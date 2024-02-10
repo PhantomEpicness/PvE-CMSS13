@@ -39,7 +39,6 @@
 		if(nest)
 			new_human.buckled = nest
 			new_human.setDir(nest.dir)
-			new_human.update_canmove()
 			nest.buckled_mob = new_human
 			nest.afterbuckle(new_human)
 	new_human.spawned_corpse = TRUE
@@ -351,7 +350,7 @@
 	)
 
 /datum/equipment_preset/corpse/security/liaison/load_gear(mob/living/carbon/human/new_human)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/liaison_suit/formal(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/liaison_suit/black(new_human), WEAR_BODY)
 	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
 		add_ice_colony_survivor_equipment(new_human)
 	else
@@ -970,7 +969,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/combat, WEAR_HANDS)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/combat, WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/shield/riot, WEAR_R_HAND)
-	new_human.equip_to_slot_or_del(new /obj/item/weapon/claymore/mercsword, WEAR_L_HAND)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/sword, WEAR_L_HAND)
 
 	var/obj/item/lantern = new /obj/item/device/flashlight/lantern(new_human)
 	lantern.name = "Beacon of Holy Light"

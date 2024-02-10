@@ -90,7 +90,7 @@ var/global/list/deployed_fultons = list()
 			var/mob/living/carbon/human/H = target_atom
 			if(isyautja(H) && H.stat == DEAD)
 				can_attach = TRUE
-			else if((H.stat != DEAD || H.mind && H.check_tod() && H.is_revivable()))
+			else if((H.stat != DEAD || H.check_tod() && H.is_revivable()))
 				to_chat(user, SPAN_WARNING("You can't attach [src] to [target_atom], they still have a chance!"))
 				return
 			else
@@ -119,7 +119,7 @@ var/global/list/deployed_fultons = list()
 				return
 			for(var/obj/item/stack/fulton/F in get_turf(target_atom))
 				return
-			var/obj/item/stack/fulton/F = new /obj/item/stack/fulton(get_turf(target_atom), 1, target_atom)
+			var/obj/item/stack/fulton/F = new type(get_turf(target_atom), 1, target_atom)
 			transfer_fingerprints_to(F)
 			src.add_fingerprint(user)
 			F.add_fingerprint(user)
@@ -172,3 +172,12 @@ var/global/list/deployed_fultons = list()
 	qdel(reservation)
 	qdel(src)
 	return
+
+/obj/item/stack/fulton/destroy_on_use
+
+/obj/item/stack/fulton/destroy_on_use/deploy_fulton()
+	. = ..()
+
+	qdel(attached_atom)
+	qdel(reservation)
+	qdel(src)

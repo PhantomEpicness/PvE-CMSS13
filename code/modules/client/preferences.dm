@@ -254,7 +254,7 @@ var/const/MAX_SAVE_SLOTS = 10
 				if(load_character())
 					return
 	if(!ooccolor)
-		ooccolor = CONFIG_GET(string/ooc_color_default)
+		ooccolor = CONFIG_GET(string/ooc_color_normal)
 	gender = pick(MALE, FEMALE)
 	real_name = random_name(gender)
 	gear = list()
@@ -586,8 +586,7 @@ var/const/MAX_SAVE_SLOTS = 10
 			dat += "<b>Tooltips:</b> <a href='?_src_=prefs;preference=tooltips'><b>[tooltips ? "Enabled" : "Disabled"]</b></a><br>"
 			dat += "<b>tgui Window Mode:</b> <a href='?_src_=prefs;preference=tgui_fancy'><b>[(tgui_fancy) ? "Fancy (default)" : "Compatible (slower)"]</b></a><br>"
 			dat += "<b>tgui Window Placement:</b> <a href='?_src_=prefs;preference=tgui_lock'><b>[(tgui_lock) ? "Primary monitor" : "Free (default)"]</b></a><br>"
-			dat += "<b>Play Admin Midis:</b> <a href='?_src_=prefs;preference=hear_midis'><b>[(toggles_sound & SOUND_MIDI) ? "Yes" : "No"]</b></a><br>"
-			dat += "<b>Play Admin Internet Sounds:</b> <a href='?_src_=prefs;preference=hear_internet'><b>[(toggles_sound & SOUND_INTERNET) ? "Yes" : "No"]</b></a><br>"
+			dat += "<b>Play Admin Sounds:</b> <a href='?_src_=prefs;preference=hear_admin_sounds'><b>[(toggles_sound & SOUND_MIDI) ? "Yes" : "No"]</b></a><br>"
 			dat += "<b>Toggle Meme or Atmospheric Sounds:</b> <a href='?src=\ref[src];action=proccall;procpath=/client/proc/toggle_admin_sound_types'>Toggle</a><br>"
 			dat += "<b>Set Eye Blur Type:</b> <a href='?src=\ref[src];action=proccall;procpath=/client/proc/set_eye_blur_type'>Set</a><br>"
 			dat += "<b>Play Lobby Music:</b> <a href='?_src_=prefs;preference=lobby_music'><b>[(toggles_sound & SOUND_LOBBY) ? "Yes" : "No"]</b></a><br>"
@@ -744,9 +743,6 @@ var/const/MAX_SAVE_SLOTS = 10
 		else if(user.client.prefs.alternate_option == RETURN_TO_LOBBY)
 			b_color = "purple"
 			msg = "Return to lobby if preference unavailable"
-		else if(user.client.prefs.alternate_option == BE_XENOMORPH)
-			b_color = "orange"
-			msg = "Be Xenomorph if preference unavailable"
 
 		HTML += "<center><br><a class='[b_color]' href='?_src_=prefs;preference=job;task=random'>[msg]</a></center><br>"
 
@@ -908,6 +904,20 @@ var/const/MAX_SAVE_SLOTS = 10
 
 	return job_preference_list[J]
 
+/// Returns a list of all the proference's jobs set to the priority argument
+/datum/preferences/proc/get_jobs_by_priority(priority)
+	var/list/jobs_to_return = list()
+
+	if(!length(job_preference_list))
+		ResetJobs()
+		return jobs_to_return
+
+	for(var/job in job_preference_list)
+		if(job_preference_list[job] == priority)
+			jobs_to_return += job
+
+	return jobs_to_return
+
 /datum/preferences/proc/SetJobDepartment(datum/job/J, priority)
 	if(!J || priority < 0 || priority > 4)
 		return FALSE
@@ -972,9 +982,9 @@ var/const/MAX_SAVE_SLOTS = 10
 					ResetJobs()
 					SetChoices(user)
 				if("random")
-					if(alternate_option == GET_RANDOM_JOB || alternate_option == BE_MARINE || alternate_option == RETURN_TO_LOBBY)
+					if(alternate_option == GET_RANDOM_JOB || alternate_option == BE_MARINE)
 						alternate_option++
-					else if(alternate_option == BE_XENOMORPH)
+					else if(alternate_option == RETURN_TO_LOBBY)
 						alternate_option = 0
 					else
 						return 0
@@ -1394,15 +1404,11 @@ var/const/MAX_SAVE_SLOTS = 10
 
 					var/prefix_length = length(new_xeno_prefix)
 
-					if(prefix_length>3)
+					if(prefix_length > 3)
 						to_chat(user, SPAN_WARNING(FONT_SIZE_BIG("Invalid Xeno Prefix. Your Prefix can only be up to 3 letters long.")))
 						return
 
-					if(prefix_length==3)
-						var/playtime = user.client.get_total_xeno_playtime()
-						if(playtime < 124 HOURS)
-							to_chat(user, SPAN_WARNING(FONT_SIZE_BIG("You need to play [time_left_until(124 HOURS, playtime, 1 HOURS)] more hours to unlock xeno three letter prefix.")))
-							return
+					if(prefix_length == 3)
 						if(xeno_postfix)
 							to_chat(user, SPAN_WARNING(FONT_SIZE_BIG("You can't use three letter prefix with any postfix.")))
 							return
@@ -1427,12 +1433,8 @@ var/const/MAX_SAVE_SLOTS = 10
 						to_chat(user, SPAN_WARNING(FONT_SIZE_BIG("You are banned from xeno name picking.")))
 						xeno_postfix = ""
 						return
-					var/playtime = user.client.get_total_xeno_playtime()
-					if(playtime < 24 HOURS)
-						to_chat(user, SPAN_WARNING(FONT_SIZE_BIG("You need to play [time_left_until(24 HOURS, playtime, 1 HOURS)] more hours to unlock xeno postfix.")))
-						return
 
-					if(length(xeno_prefix)==3)
+					if(length(xeno_prefix) == 3)
 						to_chat(user, SPAN_WARNING(FONT_SIZE_BIG("You can't use three letter prefix with any postfix.")))
 						return
 
@@ -1449,23 +1451,22 @@ var/const/MAX_SAVE_SLOTS = 10
 						var/first_char = TRUE
 						for(var/i=1, i<=length(new_xeno_postfix), i++)
 							var/ascii_char = text2ascii(new_xeno_postfix,i)
+
 							switch(ascii_char)
 								// A  .. Z
 								if(65 to 90) //Uppercase Letters will work on first char
-
 									if(length(xeno_prefix)!=2)
 										to_chat(user, SPAN_WARNING(FONT_SIZE_BIG("You can't use three letter prefix with any postfix.")))
 										return
 
-									if(!first_char && playtime < 300 HOURS)
-										to_chat(user, SPAN_WARNING(FONT_SIZE_BIG("You need to play [time_left_until(300 HOURS, playtime, 1 HOURS)] more hours to unlock double letter xeno postfix.")))
-										all_ok = FALSE
 								// 0  .. 9
 								if(48 to 57) //Numbers will work if not the first char
 									if(first_char)
 										all_ok = FALSE
+
 								else
 									all_ok = FALSE //everything else - won't
+
 							first_char = FALSE
 						if(all_ok)
 							xeno_postfix = new_xeno_postfix
@@ -1807,11 +1808,10 @@ var/const/MAX_SAVE_SLOTS = 10
 				if("rand_body")
 					be_random_body = !be_random_body
 
-				if("hear_midis")
+				if("hear_admin_sounds")
 					toggles_sound ^= SOUND_MIDI
-
-				if("hear_internet")
-					toggles_sound ^= SOUND_INTERNET
+					if(!(toggles_sound & SOUND_MIDI))
+						user?.client?.tgui_panel?.stop_music()
 
 				if("lobby_music")
 					toggles_sound ^= SOUND_LOBBY

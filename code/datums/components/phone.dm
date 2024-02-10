@@ -609,14 +609,14 @@ GLOBAL_LIST_EMPTY_TYPED(phones, /datum/component/phone)
 	return COMPONENT_OVERRIDE_DEAD_SPEAK
 
 /datum/component/phone/virtual/get_user()
-	return virtual_user
+	return virtual_user.mob
 
 // TGUI section
 
 /datum/component/phone/virtual/ui_status(mob/user, datum/ui_state/state)
 	return UI_INTERACTIVE
 
-/datum/component/phone/ui_act(action, list/params, datum/tgui/ui, datum/ui_state/state)
+/datum/component/phone/virtual/ui_act(action, list/params, datum/tgui/ui, datum/ui_state/state)
 	. = ..()
 	if(.)
 		return

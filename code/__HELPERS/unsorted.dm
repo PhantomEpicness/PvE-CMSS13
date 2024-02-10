@@ -21,16 +21,16 @@
 #define between(low, middle, high) (max(min(middle, high), low))
 
 //Offuscate x for coord system
-#define obfuscate_x(x) (x + obfs_x)
+#define obfuscate_x(x) (x + GLOB.obfs_x)
 
 //Offuscate y for coord system
-#define obfuscate_y(y) (y + obfs_y)
+#define obfuscate_y(y) (y + GLOB.obfs_y)
 
 //Deoffuscate x for coord system
-#define deobfuscate_x(x) (x - obfs_x)
+#define deobfuscate_x(x) (x - GLOB.obfs_x)
 
 //Deoffuscate y for coord system
-#define deobfuscate_y(y) (y - obfs_y)
+#define deobfuscate_y(y) (y - GLOB.obfs_y)
 
 #define can_xeno_build(T) (!T.density && !(locate(/obj/structure/fence) in T) && !(locate(/obj/structure/tunnel) in T) && (locate(/obj/effect/alien/weeds) in T))
 
@@ -1111,7 +1111,7 @@ var/global/image/action_purple_power_up
 		target_orig_turf = get_turf(target)
 	var/obj/user_holding = busy_user.get_active_hand()
 	var/obj/target_holding
-	var/cur_user_lying = busy_user.lying
+	var/cur_user_lying = busy_user.body_position
 	var/cur_target_lying
 	var/expected_total_time = delayfraction*numticks
 	var/time_remaining = expected_total_time
@@ -1119,7 +1119,7 @@ var/global/image/action_purple_power_up
 	if(has_target && istype(T))
 		cur_target_zone_sel = T.zone_selected
 		target_holding = T.get_active_hand()
-		cur_target_lying = T.lying
+		cur_target_lying = T.body_position
 
 	. = TRUE
 	for(var/i in 1 to numticks)
@@ -1143,13 +1143,13 @@ var/global/image/action_purple_power_up
 		)
 			. = FALSE
 			break
-		if(user_flags & INTERRUPT_KNOCKED_DOWN && busy_user.knocked_down || \
-			target_is_mob && (target_flags & INTERRUPT_KNOCKED_DOWN && T.knocked_down)
+		if(user_flags & INTERRUPT_KNOCKED_DOWN && HAS_TRAIT(busy_user, TRAIT_FLOORED) || \
+			target_is_mob && (target_flags & INTERRUPT_KNOCKED_DOWN && HAS_TRAIT(T, TRAIT_FLOORED))
 		)
 			. = FALSE
 			break
-		if(user_flags & INTERRUPT_STUNNED && busy_user.stunned || \
-			target_is_mob && (target_flags & INTERRUPT_STUNNED && T.stunned)
+		if(user_flags & INTERRUPT_STUNNED && HAS_TRAIT(busy_user, TRAIT_INCAPACITATED)|| \
+			target_is_mob && (target_flags & INTERRUPT_STUNNED && HAS_TRAIT(T, TRAIT_INCAPACITATED))
 		)
 			. = FALSE
 			break
@@ -1223,8 +1223,8 @@ var/global/image/action_purple_power_up
 		)
 			. = FALSE
 			break
-		if(user_flags & INTERRUPT_CHANGED_LYING && busy_user.lying != cur_user_lying || \
-			target_is_mob && (target_flags & INTERRUPT_CHANGED_LYING && T.lying != cur_target_lying)
+		if(user_flags & INTERRUPT_CHANGED_LYING && busy_user.body_position != cur_user_lying || \
+			target_is_mob && (target_flags & INTERRUPT_CHANGED_LYING && T.body_position != cur_target_lying)
 		)
 			. = FALSE
 			break

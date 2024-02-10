@@ -32,6 +32,8 @@ GLOBAL_LIST_EMPTY(co_secure_boxes)
 
 /obj/structure/closet/secure_closet/securecom/Initialize()
 	. = ..()
+	new /obj/item/storage/box/kit/honorguard(src)
+	new /obj/item/storage/box/kit/honorguard(src)
 	GLOB.co_secure_boxes += src
 
 /obj/structure/closet/secure_closet/securecom/Destroy()
@@ -250,6 +252,7 @@ GLOBAL_LIST_EMPTY(co_secure_boxes)
 	new /obj/item/storage/belt/medical/full(src)
 	new /obj/item/clothing/under/rank/medical/green(src)
 	new /obj/item/clothing/under/rank/medical/blue(src)
+	new /obj/item/clothing/under/rank/medical/lightblue(src)
 	new /obj/item/clothing/under/rank/medical/purple(src)
 	new /obj/item/clothing/mask/surgical(src)
 	new /obj/item/clothing/head/surgery/green(src)

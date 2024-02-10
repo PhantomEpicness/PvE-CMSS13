@@ -3,7 +3,7 @@
 #define GET_DEFAULT_ROLE(title) (RoleAuthority?.default_roles[title] ? RoleAuthority.default_roles[title] : title)
 
 // Squad name defines
-#define SQUAD_MARINE_1 "Alpha"
+#define SQUAD_MARINE_1 "Sun Riders"
 #define SQUAD_MARINE_2 "Bravo"
 #define SQUAD_MARINE_3 "Charlie"
 #define SQUAD_MARINE_4 "Delta"
@@ -11,6 +11,7 @@
 #define SQUAD_MARINE_CRYO "Foxtrot"
 #define SQUAD_MARINE_INTEL "Intel"
 #define SQUAD_SOF "SOF"
+#define SQUAD_CBRN "CBRN"
 
 // Job name defines
 #define JOB_SQUAD_MARINE "Rifleman"
@@ -358,12 +359,11 @@ var/global/list/job_command_roles = JOB_COMMAND_ROLES_LIST
 #define JOB_PLAYTIME_TIER_4  (175 HOURS)
 
 #define XENO_NO_AGE  -1
-#define XENO_YOUNG 0
-#define XENO_NORMAL 1
-#define XENO_MATURE 2
-#define XENO_ELDER 3
-#define XENO_ANCIENT 4
-#define XENO_PRIME 5
+#define XENO_NORMAL 0
+#define XENO_MATURE 1
+#define XENO_ELDER 2
+#define XENO_ANCIENT 3
+#define XENO_PRIME 4
 
 /// For monthly time tracking
 #define JOB_OBSERVER "Observer"

@@ -23,7 +23,7 @@
 	set src in usr
 	if(!ishuman(usr)) return
 
-	if(!usr.canmove || usr.stat || usr.is_mob_restrained() || !usr.loc || !isturf(usr.loc))
+	if(usr.is_mob_incapacitated() || !isturf(usr.loc))
 		to_chat(usr, SPAN_WARNING("Not right now!"))
 		return
 
@@ -35,7 +35,7 @@
 	set src in usr
 	if(!ishuman(usr)) return
 
-	if(!usr.canmove || usr.stat || usr.is_mob_restrained() || !usr.loc || !isturf(usr.loc))
+	if(usr.is_mob_incapacitated() || !isturf(usr.loc))
 		to_chat(usr, SPAN_WARNING("Not right now!"))
 		return
 
@@ -91,7 +91,7 @@
 	set src in usr
 	if(!ishuman(usr)) return
 
-	if(!usr.canmove || usr.stat || usr.is_mob_restrained() || !usr.loc || !isturf(usr.loc))
+	if(usr.is_mob_incapacitated() || !isturf(usr.loc))
 		to_chat(usr, SPAN_WARNING("Not right now!"))
 		return
 
@@ -103,7 +103,7 @@
 	set src in usr
 	if(!ishuman(usr)) return
 
-	if(!usr.canmove || usr.stat || usr.is_mob_restrained() || !usr.loc || !isturf(usr.loc))
+	if(usr.is_mob_incapacitated() || !isturf(usr.loc))
 		to_chat(usr, SPAN_WARNING("Not right now!"))
 		return
 
@@ -1309,8 +1309,8 @@
 /obj/item/clothing/shoes/marine/fluff/vintage //CKEY=vintagepalmer
 	name = "Vintage Sandals"
 	desc = "Vintage Sandals, suitable for only the highest class of hipster.  DONOR ITEM"
-	icon_state = "wizard"
-	item_state = "wizard"
+	icon_state = "sandals"
+	item_state = "sandals"
 
 /obj/item/clothing/shoes/marine/fluff/feodrich //CKEY=feodrich (UNIQUE)
 	name = "Doom Shoes"
@@ -1366,7 +1366,8 @@
 	name = "tactical radiopack"
 	desc = "A Radio backpack for use with the Juggernaut armor. DONOR ITEM"
 	icon_state = "skinnerpack"
-	item_state = "skinnerpack"
+	item_state = "securitypack"
+	has_gamemode_skin = FALSE //same sprite for all gamemodes.
 
 /obj/item/clothing/glasses/fluff/alexwarhammer
 	name = "Black Jack's Dank Shades"

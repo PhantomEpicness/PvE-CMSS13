@@ -10,6 +10,9 @@
 	/// Whether this action gets added to AI xenos
 	var/default_ai_action = FALSE
 
+	/// Chance of use per tick applicable tick
+	var/ai_prob_chance = 80
+
 	// Cooldown
 	/// Cooldown of the ability (do not use the cooldown var)
 	/// Probably should only have the cooldown var, but that is for another rework
@@ -79,7 +82,7 @@
 	if(!owner)
 		return FALSE
 	var/mob/living/carbon/xenomorph/X = owner
-	if(X && !X.is_mob_incapacitated() && !X.dazed && !X.lying && !X.buckled && X.plasma_stored >= plasma_cost)
+	if(X && !X.is_mob_incapacitated() && !X.dazed && X.body_position == STANDING_UP && !X.buckled && X.plasma_stored >= plasma_cost)
 		return TRUE
 
 /datum/action/xeno_action/give_to(mob/living/living_mob)
@@ -109,7 +112,7 @@
 	else
 		button.color = rgb(255,255,255,255)
 
-/datum/action/xeno_action/proc/process_ai(mob/living/carbon/xenomorph/X, delta_time)
+/datum/action/xeno_action/proc/process_ai(mob/living/carbon/xenomorph/processing_xeno, delta_time)
 	SHOULD_NOT_SLEEP(TRUE)
 	return PROCESS_KILL
 

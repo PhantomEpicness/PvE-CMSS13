@@ -120,7 +120,7 @@ var/list/AAlarmWireColorToIndex
 #define MAX_EMOTE_LEN 256
 #define MAX_PAPER_MESSAGE_LEN 3072
 #define MAX_BOOK_MESSAGE_LEN 9216
-#define MAX_NAME_LEN 26
+#define MAX_NAME_LEN 28
 
 /// 3 minutes in the station.
 #define shuttle_time_in_station 3 MINUTES
@@ -153,14 +153,6 @@ var/list/nato_phonetic_alphabet = list("Alpha", "Bravo", "Charlie", "Delta", "Ec
 //Used for autocall procs on ERT
 var/distress_cancel = 0
 var/destroy_cancel = 0
-
-//Coordinate obsfucator
-//Used by the rangefinders and linked systems to prevent coords collection/prefiring
-
-/// A number between -500 and 500.
-var/global/obfs_x = 0
-/// A number between -500 and 500.
-var/global/obfs_y = 0
 
 // Which lobby art is on display
 // This is updated by the lobby art turf when it initializes

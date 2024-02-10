@@ -7,7 +7,7 @@
 	var/turf/current_target_turf
 
 	var/ai_move_delay = 0
-	var/path_update_period = 0.5 SECONDS
+	var/path_update_period = (0.5 SECONDS)
 	var/no_path_found = FALSE
 	var/ai_range = 16
 	var/max_travel_distance = 24
@@ -19,18 +19,20 @@
 
 	var/datum/xeno_ai_movement/ai_movement_handler
 
-/mob/living/carbon/xenomorph/Destroy()
-	QDEL_NULL(ai_movement_handler)
-	return ..()
+	/// The time interval before this xeno should forcefully get a new target
+	var/forced_retarget_time = (10 SECONDS)
 
-GLOBAL_LIST_INIT(ai_target_limbs, list(
-	"head",
-	"chest",
-	"l_leg",
-	"r_leg",
-	"l_arm",
-	"r_arm"
-))
+	/// The actual cooldown declaration for forceful retargeting, reference forced_retarget_time for time in between checks
+	COOLDOWN_DECLARE(forced_retarget_cooldown)
+
+	/// Amount of times no path found has occured
+	var/no_path_found_amount = 0
+
+	/// The time interval between calculating new paths if we cannot find a path
+	var/no_path_found_period = (2.5 SECONDS)
+
+	/// Cooldown declaration for delaying finding a new path if no path was found
+	COOLDOWN_DECLARE(no_path_found_cooldown)
 
 /mob/living/carbon/xenomorph/proc/init_movement_handler()
 	return new /datum/xeno_ai_movement(src)
@@ -63,25 +65,25 @@ GLOBAL_LIST_INIT(ai_target_limbs, list(
 	if(!hive || !get_turf(src))
 		return TRUE
 
+	var/datum/component/ai_behavior_override/behavior_override = check_overrides()
+
+	if(behavior_override?.process_override_behavior(src, delta_time))
+		return TRUE
+
 	if(is_mob_incapacitated(TRUE))
 		current_path = null
 		return TRUE
 
-	var/stat_check = FALSE
-	if(istype(current_target, /mob))
-		var/mob/current_target_mob = current_target
-		stat_check = (current_target_mob.stat != CONSCIOUS)
-
-	if(QDELETED(current_target) || stat_check || get_dist(current_target, src) > ai_range)
+	if(QDELETED(current_target) || !current_target.ai_check_stat() || get_dist(current_target, src) > ai_range || COOLDOWN_FINISHED(src, forced_retarget_cooldown))
 		current_target = get_target(ai_range)
+		COOLDOWN_START(src, forced_retarget_cooldown, forced_retarget_time)
 		if(QDELETED(src))
 			return TRUE
 
 		if(current_target)
-			resting = FALSE
+			set_resting(FALSE, FALSE, TRUE)
 			if(prob(5))
 				emote("hiss")
-			return TRUE
 
 	a_intent = INTENT_HARM
 
@@ -109,7 +111,7 @@ GLOBAL_LIST_INIT(ai_target_limbs, list(
 
 	var/list/turf/turfs_to_dist_check = list(get_turf(current_target))
 
-	if(length(current_target.locs) > 1)
+	if(istype(current_target, /atom/movable) && length(current_target.locs) > 1)
 		turfs_to_dist_check = get_multitile_turfs_to_check()
 
 	for(var/turf/checked_turf as anything in turfs_to_dist_check)
@@ -130,17 +132,23 @@ GLOBAL_LIST_INIT(ai_target_limbs, list(
 		CRASH("No valid movement handler for [src]!")
 	return ai_movement_handler.ai_move_target(delta_time)
 
-/atom/proc/xeno_ai_obstacle(mob/living/carbon/xenomorph/X, direction)
+/atom/proc/xeno_ai_obstacle(mob/living/carbon/xenomorph/X, direction, turf/target)
+	if(get_turf(src) == target)
+		return 0
 	return INFINITY
+
+/atom/proc/ai_check_stat()
+	return TRUE // So we aren't trying to find a new target on attack override
 
 // Called whenever an obstacle is encountered but xeno_ai_obstacle returned something else than infinite
 // and now it is considered a valid path.
 /atom/proc/xeno_ai_act(mob/living/carbon/xenomorph/X)
-	return
+	X.do_click(src, "", list())
+	return TRUE
 
 /mob/living/carbon/xenomorph/proc/can_move_and_apply_move_delay()
 	// Unable to move, try next time.
-	if(ai_move_delay > world.time || !canmove || is_mob_incapacitated(TRUE) || (lying && !can_crawl) || anchored)
+	if(ai_move_delay > world.time || !(mobility_flags & MOBILITY_MOVE) || is_mob_incapacitated(TRUE) || (body_position != STANDING_UP && !can_crawl) || anchored)
 		return FALSE
 
 	ai_move_delay = world.time + move_delay
@@ -161,10 +169,16 @@ GLOBAL_LIST_INIT(ai_target_limbs, list(
 		return FALSE
 
 	if(no_path_found)
+
+		if(no_path_found_amount > 0)
+			COOLDOWN_START(src, no_path_found_cooldown, no_path_found_period)
 		no_path_found = FALSE
+		no_path_found_amount++
 		return FALSE
 
-	if(!current_path || (next_path_generation < world.time && current_target_turf != T))
+	no_path_found_amount = 0
+
+	if((!current_path || (next_path_generation < world.time && current_target_turf != T)) && COOLDOWN_FINISHED(src, no_path_found_cooldown))
 		if(!XENO_CALCULATING_PATH(src) || current_target_turf != T)
 			SSxeno_pathfinding.calculate_path(src, T, max_range, src, CALLBACK(src, PROC_REF(set_path)), list(src, current_target))
 			current_target_turf = T
@@ -209,30 +223,53 @@ GLOBAL_LIST_INIT(ai_target_limbs, list(
 
 	return TRUE
 
+/// Checks and returns the nearest override for behavior
+/mob/living/carbon/xenomorph/proc/check_overrides()
+	var/shortest_distance = INFINITY
+	var/datum/component/ai_behavior_override/closest_valid_override
+	for(var/datum/component/ai_behavior_override/cycled_override in GLOB.all_ai_behavior_overrides)
+		var/distance = get_dist(src, cycled_override.parent)
+		var/validity = cycled_override.check_behavior_validity(src, distance)
+
+		if(!validity)
+			continue
+
+		if(distance >= shortest_distance)
+			continue
+
+		shortest_distance = distance
+		closest_valid_override = cycled_override
+
+	return closest_valid_override
+
 #define EXTRA_CHECK_DISTANCE_MULTIPLIER 0.20
 
 /mob/living/carbon/xenomorph/proc/get_target(range)
 	var/list/viable_targets = list()
 	var/atom/movable/closest_target
 	var/smallest_distance = INFINITY
-	for(var/mob/living/carbon/human/potential_alive_human_target as anything in GLOB.alive_human_list)
-		if(z != potential_alive_human_target.z)
+
+	for(var/mob/living/carbon/potential_target as anything in GLOB.alive_mob_list)
+		if(!iscarbon(potential_target))
 			continue
 
-		if(!check_mob_target(potential_alive_human_target))
+		if(z != potential_target.z)
 			continue
 
-		var/distance = get_dist(src, potential_alive_human_target)
+		if(!potential_target.ai_can_target(src))
+			continue
+
+		var/distance = get_dist(src, potential_target)
 
 		if(distance > ai_range)
 			continue
 
-		viable_targets += potential_alive_human_target
+		viable_targets += potential_target
 
 		if(smallest_distance <= distance)
 			continue
 
-		closest_target = potential_alive_human_target
+		closest_target = potential_target
 		smallest_distance = distance
 
 	for(var/obj/vehicle/multitile/potential_vehicle_target as anything in GLOB.all_multi_vehicles)
@@ -245,17 +282,23 @@ GLOBAL_LIST_INIT(ai_target_limbs, list(
 			continue
 
 		if(potential_vehicle_target.health <= 0)
-			var/skip_vehicle = TRUE
+			continue
 
-			var/list/interior_living_mobs = potential_vehicle_target.interior.get_passengers()
-			for(var/mob/living/carbon/human/human_mob in interior_living_mobs)
-				if(!check_mob_target(human_mob))
-					continue
+		var/multitile_faction = potential_vehicle_target.vehicle_faction
+		if(hive.faction_is_ally(multitile_faction))
+			continue
 
-				skip_vehicle = FALSE
-
-			if(skip_vehicle)
+		var/skip_vehicle
+		var/list/interior_living_mobs = potential_vehicle_target.interior.get_passengers()
+		for(var/mob/living/carbon/human/human_mob in interior_living_mobs)
+			if(!human_mob.ai_can_target(src))
 				continue
+
+			skip_vehicle = FALSE
+			break
+
+		if(skip_vehicle)
+			continue
 
 		viable_targets += potential_vehicle_target
 
@@ -295,14 +338,14 @@ GLOBAL_LIST_INIT(ai_target_limbs, list(
 
 #undef EXTRA_CHECK_DISTANCE_MULTIPLIER
 
-/mob/living/carbon/xenomorph/proc/check_mob_target(mob/living/carbon/human/checked_human)
-	if(checked_human.species.flags & IS_SYNTHETIC)
+/mob/living/carbon/proc/ai_can_target(mob/living/carbon/xenomorph/ai_xeno)
+	if(!ai_check_stat())
 		return FALSE
 
-	if(FACTION_XENOMORPH in checked_human.faction_group)
+	if(ai_xeno.can_not_harm(src))
 		return FALSE
 
-	if(checked_human.stat != CONSCIOUS)
+	if(alpha <= 45 && get_dist(ai_xeno, src) > 2)
 		return FALSE
 
 	return TRUE

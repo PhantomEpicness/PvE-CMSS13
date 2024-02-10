@@ -159,9 +159,8 @@
 
 	accurate_range = 8
 	max_range = 8
-	damage = 90
-	penetration = ARMOR_PENETRATION_TIER_4
-	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_6
+	damage = 60
+	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_8
 	firing_freq_offset = SOUND_FREQ_LOW
 
 //buckshot variant only used by the masterkey shotgun attachment.
@@ -196,7 +195,6 @@
 	accurate_range = 8
 	max_range = 8
 	damage = 90
-	penetration = ARMOR_PENETRATION_TIER_4
 	firing_freq_offset = SOUND_FREQ_LOW
 
 /*
@@ -354,7 +352,7 @@
 	if(P.distance_travelled > 8)
 		knockback(M, P, 12)
 
-	else if(!M || M == P.firer || M.lying) //These checks are included in knockback and would be redundant above.
+	else if(!M || M == P.firer || M.body_position == LYING_DOWN) //These checks are included in knockback and would be redundant above.
 		return
 
 	shake_camera(M, 3, 4)
