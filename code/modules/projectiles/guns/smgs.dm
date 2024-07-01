@@ -687,3 +687,179 @@
 	if(.)
 		click_empty(user)
 	return FALSE
+
+/obj/item/weapon/gun/smg/vindicator
+	name = "\improper R27 Vindicator SMG"
+	desc = "A purpose built submachine gun for fighting in the confines of space faring vessels. It accomplishes this by primarily firing .45 caliber light explosive rounds for causing as much devestation as possible with minimal penetration. These rounds are very poor at penetrating armor, though it can chamber any other .45 ACP rounds aswell, including AP."
+	desc_lore = "Stemming from the R52 Corax, this SMG was also designed for the USCM as a competetor to the Armat M39 and was actually the choice weapon, though it was rejected last moment for an unspecified reason Theories range from USCM officials being bribed by Armat to the R27's ergonomics being too unfamiliar to marines. Nevertheless, it has become a favorite of Colonial Marshals, Mercenary groups, and Spacers. "
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony.dmi'
+	icon_state = "fp9000"
+	item_state = "fp9000"
+
+	fire_sound = 'sound/weapons/gun_p90.ogg'
+	current_mag = /obj/item/ammo_magazine/smg/fp9000
+
+	attachable_allowed = list(
+		/obj/item/attachable/compensator,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/extended_barrel,
+		/obj/item/attachable/heavy_barrel,
+	)
+	random_spawn_chance = 65
+	random_spawn_under = list(
+		/obj/item/attachable/lasersight,
+	)
+	random_spawn_muzzle = list(
+		/obj/item/attachable/compensator,
+		/obj/item/attachable/extended_barrel,
+	)
+
+	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK
+
+/obj/item/weapon/gun/smg/fp9000/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/scope/mini/S = new(src)
+	S.icon_state = "miniscope_fp9000"
+	S.attach_icon = "miniscope_fp9000_a" // Custom
+	S.flags_attach_features &= ~ATTACH_REMOVABLE
+	S.Attach(src)
+	update_attachable(S.slot)
+
+/obj/item/weapon/gun/smg/fp9000/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 20, "rail_y" = 21, "under_x" = 26, "under_y" = 16, "stock_x" = 22, "stock_y" = 16)
+
+/obj/item/weapon/gun/smg/fp9000/set_gun_config_values()
+	..()
+	fire_delay = FIRE_DELAY_TIER_SMG
+	burst_delay = FIRE_DELAY_TIER_SMG
+	burst_amount = BURST_AMOUNT_TIER_3
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_5
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_5
+	scatter = SCATTER_AMOUNT_TIER_6
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_4
+	scatter_unwielded = SCATTER_AMOUNT_TIER_4
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_1
+	recoil_unwielded = RECOIL_AMOUNT_TIER_5
+
+
+/obj/item/weapon/gun/smg/shredder
+	name = "\improper R29 Thrasher SMG"
+	desc = "The smallest and most vicious SMG in the R20 series of weapons has earned it's reputation as a true bullet hose, emptying a full magazine of forty 9mm rounds in a couple seconds. When tamed by a professional, it is undeniably devestating."
+	desc_lore = "Seen in use by select USCM MARSOC and TWE SAS units, though there are some mercenary groups that use this too."
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony.dmi'
+	icon_state = "fp9000"
+	item_state = "fp9000"
+
+	fire_sound = 'sound/weapons/gun_p90.ogg'
+	current_mag = /obj/item/ammo_magazine/smg/fp9000
+
+	attachable_allowed = list(
+		/obj/item/attachable/compensator,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/extended_barrel,
+		/obj/item/attachable/heavy_barrel,
+	)
+	random_spawn_chance = 65
+	random_spawn_under = list(
+		/obj/item/attachable/lasersight,
+	)
+	random_spawn_muzzle = list(
+		/obj/item/attachable/compensator,
+		/obj/item/attachable/extended_barrel,
+	)
+
+	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK
+
+/obj/item/weapon/gun/smg/fp9000/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/scope/mini/S = new(src)
+	S.icon_state = "miniscope_fp9000"
+	S.attach_icon = "miniscope_fp9000_a" // Custom
+	S.flags_attach_features &= ~ATTACH_REMOVABLE
+	S.Attach(src)
+	update_attachable(S.slot)
+
+/obj/item/weapon/gun/smg/fp9000/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 20, "rail_y" = 21, "under_x" = 26, "under_y" = 16, "stock_x" = 22, "stock_y" = 16)
+
+/obj/item/weapon/gun/smg/fp9000/set_gun_config_values()
+	..()
+	fire_delay = FIRE_DELAY_TIER_SMG
+	burst_delay = FIRE_DELAY_TIER_SMG
+	burst_amount = BURST_AMOUNT_TIER_3
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_5
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_5
+	scatter = SCATTER_AMOUNT_TIER_6
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_4
+	scatter_unwielded = SCATTER_AMOUNT_TIER_4
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_1
+	recoil_unwielded = RECOIL_AMOUNT_TIER_5
+
+
+// Funny RNG properties
+
+/obj/item/weapon/gun/smg/fgc9
+	name = "\improper Capri Submachinegun"
+	desc = "One of the only successful and widley avaliable 3D printed firearms, the Capri SMG has been the bane of security forces for decades now. Due to inperfections in printing and the fact that the blueprint files used to print most of these are likely low quality copies-of-copies, the quality for these are highly unpredictable and it suffers from accuracy problems. Some variants allieviate this by utilizing drum magazines."
+	desc_lore = "The only thing known about these submachineguns is the designer, whom it was named after and the general shape and design. As it has been over 70 years since the original first popped up on the black market from stolen blueprints, each weapon is differant due to various modifications, recovery from bad floppy disks, and conversion between differant 3-D printer and autolathe models. Besides the frame, for most variants, basic interoperability between variants does not exist, meaning swapping parts or even magazines between them wont work. A Capri SMG's magazines used by pirates in UPP space won't be compatible with a Capri SMG made in a CLF warehouse in UA space and one in made for a Detriot gang on Earth certainly wouldn't work with attachments made in the Luna Colony. Reportedly, even CLF units on differant planets run into the same issues. This has attracted the curiousity of a niche gun enthusiast community, looking to obtain as many differant variants as possible due to pretty much every single one of them being unique and has it's own interesting history that is still being traced back to the original. In 2165, the newly established Advanced Automated Printing Consortium, a cartel of autolathe and 3-D printer producing megacorporations, teamed up to design a complex detection system within the their autolathe units to automatically detect and reject any parts that resemble any firearm parts to avoid UA and TWE regulations after increased scrutiny into weapons like the Capri SMG. ( The UPP have already barred personal use of Autholathes long before these were a problem). Naturally, anyone rich or influential enough has the ability to purchase a license to be \'authorized\' to be able to remove protections and print such items. "
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony.dmi'
+	icon_state = "fp9000"
+	item_state = "fp9000"
+
+	fire_sound = 'sound/weapons/gun_p90.ogg'
+	current_mag = /obj/item/ammo_magazine/smg/fp9000
+
+// Rifle+ damage with mid fire rate. OK range
+
+/obj/item/weapon/gun/smg/heavy_smg
+	name = "\improper Type 26 Pariah Submachinegun"
+	desc = "An older UPP design spanning from the late 21st century, this SMG was primarily used by internal police and security forces of the Union. It's simple, robust assembly and being cheap enough to mass produce is the reason why it had been in service for almost a century. Fires heavy 11x27mm rounds. Runs like shit ,but will run like shit far longer than any modern gun."
+	desc_lore = "When the UPP finally started mothballing them, millions of these SMGs suddenly started flooding black markets and CLF cells across the galaxy. Various copies and clones of this weapon are also highly abundant due to it's simplistic design that's easy to replicate by any amatuer gunsmith. Unconfirmed reports state that rather than having to deal with strict firearms control procedures, many UPP quartermasters sold them off to smugglers with the Party turning a blind eye, as long as more of them ended up in the hands of CLF and pirates operating in American and TWE space."
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony.dmi'
+	icon_state = "fp9000"
+	item_state = "fp9000"
+
+	fire_sound = 'sound/weapons/gun_p90.ogg'
+	current_mag = /obj/item/ammo_magazine/smg/fp9000
+
+	attachable_allowed = list(
+		/obj/item/attachable/compensator,
+		/obj/item/attachable/lasersight,
+		/obj/item/attachable/extended_barrel,
+		/obj/item/attachable/heavy_barrel,
+	)
+	random_spawn_chance = 65
+	random_spawn_under = list(
+		/obj/item/attachable/lasersight,
+	)
+	random_spawn_muzzle = list(
+		/obj/item/attachable/compensator,
+		/obj/item/attachable/extended_barrel,
+	)
+
+	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK
+
+/obj/item/weapon/gun/smg/fp9000/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/scope/mini/S = new(src)
+	S.icon_state = "miniscope_fp9000"
+	S.attach_icon = "miniscope_fp9000_a" // Custom
+	S.flags_attach_features &= ~ATTACH_REMOVABLE
+	S.Attach(src)
+	update_attachable(S.slot)
+
+/obj/item/weapon/gun/smg/fp9000/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 20, "rail_y" = 21, "under_x" = 26, "under_y" = 16, "stock_x" = 22, "stock_y" = 16)
+
+/obj/item/weapon/gun/smg/fp9000/set_gun_config_values()
+	..()
+	fire_delay = FIRE_DELAY_TIER_SMG
+	burst_delay = FIRE_DELAY_TIER_SMG
+	burst_amount = BURST_AMOUNT_TIER_3
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_5
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_5
+	scatter = SCATTER_AMOUNT_TIER_6
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_4
+	scatter_unwielded = SCATTER_AMOUNT_TIER_4
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_1
+	recoil_unwielded = RECOIL_AMOUNT_TIER_5

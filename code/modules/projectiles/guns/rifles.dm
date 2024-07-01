@@ -1946,3 +1946,53 @@
 	f90_shotgun_barrel.Attach(src)
 	update_attachable(f90_shotgun.slot)
 	update_attachable(f90_shotgun_barrel.slot)
+
+
+// MK1 with lower mag size and faster wield
+/obj/item/weapon/gun/rifle/corax
+	name = "\improper R21 Corax Carabine"
+	desc = "An ergonomic pulse carabine that was originally meant to compete with the M41A for use by the USCM before being rejected as it underperformed in some torture testing due to it's lightweight build. Chambered in 10x24mm Caseless, with ammo compatibility with the M41. Because of this, the Corax would have been scrapped entirely if it weren't for several large mercenary groups and some CMB S.W.A.T teams. Features ammo (but not magazine) compatibility with the M41."
+	icon_state = "abr40_tac"
+	item_state = "abr40_tac"
+	current_mag = /obj/item/ammo_magazine/rifle/l42a/ap
+	attachable_allowed = list(
+		//Barrel,
+		/obj/item/attachable/suppressor,
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/bayonet/upp,
+		/obj/item/attachable/bayonet/co2,
+		//Rail,
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/reflex,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/magnetic_harness,
+		/obj/item/attachable/scope,
+		/obj/item/attachable/scope/mini,
+		/obj/item/attachable/scope/mini/hunting,
+		//Under,
+		/obj/item/attachable/flashlight/grip,
+		//Stock,
+		/obj/item/attachable/stock/carbine,
+		/obj/item/attachable/stock/carbine/wood,
+		/obj/item/attachable/stock/carbine/wood/tactical,
+	)
+
+	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	wield_delay = WIELD_DELAY_VERY_FAST
+	aim_slowdown = SLOWDOWN_ADS_QUICK
+	starting_attachment_types = list(/obj/item/attachable/stock/carbine)
+	map_specific_decoration = TRUE
+
+/obj/item/weapon/gun/smg/rifle/corax/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 19,"rail_x" = 12, "rail_y" = 20, "under_x" = 18, "under_y" = 15, "stock_x" = 22, "stock_y" = 10)
+
+/obj/item/weapon/gun/smg/rifle/corax/set_gun_config_values()
+	..()
+	fire_delay = FIRE_DELAY_TIER_8
+	burst_amount = 0
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_5
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_4
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_6
+	recoil_unwielded = RECOIL_AMOUNT_TIER_4
+	damage_falloff_mult = 0
+	scatter = SCATTER_AMOUNT_TIER_8
