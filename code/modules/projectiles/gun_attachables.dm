@@ -492,6 +492,17 @@ Defined in conflicts.dm of the #defines folder.
 	flags_attach_features = NO_FLAGS
 	hud_offset_mod = -3
 
+/obj/item/attachable/lasgun_barrel
+	name = "lazor barrel"
+	desc = "This isn't supposed to be seperated from the gun, how'd this happen?"
+	icon_state = "las_barrel"
+	attach_icon = "las_barrel"
+	slot = "muzzle"
+	wield_delay_mod = WIELD_DELAY_NONE
+	flags_attach_features = NO_FLAGS
+	melee_mod = 0 //Integrated attachment for visuals, stats handled on main gun.
+	size_mod = 0
+
 /obj/item/attachable/sniperbarrel/New()
 	..()
 	accuracy_mod = HIT_ACCURACY_MULT_TIER_3
@@ -2568,6 +2579,80 @@ Defined in conflicts.dm of the #defines folder.
 	pixel_shift_y = 20
 	hud_offset_mod = 2
 
+/obj/item/attachable/stock/corax
+	name = "Corax Skeletal Stock"
+	desc = "If you can read this, someone screwed up. Go Github this and bug a coder."
+	icon_state = "corax_stock"
+	slot = "stock"
+	wield_delay_mod = WIELD_DELAY_NONE
+	melee_mod = 5
+	size_mod = 2
+	pixel_shift_x = 55
+	pixel_shift_y = 15
+	hud_offset_mod = 2
+
+
+/obj/item/attachable/stock/merc
+	name = "merc smg folding stock"
+	desc = ""
+	slot = "stock"
+	melee_mod = 10
+	size_mod = 1
+	icon_state = "mercsmg_stock"
+	attach_icon = "mercsmg_stock"
+	wield_delay_mod = WIELD_DELAY_NONE
+	pixel_shift_x = 32
+	pixel_shift_y = 32
+	attachment_action_type = /datum/action/item_action/toggle
+	hud_offset_mod = 5
+	collapsible = TRUE
+
+/obj/item/attachable/stock/merc/apply_on_weapon(obj/item/weapon/gun/gun)
+	if(stock_activated)
+		accuracy_mod = HIT_ACCURACY_MULT_TIER_3
+		recoil_mod = -RECOIL_AMOUNT_TIER_4
+		scatter_mod = -SCATTER_AMOUNT_TIER_8
+		scatter_unwielded_mod = SCATTER_AMOUNT_TIER_10
+		size_mod = 1
+		aim_speed_mod = CONFIG_GET(number/slowdown_low)
+		wield_delay_mod = WIELD_DELAY_FAST
+		movement_onehanded_acc_penalty_mod = -MOVEMENT_ACCURACY_PENALTY_MULT_TIER_5
+		accuracy_unwielded_mod = -HIT_ACCURACY_MULT_TIER_3
+		recoil_unwielded_mod = RECOIL_AMOUNT_TIER_4
+		hud_offset_mod = 5
+		icon_state = "mercsmg_stock"
+		attach_icon = "mercsmg_stock"
+
+	else
+		accuracy_mod = 0
+		recoil_mod = 0
+		scatter_mod = 0
+		scatter_unwielded_mod = 0
+		size_mod = 0
+		aim_speed_mod = 0
+		wield_delay_mod = 0
+		movement_onehanded_acc_penalty_mod = 0
+		accuracy_unwielded_mod = 0
+		recoil_unwielded_mod = 0
+		hud_offset_mod = 3
+		icon_state = "mercsmg_stockcc"
+		attach_icon = "mercsmg_stockcc"
+
+	gun.recalculate_attachment_bonuses()
+	gun.update_overlays(src, "stock")
+
+
+/obj/item/attachable/stock/nsg23
+	name = "NSG 23 stock"
+	desc = "If you can read this, someone screwed up. Go Github this and bug a coder."
+	icon_state = "nsg23_stock"
+	slot = "stock"
+	wield_delay_mod = WIELD_DELAY_NONE
+	melee_mod = 5
+	size_mod = 2
+	pixel_shift_x = 21
+	pixel_shift_y = 20
+	hud_offset_mod = 2
 // ======== Underbarrel Attachments ======== //
 
 

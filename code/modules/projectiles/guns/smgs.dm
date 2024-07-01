@@ -742,7 +742,7 @@
 	recoil_unwielded = RECOIL_AMOUNT_TIER_5
 
 
-/obj/item/weapon/gun/smg/shredder
+/obj/item/weapon/gun/smg/thrasher
 	name = "\improper R29 Thrasher SMG"
 	desc = "The smallest and most vicious SMG in the R20 series of weapons has earned it's reputation as a true bullet hose, emptying a full magazine of forty 9mm rounds in a couple seconds. When tamed by a professional, it is undeniably devestating."
 	desc_lore = "Seen in use by select USCM MARSOC and TWE SAS units, though there are some mercenary groups that use this too."
@@ -770,17 +770,16 @@
 
 	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK
 
-/obj/item/weapon/gun/smg/fp9000/handle_starting_attachment()
+/obj/item/weapon/gun/smg/thrasher/handle_starting_attachment()
 	..()
-	var/obj/item/attachable/scope/mini/S = new(src)
-	S.icon_state = "miniscope_fp9000"
-	S.attach_icon = "miniscope_fp9000_a" // Custom
-	S.flags_attach_features &= ~ATTACH_REMOVABLE
-	S.Attach(src)
-	update_attachable(S.slot)
+	var/obj/item/attachable/stock/merc/stock = new(src)
+	stock.stock_activated = TRUE
+	stock.flags_attach_features &= ~ATTACH_REMOVABLE
+	stock.Attach(src)
+	update_attachable(stock.slot)
 
 /obj/item/weapon/gun/smg/fp9000/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 20, "rail_y" = 21, "under_x" = 26, "under_y" = 16, "stock_x" = 22, "stock_y" = 16)
+	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 18,"rail_x" = 20, "rail_y" = 21, "under_x" = 26, "under_y" = 16, "stock_x" = 32, "stock_y" = 32)
 
 /obj/item/weapon/gun/smg/fp9000/set_gun_config_values()
 	..()
@@ -812,7 +811,7 @@
 // Rifle+ damage with mid fire rate. OK range
 
 /obj/item/weapon/gun/smg/heavy_smg
-	name = "\improper Type 26 Pariah Submachinegun"
+	name = "\improper Type 26 Minsk Submachinegun"
 	desc = "An older UPP design spanning from the late 21st century, this SMG was primarily used by internal police and security forces of the Union. It's simple, robust assembly and being cheap enough to mass produce is the reason why it had been in service for almost a century. Fires heavy 11x27mm rounds. Runs like shit ,but will run like shit far longer than any modern gun."
 	desc_lore = "When the UPP finally started mothballing them, millions of these SMGs suddenly started flooding black markets and CLF cells across the galaxy. Various copies and clones of this weapon are also highly abundant due to it's simplistic design that's easy to replicate by any amatuer gunsmith. Unconfirmed reports state that rather than having to deal with strict firearms control procedures, many UPP quartermasters sold them off to smugglers with the Party turning a blind eye, as long as more of them ended up in the hands of CLF and pirates operating in American and TWE space."
 	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony.dmi'

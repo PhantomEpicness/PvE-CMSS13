@@ -197,6 +197,101 @@
 	recoil_unwielded = RECOIL_AMOUNT_TIER_5
 	fa_scatter_peak = SCATTER_AMOUNT_TIER_8
 
+// Laser rifle.
+
+/obj/item/weapon/gun/energy/lasgun
+	name = "DX-990 Pulsed Laser Rifle"
+	desc = "A refit of the classic Israeli SMG. Fires laser bolts."
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony.dmi'
+	icon_state = "laz_uzi"
+	item_state = "laz_uzi"
+	muzzle_flash = "muzzle_laser"
+	gun_category = GUN_CATEGORY_SMG
+	flags_equip_slot = SLOT_WAIST
+	charge_cost = 200
+	ammo = /datum/ammo/energy/laz_uzi
+	fire_sound = 'sound/weapons/Laser4.ogg'
+	has_charge_meter = FALSE
+	charge_icon = "+laz_uzi_empty"
+	start_automatic = TRUE
+
+/obj/item/weapon/gun/energy/laz_uzi/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_SMG)
+	set_burst_delay(FIRE_DELAY_TIER_SMG)
+	set_burst_amount(BURST_AMOUNT_TIER_2)
+	accuracy_mult = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_3
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
+	scatter = SCATTER_AMOUNT_TIER_5
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_5
+	scatter_unwielded = SCATTER_AMOUNT_TIER_6
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil_unwielded = RECOIL_AMOUNT_TIER_5
+	fa_scatter_peak = SCATTER_AMOUNT_TIER_8
+
+
+/obj/item/weapon/gun/energy/beamer
+	name = "laser UZI"
+	desc = "A refit of the classic Israeli SMG. Fires laser bolts."
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony.dmi'
+	icon_state = "laz_uzi"
+	item_state = "laz_uzi"
+	muzzle_flash = "muzzle_laser"
+	gun_category = GUN_CATEGORY_SMG
+	flags_equip_slot = SLOT_WAIST
+	charge_cost = 200
+	ammo = /datum/ammo/energy/laz_uzi
+	fire_sound = 'sound/weapons/Laser4.ogg'
+	has_charge_meter = FALSE
+	charge_icon = "+laz_uzi_empty"
+	start_automatic = TRUE
+
+/obj/item/weapon/gun/energy/laz_uzi/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_SMG)
+	set_burst_delay(FIRE_DELAY_TIER_SMG)
+	set_burst_amount(BURST_AMOUNT_TIER_2)
+	accuracy_mult = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_3
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
+	scatter = SCATTER_AMOUNT_TIER_5
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_5
+	scatter_unwielded = SCATTER_AMOUNT_TIER_6
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil_unwielded = RECOIL_AMOUNT_TIER_5
+	fa_scatter_peak = SCATTER_AMOUNT_TIER_8
+
+
+/obj/item/weapon/gun/energy/beamer/heavy
+	name = "WY XBW-424-9"
+	desc = "A heavy laser \'beamer\' that emits a high penetration particle beam that nessecitates the operator to stay on target to maximize effect. Seems like it needs a similar apparatus to the USCM Smartgun. Uses stabilized U-289 cartidges and a whole lot of power."
+	desc_lore = "This beast of a weapons system was developed in W-Y labs in response to an increasingly concerning trend in it's XX-121 program, where subjects would adapt to resist traditional projectile weapons given enough time and pressure."
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony.dmi'
+	icon_state = "laz_uzi"
+	item_state = "laz_uzi"
+	muzzle_flash = "muzzle_laser"
+	gun_category = GUN_CATEGORY_SMG
+	flags_equip_slot = SLOT_WAIST
+	charge_cost = 200
+	ammo = /datum/ammo/energy/laz_uzi
+	fire_sound = 'sound/weapons/Laser4.ogg'
+	has_charge_meter = FALSE
+	charge_icon = "+laz_uzi_empty"
+	start_automatic = TRUE
+
+/obj/item/weapon/gun/energy/laz_uzi/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_SMG)
+	set_burst_delay(FIRE_DELAY_TIER_SMG)
+	set_burst_amount(BURST_AMOUNT_TIER_2)
+	accuracy_mult = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_3
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
+	scatter = SCATTER_AMOUNT_TIER_5
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_5
+	scatter_unwielded = SCATTER_AMOUNT_TIER_6
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil_unwielded = RECOIL_AMOUNT_TIER_5
+	fa_scatter_peak = SCATTER_AMOUNT_TIER_8
+
 //############################ Taser ##################
 // Lots of bits for it so splitting off an area
 /obj/item/weapon/gun/energy/taser
