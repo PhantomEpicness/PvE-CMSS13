@@ -690,8 +690,8 @@
 
 /obj/item/weapon/gun/smg/vindicator
 	name = "\improper R27 Vindicator SMG"
-	desc = "A purpose built submachine gun for fighting in the confines of space faring vessels. It accomplishes this by primarily firing .45 caliber light explosive rounds for causing as much devestation as possible with minimal penetration. These rounds are very poor at penetrating armor, though it can chamber any other .45 ACP rounds aswell, including AP."
-	desc_lore = "Stemming from the R52 Corax, this SMG was also designed for the USCM as a competetor to the Armat M39 and was actually the choice weapon, though it was rejected last moment for an unspecified reason Theories range from USCM officials being bribed by Armat to the R27's ergonomics being too unfamiliar to marines. Nevertheless, it has become a favorite of Colonial Marshals, Mercenary groups, and Spacers. "
+	desc = "A purpose built submachine gun for fighting in the confines of space faring vessels. It accomplishes this by primarily firing .45 caliber light explosive rounds for causing as much devestation as possible with minimal risk of collateral damage. As a result, these rounds are very poor at penetrating armor, though it can chamber any other .45 ACP rounds aswell."
+	desc_lore = "Stemming from the R21 Corax, this SMG was also designed for the USCM as a competetor to the Armat M39 and was actually the choice weapon, though it was rejected last moment for an unspecified reason Theories range from USCM officials being bribed by Armat to the R27's ergonomics being too unfamiliar to marines. Nevertheless, it has become a favorite of Colonial Marshals, Mercenary groups, and Spacers. "
 	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony.dmi'
 	icon_state = "fp9000"
 	item_state = "fp9000"
