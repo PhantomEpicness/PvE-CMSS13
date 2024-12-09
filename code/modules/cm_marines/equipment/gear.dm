@@ -212,8 +212,7 @@
 
 /obj/item/reagent_container/food/snacks/mre_pack
 	name = "\improper generic MRE pack"
-	//trash = /obj/item/trash/USCMtray
-	trash = null
+	trash = /obj/item/trash/USCMtray
 	w_class = SIZE_SMALL
 
 /obj/item/reagent_container/food/snacks/mre_pack/meal1

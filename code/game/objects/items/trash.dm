@@ -186,6 +186,7 @@
 	desc = "Finished with its tour of duty."
 	icon_state = "MREtray"
 
+/obj/item/trash/UPPtray
 //////////
 ///Misc///
 //////////
