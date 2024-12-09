@@ -1951,7 +1951,8 @@
 // MK1 with lower mag size and faster wield
 /obj/item/weapon/gun/rifle/corax
 	name = "\improper R21 Corax Carabine"
-	desc = "An ergonomic pulse carabine that was originally meant to compete with the M41A for use by the USCM before being rejected as it underperformed in some torture testing due to it's lightweight build. Chambered in 10x24mm Caseless, with ammo compatibility with the M41. Because of this, the Corax would have been scrapped entirely if it weren't for several large mercenary groups and some CMB S.W.A.T teams. Features ammo (but not magazine) compatibility with the M41."
+	desc = "An ergonomic pulse carabine that was originally meant to compete with the M41A for use by the USCM before being rejected due to underperformance in torture testing. Chambered in 10x24mm Caseless, with ammo compatibility with the M41."
+	desc_lore ="The Corax would have been scrapped entirely if it weren't for several large mercenary groups and CMB precincts buying it. While there has only been a few limited production runs for the Civilian market, the Corax can also be found occasional in black markets."
 	icon_state = "abr40_tac"
 	item_state = "abr40_tac"
 	current_mag = /obj/item/ammo_magazine/rifle/l42a/ap
@@ -1988,11 +1989,13 @@
 
 /obj/item/weapon/gun/smg/rifle/corax/set_gun_config_values()
 	..()
-	fire_delay = FIRE_DELAY_TIER_8
-	burst_amount = 0
-	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_5
-	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_4
-	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_6
-	recoil_unwielded = RECOIL_AMOUNT_TIER_4
-	damage_falloff_mult = 0
-	scatter = SCATTER_AMOUNT_TIER_8
+	set_fire_delay(FIRE_DELAY_TIER_11)
+	set_burst_amount(BURST_AMOUNT_TIER_4)
+	set_burst_delay(FIRE_DELAY_TIER_11)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_3
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
+	scatter = SCATTER_AMOUNT_TIER_9
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_9
+	scatter_unwielded = SCATTER_AMOUNT_TIER_2
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2
+	recoil_unwielded = RECOIL_AMOUNT_TIER_2
