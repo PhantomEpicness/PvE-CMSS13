@@ -1,0 +1,10181 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ag" = (
+/obj/structure/window/framed/almayer/white/hull,
+/turf/open/floor/plating,
+/area/space)
+"ap" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/window,
+/obj/item/tool/pen{
+	pixel_x = 12;
+	pixel_y = -5
+	},
+/obj/item/tool/pen{
+	pixel_x = 12;
+	pixel_y = -5
+	},
+/obj/item/folder/yellow{
+	pixel_y = 4;
+	pixel_x = -14;
+	name = "Threat analysis of Sector J-233255";
+	desc = "A folder with pages of information detailing the security status of a subsector you never even heard of."
+	},
+/obj/item/folder/red{
+	pixel_x = 5;
+	name = "ICC Contraband Regulations 2180"
+	},
+/obj/item/folder/blue{
+	name = "Matson Intersystems SOP"
+	},
+/turf/open/floor/almayer{
+	icon_state = "plating_striped"
+	},
+/area/space)
+"aD" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_x = -1;
+	pixel_y = 2
+	},
+/turf/open/floor/strata{
+	icon_state = "blue3";
+	dir = 8
+	},
+/area/space)
+"aR" = (
+/obj/structure/machinery/door/airlock/almayer/medical/glass/colony{
+	dir = 1;
+	name = "\improper Airlock"
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"aX" = (
+/obj/structure/filingcabinet/security{
+	pixel_y = 21;
+	density = 0;
+	pixel_x = 8
+	},
+/obj/structure/filingcabinet/security{
+	pixel_y = 21;
+	density = 0;
+	pixel_x = -8
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"bl" = (
+/obj/structure/largecrate/random/barrel/blue{
+	pixel_y = 11;
+	pixel_x = 9
+	},
+/obj/structure/largecrate/random/barrel/green{
+	pixel_x = 3
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"bx" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice8";
+	pixel_x = -1
+	},
+/turf/open/floor/almayer_hull,
+/area/space)
+"bG" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E"
+	},
+/obj/structure/sign/safety/escapepod{
+	pixel_x = -17;
+	pixel_y = -8
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
+	},
+/area/space)
+"bK" = (
+/obj/structure/bed/chair/office/light{
+	dir = 1
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"bR" = (
+/turf/closed/shuttle/elevator{
+	dir = 5
+	},
+/area/space)
+"bS" = (
+/obj/item/bedsheet/clown,
+/obj/structure/bed,
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"bX" = (
+/obj/item/weapon/gun/energy/rxfm5_eva{
+	pixel_y = -2;
+	pixel_x = 2
+	},
+/obj/structure/surface/table/almayer,
+/obj/item/weapon/gun/energy/rxfm5_eva{
+	pixel_y = 6
+	},
+/turf/open/floor/strata{
+	icon_state = "red3";
+	dir = 8
+	},
+/area/space)
+"cb" = (
+/obj/structure/machinery/door/poddoor/almayer{
+	name = "\improper Bridge Podlock"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"cg" = (
+/turf/closed/shuttle/escapepod{
+	icon_state = "wall2"
+	},
+/area/space)
+"cl" = (
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"cu" = (
+/obj/structure/machinery/door/airlock/almayer/generic{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/space)
+"cy" = (
+/obj/structure/closet/secure_closet/personal/cabinet{
+	density = 0;
+	pixel_y = 16;
+	pixel_x = 8
+	},
+/obj/item/clothing/under/color/grey,
+/obj/item/reagent_container/food/drinks/cans/aspen,
+/obj/item/reagent_container/food/drinks/cans/aspen,
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"cG" = (
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 8
+	},
+/obj/structure/stairs{
+	icon_state = "ramptop";
+	dir = 1
+	},
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 4
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"cM" = (
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 8
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
+	},
+/area/space)
+"cY" = (
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 4
+	},
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 8
+	},
+/obj/structure/stairs{
+	icon_state = "ramptop"
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"dh" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/item/ashtray/bronze{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/tool/pen{
+	pixel_y = -5
+	},
+/obj/structure/machinery/status_display{
+	pixel_y = 24
+	},
+/obj/item/device/flashlight/lamp{
+	pixel_y = 12;
+	pixel_x = -6
+	},
+/obj/item/reagent_container/food/drinks/coffeecup{
+	pixel_y = 1;
+	pixel_x = -5
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"dj" = (
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
+	},
+/area/space)
+"do" = (
+/obj/structure/filingcabinet/security{
+	pixel_y = 21;
+	density = 0;
+	pixel_x = 8
+	},
+/obj/structure/filingcabinet/security{
+	pixel_y = 21;
+	density = 0;
+	pixel_x = -8
+	},
+/turf/open/floor/strata,
+/area/space)
+"dE" = (
+/obj/structure/surface/rack,
+/obj/item/storage/box/donkpockets{
+	pixel_x = -3;
+	pixel_y = 14
+	},
+/obj/item/storage/box/donkpockets{
+	pixel_x = -3;
+	pixel_y = 9
+	},
+/obj/item/storage/box/donkpockets{
+	pixel_x = -3;
+	pixel_y = 5
+	},
+/obj/item/reagent_container/food/drinks/dry_ramen{
+	pixel_y = 4;
+	pixel_x = 9
+	},
+/obj/item/reagent_container/food/drinks/dry_ramen{
+	pixel_y = -3
+	},
+/obj/item/reagent_container/food/drinks/dry_ramen{
+	pixel_x = 2;
+	pixel_y = -3
+	},
+/turf/open/floor/strata,
+/area/space)
+"dK" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/machinery/faxmachine{
+	pixel_y = 7
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"dR" = (
+/turf/open/floor/plating/prison{
+	color = "#bbbee8"
+	},
+/area/space)
+"dS" = (
+/turf/open/floor/strata{
+	icon_state = "blue3";
+	dir = 10
+	},
+/area/space)
+"ec" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/folder/black_random,
+/obj/item/device/flashlight/lamp/green{
+	pixel_x = 8;
+	pixel_y = 14;
+	layer = 5
+	},
+/obj/item/folder/white{
+	pixel_y = 3;
+	pixel_x = 2
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"em" = (
+/turf/closed/shuttle/elevator/gears,
+/area/space)
+"ez" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/window,
+/obj/structure/window{
+	dir = 4
+	},
+/obj/structure/machinery/recharger/unanchored{
+	pixel_x = -5
+	},
+/turf/open/floor/almayer{
+	icon_state = "plating_striped"
+	},
+/area/space)
+"eD" = (
+/obj/structure/window{
+	dir = 1;
+	layer = 2.6;
+	pixel_y = 8
+	},
+/obj/structure/largecrate/random/secure,
+/obj/structure/largecrate/random/case/small{
+	pixel_y = 14
+	},
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"eJ" = (
+/obj/structure/surface/table/almayer,
+/obj/structure/machinery/prop/almayer/computer{
+	dir = 8;
+	pixel_x = 3
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/space)
+"eN" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/computer/communications{
+	pixel_y = 7;
+	icon_state = "cant_a_onedir";
+	pixel_x = -14
+	},
+/obj/structure/prop/invuln{
+	icon = 'icons/obj/structures/machinery/computer.dmi';
+	icon_state = "cant_b_onedir";
+	pixel_y = 35;
+	desc = "A large overhead display showing information about the ship's enegines and power generation";
+	name = "systems display";
+	dir = 4;
+	pixel_x = 13
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"fd" = (
+/obj/structure/largecrate/random/barrel/blue{
+	pixel_y = 11;
+	pixel_x = 9
+	},
+/obj/structure/largecrate/random/barrel/yellow{
+	pixel_x = 9
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"ff" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_y = 2
+	},
+/obj/structure/largecrate/random/barrel/red{
+	pixel_x = -8;
+	pixel_y = -5
+	},
+/turf/open/floor/strata{
+	icon_state = "blue3"
+	},
+/area/space)
+"fg" = (
+/obj/structure/closet/secure_closet{
+	density = 0;
+	pixel_x = 8;
+	pixel_y = 18
+	},
+/obj/structure/filingcabinet/chestdrawer{
+	pixel_y = 21;
+	pixel_x = -7;
+	density = 0
+	},
+/turf/open/floor/strata,
+/area/space)
+"fq" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	dir = 1
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"fr" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/sign/safety/escapepod{
+	pixel_x = 32
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
+	},
+/area/space)
+"fu" = (
+/turf/closed/shuttle/elevator{
+	dir = 4
+	},
+/area/space)
+"fw" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ashtray/bronze{
+	icon_state = "ashtray_small_bl_full";
+	pixel_y = 9
+	},
+/obj/item/storage/fancy/cigar/matchbook/wy_gold,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"fJ" = (
+/turf/open/floor/strata{
+	icon_state = "white_cyan2"
+	},
+/area/space)
+"fK" = (
+/obj/structure/machinery/door/airlock/almayer/secure/reinforced{
+	dir = 8;
+	name = "\improper Bridge Escape Pod 1";
+	req_access = null
+	},
+/turf/closed/wall/strata_outpost/reinforced/hull{
+	desc = "A thick plasteel wall that seperates the ship from space.";
+	name = "hull wall"
+	},
+/area/space)
+"fL" = (
+/obj/structure/surface/rack,
+/obj/item/storage/toolbox/emergency{
+	pixel_y = 9
+	},
+/obj/item/reagent_container/glass/bucket/mopbucket{
+	pixel_x = 7;
+	pixel_y = -3
+	},
+/obj/item/reagent_container/spray/cleaner{
+	pixel_y = 2;
+	pixel_x = -9
+	},
+/obj/item/storage/box/gloves{
+	layer = 3.1;
+	pixel_x = 6;
+	pixel_y = 7
+	},
+/obj/item/reagent_container/spray/cleaner{
+	pixel_y = 11;
+	pixel_x = 10
+	},
+/turf/open/floor/plating/prison{
+	color = "#bbbee8"
+	},
+/area/space)
+"fN" = (
+/turf/closed/wall/almayer/white/reinforced,
+/area/space)
+"fT" = (
+/obj/structure/machinery/door/airlock/almayer/secure/reinforced{
+	dir = 8;
+	name = "\improper Bridge Escape Pod 2";
+	req_access = null
+	},
+/turf/closed/wall/strata_outpost/reinforced/hull{
+	desc = "A thick plasteel wall that seperates the ship from space.";
+	name = "hull wall"
+	},
+/area/space)
+"gd" = (
+/obj/structure/window{
+	dir = 1;
+	layer = 2.6;
+	pixel_y = 8
+	},
+/turf/open/floor/strata{
+	icon_state = "red1"
+	},
+/area/space)
+"gt" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/window,
+/obj/structure/machinery/prop/almayer/CICmap{
+	desc = "A table that displays a map of the surrounding space sector."
+	},
+/turf/open/floor/almayer{
+	icon_state = "plating_striped"
+	},
+/area/space)
+"gu" = (
+/turf/open/shuttle/elevator,
+/area/space)
+"gz" = (
+/obj/structure/machinery/door/airlock/almayer/security{
+	dir = 1;
+	name = "\improper Mini Damage Control Locker";
+	desc = "A hardend mini damage control locker door. Has the bare essentiels."
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"gL" = (
+/obj/structure/surface/rack,
+/obj/item/inflatable/door{
+	pixel_x = -6;
+	pixel_y = 13
+	},
+/obj/item/inflatable{
+	pixel_x = -6;
+	pixel_y = 11
+	},
+/obj/item/inflatable{
+	pixel_x = -6;
+	pixel_y = 11
+	},
+/obj/item/inflatable{
+	pixel_x = -6;
+	pixel_y = 11
+	},
+/obj/item/storage/toolbox/mechanical/green,
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"gO" = (
+/obj/structure/machinery/door/airlock/multi_tile/elevator/arrivals{
+	name = "\improper  Bridge Access Door"
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
+	},
+/area/space)
+"gY" = (
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 8
+	},
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0
+	},
+/obj/structure/window{
+	name = "display case window";
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk{
+	color = "#bdbdbd "
+	},
+/area/space)
+"hc" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/machinery/computer/emails{
+	dir = 8;
+	pixel_y = 8
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"he" = (
+/obj/structure/machinery/power/smes{
+	pixel_y = 4;
+	pixel_x = 1
+	},
+/obj/structure/machinery/power/smes{
+	pixel_y = 21;
+	pixel_x = 1
+	},
+/turf/open/floor/strata{
+	icon_state = "yellow1"
+	},
+/area/space)
+"ho" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_x = -1;
+	pixel_y = 2
+	},
+/turf/open/floor/strata{
+	dir = 4;
+	icon_state = "blue3"
+	},
+/area/space)
+"ht" = (
+/obj/structure/machinery/door/airlock/evacuation{
+	dir = 8;
+	name = "\improper Bridge Escape Pod 1"
+	},
+/turf/closed/shuttle/escapepod{
+	icon_state = "wall10"
+	},
+/area/space)
+"hx" = (
+/obj/structure/largecrate/supply/supplies/water,
+/obj/item/storage/toolbox/emergency{
+	pixel_y = 9
+	},
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"hy" = (
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/turf/open/floor/almayer{
+	dir = 1;
+	icon_state = "plating_striped"
+	},
+/area/space)
+"hD" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	layer = 3.33;
+	pixel_x = 2
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out"
+	},
+/turf/open/floor/strata{
+	icon_state = "red3";
+	dir = 4
+	},
+/area/space)
+"hJ" = (
+/obj/structure/largecrate/random/barrel/yellow{
+	pixel_x = 9
+	},
+/obj/item/stack/cable_coil{
+	pixel_x = 10;
+	pixel_y = 11
+	},
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"hQ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out";
+	pixel_x = 1;
+	dir = 1
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"hR" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	dir = 1
+	},
+/turf/open/floor/strata{
+	icon_state = "blue4"
+	},
+/area/space)
+"hT" = (
+/obj/structure/largecrate/random/barrel/blue{
+	pixel_x = 12;
+	pixel_y = 13
+	},
+/obj/structure/largecrate/random/barrel/yellow{
+	pixel_x = 9
+	},
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"ie" = (
+/obj/structure/prop/structure_lattice{
+	color = "#627278"
+	},
+/turf/open/space/basic,
+/area/space)
+"if" = (
+/obj/structure/machinery/computer/shuttle/ert/broken,
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/space)
+"ij" = (
+/obj/structure/machinery/shower{
+	dir = 8
+	},
+/obj/structure/window/reinforced/tinted,
+/obj/structure/window/reinforced/tinted{
+	dir = 1;
+	layer = 2.5
+	},
+/obj/structure/window/reinforced/tinted{
+	dir = 8;
+	layer = 2.6
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"im" = (
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 4
+	},
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0
+	},
+/obj/structure/window{
+	name = "display case window";
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk{
+	color = "#bdbdbd "
+	},
+/area/space)
+"in" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_x = -1;
+	pixel_y = 2
+	},
+/turf/open/floor/strata{
+	dir = 8;
+	icon_state = "blue3"
+	},
+/area/space)
+"iJ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	dir = 1
+	},
+/turf/open/floor/strata{
+	icon_state = "blue3";
+	dir = 8
+	},
+/area/space)
+"iT" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	dir = 1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"iY" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	pixel_y = 1
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"jg" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata{
+	icon_state = "yellow3";
+	dir = 4
+	},
+/area/space)
+"jj" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/prop/almayer/computer/PC{
+	desc = "A small desktop computer. Someone has switched to personal emails and disabled the inventory sort system.";
+	icon_state = "alert:2";
+	name = "inventory computer";
+	dir = 8
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"ju" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_x = -1;
+	pixel_y = 2
+	},
+/turf/open/floor/strata{
+	dir = 8;
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"jx" = (
+/turf/open/floor/strata{
+	icon_state = "blue1"
+	},
+/area/space)
+"jB" = (
+/obj/structure/machinery/power/monitor{
+	name = "Main Power Grid Monitoring";
+	desc = "It monitors power levels across the ship"
+	},
+/turf/open/floor/strata{
+	icon_state = "yellow2";
+	dir = 8
+	},
+/area/space)
+"jI" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"jL" = (
+/obj/structure/machinery/door/airlock/almayer/generic{
+	dir = 8;
+	name = "Restroom"
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"jQ" = (
+/obj/structure/closet,
+/turf/open/floor/plating/almayer,
+/area/space)
+"jS" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_y = 1
+	},
+/turf/open/floor/strata{
+	icon_state = "blue3";
+	dir = 10
+	},
+/area/space)
+"jZ" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"kb" = (
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/turf/open/floor/almayer{
+	dir = 1;
+	icon_state = "plating_striped"
+	},
+/area/space)
+"kc" = (
+/obj/structure/largecrate/random/barrel/white{
+	pixel_y = 3;
+	pixel_x = -5
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"kd" = (
+/obj/effect/decal/cleanable/blood{
+	dir = 4;
+	icon_state = "gib6"
+	},
+/obj/item/inflatable{
+	pixel_y = 12
+	},
+/obj/effect/spawner/random/tool,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/prison{
+	color = "#bbbee8"
+	},
+/area/space)
+"kk" = (
+/obj/structure/surface/table/reinforced/prison,
+/turf/open/floor/strata,
+/area/space)
+"kl" = (
+/turf/closed/wall/strata_outpost/reinforced/hull{
+	desc = "A thick plasteel wall that seperates the ship from space.";
+	name = "hull wall"
+	},
+/area/space)
+"kr" = (
+/turf/open/floor/strata{
+	dir = 8;
+	icon_state = "blue3"
+	},
+/area/space)
+"ks" = (
+/obj/structure/bed/chair/office/light{
+	dir = 8
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"ku" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out";
+	pixel_x = 1;
+	dir = 1
+	},
+/turf/open/floor/strata{
+	icon_state = "blue3";
+	dir = 1
+	},
+/area/space)
+"kS" = (
+/obj/structure/flora/pottedplant{
+	desc = "It is made of Fiberbush(tm). It contains asbestos. Studies say that greenery calms the mind due to some sort evolved mechanism in the brain. This plant is not calming.";
+	icon_state = "pottedplant_21";
+	layer = 3.1;
+	name = "synthethic potted plant";
+	pixel_x = -2;
+	pixel_y = 16
+	},
+/obj/structure/machinery/flasher_button{
+	pixel_x = 23;
+	name = "Halon system release switch";
+	desc = "A control switch to trigger the halon system in the server room to rapidally starve fires of oxygen. Seems broken. "
+	},
+/turf/open/floor/strata{
+	icon_state = "blue1"
+	},
+/area/space)
+"kT" = (
+/obj/structure/machinery/vending/snack,
+/turf/open/floor/strata,
+/area/space)
+"kY" = (
+/obj/structure/janitorialcart,
+/obj/item/tool/mop,
+/turf/open/floor/plating/prison{
+	color = "#bbbee8"
+	},
+/area/space)
+"le" = (
+/obj/structure/machinery/door/airlock/almayer/maint/colony/autoname{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/space)
+"lj" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/machinery/computer/emails{
+	pixel_y = 15;
+	pixel_x = 5
+	},
+/obj/item/paper{
+	pixel_y = -2;
+	pixel_x = 15
+	},
+/obj/item/folder/blue{
+	name = "On Cross Border Shipping";
+	desc = "A blue folder detailing how to properly deal with interborder shipping as a hauler."
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"lo" = (
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"lv" = (
+/obj/structure/sink{
+	pixel_y = 24
+	},
+/obj/structure/mirror{
+	pixel_y = 37;
+	icon_state = "mirror_broke"
+	},
+/obj/item/tool/soap/nanotrasen{
+	pixel_y = 19;
+	pixel_x = -4
+	},
+/turf/open/floor/strata{
+	icon_state = "white_cyan2"
+	},
+/area/space)
+"lz" = (
+/obj/structure/largecrate/random/barrel/green,
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"lA" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_x = -1;
+	pixel_y = 2
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"lB" = (
+/turf/open/floor/strata{
+	icon_state = "blue3";
+	dir = 1
+	},
+/area/space)
+"lG" = (
+/obj/structure/prop/structure_lattice{
+	color = "#627278"
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"lL" = (
+/obj/structure/surface/table/almayer,
+/obj/structure/machinery/computer/communications,
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/space)
+"lN" = (
+/turf/closed/shuttle/elevator{
+	dir = 1
+	},
+/area/space)
+"lU" = (
+/obj/structure/machinery/door/airlock/almayer/engineering{
+	name = "\improper Bridge Auxilary Power"
+	},
+/turf/open/floor/plating,
+/area/space)
+"lY" = (
+/obj/structure/filingcabinet/security{
+	pixel_y = 24;
+	density = 0;
+	pixel_x = 11
+	},
+/obj/structure/filingcabinet/chestdrawer{
+	pixel_y = 24;
+	pixel_x = -5;
+	density = 0
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"ma" = (
+/obj/structure/machinery/door/airlock/almayer/medical/glass/colony{
+	dir = 2;
+	name = "\improper Navigator\'s Quarters"
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"ms" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"mt" = (
+/obj/structure/machinery/power/breakerbox{
+	icon = 'icons/obj/structures/machinery/breakerbox.dmi'
+	},
+/turf/open/floor/strata{
+	icon_state = "yellow1"
+	},
+/area/space)
+"mv" = (
+/obj/structure/window/reinforced/tinted{
+	dir = 8
+	},
+/obj/structure/toilet{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"mx" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	dir = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	dir = 1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"mA" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12"
+	},
+/turf/open/floor/almayer_hull,
+/area/space)
+"mO" = (
+/obj/structure/filingcabinet{
+	density = 0;
+	icon_state = "chestdrawer";
+	pixel_x = -7;
+	pixel_y = 16
+	},
+/obj/structure/filingcabinet{
+	density = 0;
+	icon_state = "chestdrawer";
+	pixel_x = 8;
+	pixel_y = 16
+	},
+/obj/item/device/flashlight/lamp/green{
+	pixel_x = 8;
+	pixel_y = 21;
+	layer = 5
+	},
+/obj/item/prop/helmetgarb/prescription_bottle{
+	pixel_x = -1;
+	pixel_y = 23
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"mV" = (
+/obj/structure/machinery/door/airlock/almayer/medical/glass/colony{
+	dir = 8;
+	name = "\improper Airlock"
+	},
+/turf/open/floor/plating,
+/area/space)
+"nc" = (
+/obj/structure/bed/chair/office/light{
+	dir = 1;
+	pixel_y = 12
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"nh" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/computer/atmos_alert{
+	pixel_x = -10
+	},
+/obj/structure/prop/invuln{
+	icon = 'icons/obj/structures/machinery/computer.dmi';
+	icon_state = "cant_onedir";
+	pixel_y = 8;
+	name = "systems computer";
+	desc = "A computer connected to the ship's systems";
+	pixel_x = 15
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"ni" = (
+/turf/closed/shuttle/escapepod{
+	icon_state = "wall7"
+	},
+/area/space)
+"np" = (
+/turf/closed/shuttle/elevator{
+	dir = 9
+	},
+/area/space)
+"nr" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/computer/shuttle_control{
+	dir = 4;
+	name = "Elevator Control Console"
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"ny" = (
+/obj/structure/surface/rack,
+/obj/item/prop/almayer/flight_recorder/colony{
+	pixel_x = -6;
+	pixel_y = 10;
+	name = "\improper Broken SIR-77 ship information recorder";
+	desc = "A small red box that records key data for the vessel. Usually refered to the black box. This one looks like it's been chewed up like gum and is severely damaged. Upon closer inspection, you can see the film inside and it looks like it has been rotting away for a while. No way any data is getting off this."
+	},
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"nD" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/prop/invuln{
+	icon = 'icons/obj/structures/machinery/bigscreen.dmi';
+	icon_state = "bigscreen_uscm";
+	pixel_x = 10;
+	pixel_y = 35;
+	name = "Primary Display";
+	desc = "A large screen displaying detailed infomration on whatever the AI finds important."
+	},
+/obj/structure/prop/invuln{
+	icon = 'icons/obj/structures/machinery/computer.dmi';
+	icon_state = "cant_c_onedir";
+	pixel_y = 35;
+	desc = "A large overhead display showing information about the ship's enegines and power generation";
+	name = "systems display";
+	pixel_x = -23
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"nP" = (
+/obj/structure/bed/chair/office/light{
+	dir = 8;
+	pixel_y = 13;
+	pixel_x = 8
+	},
+/obj/structure/bed/chair/office/light{
+	dir = 1;
+	pixel_y = 5;
+	pixel_x = 14
+	},
+/obj/structure/bed/chair/office/light,
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"nS" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice4";
+	pixel_x = 1;
+	pixel_y = 16
+	},
+/turf/open/space/basic,
+/area/space)
+"nW" = (
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/turf/open/floor/strata{
+	icon_state = "blue3";
+	dir = 4
+	},
+/area/space)
+"og" = (
+/turf/open/floor/plating,
+/area/space)
+"oj" = (
+/obj/structure/machinery/computer/telecomms/monitor{
+	pixel_y = 14
+	},
+/turf/open/floor/plating/plating_catwalk{
+	color = "#bdbdbd "
+	},
+/area/space)
+"oo" = (
+/turf/closed/shuttle/elevator{
+	dir = 6
+	},
+/area/space)
+"oq" = (
+/obj/structure/machinery/power/fusion_engine,
+/turf/open/floor/strata{
+	icon_state = "yellow1"
+	},
+/area/space)
+"ot" = (
+/obj/structure/flora/pottedplant{
+	desc = "It is made of Fiberbush(tm). It contains asbestos.";
+	icon_state = "pottedplant_22";
+	name = "synthetic potted plant";
+	pixel_y = 20;
+	pixel_x = 9
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"ov" = (
+/obj/structure/machinery/door/airlock/multi_tile/almayer/almayer{
+	name = "\improper Bridge"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"oG" = (
+/obj/structure/machinery/flasher_button{
+	pixel_x = -22;
+	name = "Halon system release switch";
+	desc = "A control switch to trigger the halon system in the server room to rapidally starve fires of oxygen. Seems broken. "
+	},
+/turf/open/floor/strata{
+	dir = 8;
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"oK" = (
+/obj/structure/window/framed/almayer,
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"oT" = (
+/turf/closed/shuttle/escapepod{
+	icon_state = "wall15"
+	},
+/area/space)
+"pm" = (
+/obj/structure/bed/chair/dropship/passenger{
+	dir = 4
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/space)
+"ps" = (
+/turf/open/floor/almayer{
+	dir = 8;
+	icon_state = "plating_striped"
+	},
+/area/space)
+"pw" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 11
+	},
+/turf/open/floor{
+	icon_state = "freezerfloor"
+	},
+/area/space)
+"py" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/folder/white{
+	pixel_y = 3;
+	pixel_x = 2
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"pD" = (
+/obj/structure/closet/secure_closet/personal/cabinet{
+	density = 0;
+	pixel_y = 16;
+	pixel_x = 8
+	},
+/obj/item/clothing/under/color/white{
+	pixel_x = 5
+	},
+/obj/item/reagent_container/food/drinks/cans/aspen,
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"pE" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E"
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
+	},
+/area/space)
+"pI" = (
+/obj/structure/surface/table/reinforced/almayer_blend,
+/obj/structure/machinery/door/window/eastleft{
+	name = "Security Desk"
+	},
+/obj/structure/machinery/door/window/eastleft{
+	dir = 8;
+	name = "Security Desk"
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"pP" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_x = -1;
+	pixel_y = 2
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"pR" = (
+/obj/structure/machinery/flasher_button{
+	pixel_x = 23;
+	name = "Halon system release switch";
+	desc = "A control switch to trigger the halon system in the server room to rapidally starve fires of oxygen. Seems broken. "
+	},
+/obj/structure/largecrate/supply{
+	pixel_x = -1;
+	pixel_y = 6
+	},
+/obj/structure/largecrate/supply{
+	pixel_y = 22
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"pX" = (
+/obj/structure/prop/server_equipment/yutani_server{
+	density = 0;
+	desc = "A powerful server tower housing various functions.";
+	name = "server tower";
+	pixel_y = 23
+	},
+/obj/structure/window{
+	dir = 8
+	},
+/obj/structure/window{
+	dir = 4
+	},
+/obj/structure/machinery/door/window/eastleft{
+	dir = 2
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms";
+	color = "#bbbee8"
+	},
+/area/space)
+"pZ" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"qj" = (
+/obj/structure/machinery/door/airlock/almayer/engineering{
+	dir = 1;
+	name = "\improper Bridge Auxilary Power"
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"qA" = (
+/obj/structure/window{
+	dir = 4
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms";
+	color = "#bbbee8"
+	},
+/area/space)
+"qI" = (
+/turf/closed/shuttle/escapepod{
+	icon_state = "wall13"
+	},
+/area/space)
+"qP" = (
+/obj/structure/prop/server_equipment,
+/obj/structure/window{
+	dir = 4
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"qS" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/prop/invuln{
+	icon = 'icons/obj/structures/machinery/computer.dmi';
+	icon_state = "cant_b_onedir";
+	pixel_y = 33;
+	desc = "A large overhead display showing information about the ship's enegines and power generation";
+	name = "systems display";
+	pixel_x = -19
+	},
+/obj/structure/machinery/prop/almayer/computer,
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"qU" = (
+/obj/structure/window{
+	dir = 4
+	},
+/obj/structure/machinery/computer/telecomms/server{
+	pixel_y = 14
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms";
+	color = "#bbbee8"
+	},
+/area/space)
+"qY" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/machinery/microwave{
+	pixel_y = 7
+	},
+/turf/open/floor/strata,
+/area/space)
+"ra" = (
+/obj/structure/surface/rack,
+/obj/item/ammo_magazine/smg/nailgun,
+/obj/item/weapon/gun/pistol/clfpistol{
+	name = "Glock 7";
+	desc = "Originating from Germany, this compact pistol sports a porcelain frame and an advanced polymer build that makes it invisible to metal detectors. Due to this it is quite expensive."
+	},
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"rq" = (
+/obj/structure/stairs{
+	icon_state = "ramptop"
+	},
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 8
+	},
+/turf/open/floor/strata{
+	icon_state = "blue3";
+	dir = 4
+	},
+/area/space)
+"rs" = (
+/obj/structure/window/framed/almayer/hull,
+/turf/closed/wall/strata_outpost/reinforced/hull{
+	desc = "A thick plasteel wall that seperates the ship from space.";
+	name = "hull wall"
+	},
+/area/space)
+"rG" = (
+/turf/open/floor/almayer_hull{
+	dir = 8;
+	icon_state = "outerhull_dir"
+	},
+/area/space)
+"rH" = (
+/obj/structure/machinery/door/airlock/almayer/command/reinforced{
+	dir = 1;
+	name = "\improper Bridge Office"
+	},
+/turf/open/floor/plating,
+/area/space)
+"rL" = (
+/obj/structure/surface/rack,
+/obj/item/storage/belt/utility/full,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/clothing/accessory/storage/webbing,
+/obj/item/clothing/glasses/welding,
+/obj/item/clothing/glasses/welding,
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/space)
+"su" = (
+/obj/structure/bed/chair/office/light{
+	dir = 8
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/space)
+"sx" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_y = -1
+	},
+/turf/open/shuttle/escapepod,
+/area/space)
+"sL" = (
+/obj/structure/surface/rack{
+	pixel_y = 14;
+	pixel_x = -4;
+	density = 0
+	},
+/obj/item/inflatable{
+	pixel_x = -2;
+	pixel_y = 10
+	},
+/obj/item/inflatable{
+	pixel_x = -6;
+	pixel_y = 11
+	},
+/obj/item/inflatable/door{
+	pixel_x = -6;
+	pixel_y = 13
+	},
+/obj/structure/machinery/suit_storage_unit/compression_suit{
+	pixel_y = 18;
+	density = 0;
+	pixel_x = 21
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/prison{
+	color = "#bbbee8"
+	},
+/area/space)
+"sM" = (
+/obj/structure/window/framed/almayer,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"tc" = (
+/turf/open/space/basic,
+/area/space)
+"tm" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	dir = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_x = 2;
+	dir = 1
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"tx" = (
+/obj/structure/machinery/disposal,
+/obj/item/trash/crushed_cup{
+	pixel_x = -3;
+	pixel_y = -10
+	},
+/turf/open/floor/strata,
+/area/space)
+"tz" = (
+/obj/structure/surface/rack{
+	pixel_y = 7
+	},
+/obj/item/storage/belt/shotgun/full/random{
+	pixel_y = 15
+	},
+/obj/item/storage/belt/shotgun/full/random{
+	pixel_y = 8
+	},
+/turf/open/floor/strata{
+	icon_state = "red1"
+	},
+/area/space)
+"tC" = (
+/turf/open/floor/plating/plating_catwalk{
+	color = "#bdbdbd "
+	},
+/area/space)
+"tG" = (
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/turf/open/floor/strata{
+	dir = 8;
+	icon_state = "blue3"
+	},
+/area/space)
+"tK" = (
+/obj/structure/stairs{
+	icon_state = "ramptop"
+	},
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 4
+	},
+/turf/open/floor/strata{
+	dir = 8;
+	icon_state = "blue3"
+	},
+/area/space)
+"tP" = (
+/turf/closed/wall/strata_outpost{
+	name = "bulkhead walls"
+	},
+/area/space)
+"tV" = (
+/obj/structure/machinery/door/airlock/evacuation{
+	dir = 2;
+	name = "\improper Evacuation Airlock PU-6"
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
+	},
+/area/space)
+"uc" = (
+/obj/structure/toilet{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"up" = (
+/obj/structure/machinery/door/airlock/almayer/maint/colony/autoname{
+	dir = 2
+	},
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"uq" = (
+/turf/closed/shuttle/escapepod{
+	icon_state = "wall10"
+	},
+/area/space)
+"ur" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	dir = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	dir = 1
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"us" = (
+/turf/closed/shuttle/elevator{
+	dir = 10
+	},
+/area/space)
+"uu" = (
+/obj/structure/machinery/door/airlock/almayer/engineering{
+	name = "Aft Storage";
+	dir = 2
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"uz" = (
+/obj/structure/flora/pottedplant,
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"uM" = (
+/obj/structure/surface/rack,
+/obj/item/device/toner{
+	desc = "Toner for a printer."
+	},
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"uV" = (
+/turf/open/floor/almayer_hull,
+/area/space)
+"uW" = (
+/obj/item/prop/almayer/flight_recorder/colony{
+	pixel_x = -6;
+	pixel_y = 10;
+	name = "\improper Broken SIR-77 ship information recorder";
+	desc = "A small red box that records key data for the vessel. Usually refered to the black box. This one looks like it's been chewed up like gum and is severely damaged. Upon closer inspection, you can see the film inside and it looks like it has been rotting away for a while. No way any data is getting off this."
+	},
+/turf/open/floor/almayer_hull,
+/area/space)
+"va" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice8";
+	pixel_y = 16;
+	layer = 6.1
+	},
+/turf/open/space/basic,
+/area/space)
+"vo" = (
+/turf/closed/wall/almayer/white/outer_tile,
+/area/space)
+"vs" = (
+/obj/structure/machinery/door/airlock/almayer/medical/glass/colony{
+	dir = 8;
+	name = "\improper Airlock"
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"vt" = (
+/obj/structure/platform{
+	density = 0;
+	climb_delay = 0;
+	dir = 4
+	},
+/turf/open/floor/strata{
+	icon_state = "blue1"
+	},
+/area/space)
+"vw" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	dir = 1
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"vE" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out";
+	pixel_x = -1;
+	dir = 1
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"vM" = (
+/turf/open/shuttle/escapepod{
+	icon_state = "floor12"
+	},
+/area/space)
+"vP" = (
+/turf/open/floor/strata{
+	icon_state = "yellow3";
+	dir = 4
+	},
+/area/space)
+"vV" = (
+/obj/structure/machinery/door/airlock/multi_tile/almayer/almayer,
+/turf/open/shuttle/elevator,
+/area/space)
+"wc" = (
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 8
+	},
+/obj/structure/platform{
+	layer = 2.14;
+	density = 0;
+	climb_delay = 0
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
+	},
+/area/space)
+"wf" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/paper_bin/uscm{
+	pixel_y = 11;
+	pixel_x = 7
+	},
+/obj/item/tool/pen{
+	pixel_y = 7
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"wh" = (
+/obj/structure/platform_decoration,
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
+	},
+/area/space)
+"wl" = (
+/obj/structure/machinery/door/window/eastleft,
+/turf/open/floor/almayer{
+	icon_state = "tcomms";
+	color = "#bbbee8"
+	},
+/area/space)
+"wq" = (
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk{
+	color = "#bdbdbd "
+	},
+/area/space)
+"wt" = (
+/obj/structure/filingcabinet{
+	density = 0;
+	icon_state = "chestdrawer";
+	pixel_x = -7;
+	pixel_y = 16;
+	name = "cabinet"
+	},
+/obj/structure/filingcabinet{
+	density = 0;
+	icon_state = "chestdrawer";
+	pixel_x = 8;
+	pixel_y = 16;
+	name = "cabinet"
+	},
+/turf/open/floor/strata{
+	icon_state = "blue1"
+	},
+/area/space)
+"wu" = (
+/obj/structure/closet/secure_closet/freezer/fridge,
+/obj/item/reagent_container/food/drinks/cans/classcola{
+	pixel_x = -7
+	},
+/obj/item/reagent_container/food/drinks/cans/classcola,
+/obj/item/reagent_container/food/drinks/cans/classcola{
+	pixel_x = 1;
+	pixel_y = 10
+	},
+/obj/item/reagent_container/food/drinks/cans/classcola{
+	pixel_x = -7;
+	pixel_y = 15
+	},
+/obj/item/reagent_container/food/drinks/cans/iced_tea{
+	pixel_y = 5;
+	pixel_x = -3
+	},
+/obj/item/reagent_container/food/drinks/cans/iced_tea{
+	pixel_y = 5;
+	pixel_x = -3
+	},
+/turf/open/floor/strata,
+/area/space)
+"wv" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	dir = 1
+	},
+/turf/open/floor/plating/plating_catwalk{
+	color = "#bdbdbd "
+	},
+/area/space)
+"wy" = (
+/turf/open/floor/strata{
+	icon_state = "blue3";
+	dir = 5
+	},
+/area/space)
+"wD" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/machinery/status_display{
+	pixel_y = 30
+	},
+/obj/item/tool/pen{
+	pixel_y = -5
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"wH" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/newspaper,
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"wP" = (
+/obj/structure/surface/rack,
+/obj/item/reagent_container/spray/cleaner{
+	pixel_y = 2;
+	pixel_x = -9
+	},
+/obj/item/storage/box/gloves{
+	layer = 3.1;
+	pixel_x = 6;
+	pixel_y = 7
+	},
+/obj/item/reagent_container/glass/bucket/mopbucket{
+	pixel_x = 7;
+	pixel_y = -3
+	},
+/obj/item/weapon/gun/pistol/clfpistol,
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"wT" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/platform{
+	density = 0;
+	climb_delay = 0
+	},
+/obj/structure/machinery/prop/almayer/computer{
+	dir = 8;
+	pixel_x = 1;
+	pixel_y = 6
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms";
+	color = "#bbbee8"
+	},
+/area/space)
+"wV" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/reagent_container/food/drinks/coffeecup{
+	pixel_y = -3;
+	pixel_x = 8
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"wX" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/prison{
+	color = "#bbbee8"
+	},
+/area/space)
+"xb" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/item/clothing/head/beret/sec/hos{
+	desc = "A navy-blue beret with the USCSS Canterbury emblem. For officers that are more inclined towards style than safety.";
+	pixel_x = -3;
+	pixel_y = 10
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"xp" = (
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 11
+	},
+/turf/open/floor/strata{
+	icon_state = "white_cyan2"
+	},
+/area/space)
+"xB" = (
+/obj/structure/prop/almayer/computers/sensor_computer1{
+	name = "Life support systems computer";
+	icon_state = "mps";
+	pixel_x = 10;
+	pixel_y = 12;
+	density = 0;
+	layer = 4
+	},
+/obj/structure/platform{
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	dir = 1;
+	icon_state = "plating_striped"
+	},
+/area/space)
+"xQ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	layer = 3.33;
+	pixel_x = 2
+	},
+/obj/structure/machinery/sentry_holder/colony{
+	pixel_y = 26
+	},
+/turf/open/floor/strata{
+	icon_state = "red3";
+	dir = 4
+	},
+/area/space)
+"xX" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/folder/red{
+	pixel_y = 8
+	},
+/obj/item/folder/yellow{
+	pixel_y = 14
+	},
+/obj/item/folder/white{
+	pixel_y = 3;
+	pixel_x = 2
+	},
+/turf/open/floor/strata,
+/area/space)
+"ya" = (
+/obj/structure/machinery/power/apc/almayer{
+	cell_type = /obj/item/cell/hyper
+	},
+/obj/structure/closet/crate/plastic,
+/turf/open/floor/plating/almayer,
+/area/space)
+"yn" = (
+/turf/open/shuttle/escapepod,
+/area/space)
+"yt" = (
+/obj/structure/machinery/door/airlock/almayer/generic{
+	dir = 8
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"yz" = (
+/obj/structure/machinery/door/airlock/evacuation{
+	dir = 8;
+	name = "\improper Bridge Escape Pod 2"
+	},
+/turf/open/shuttle/escapepod{
+	icon_state = "floor11"
+	},
+/area/space)
+"yA" = (
+/obj/effect/decal/cleanable/blood/oil,
+/turf/open/floor/plating/almayer,
+/area/space)
+"yG" = (
+/obj/structure/surface/rack,
+/obj/item/weapon/gun/shotgun/pump/dual_tube/cmb/m3717,
+/obj/item/weapon/gun/shotgun/pump/dual_tube/cmb/m3717{
+	pixel_y = 7
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"yJ" = (
+/obj/structure/surface/table/woodentable/fancy,
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"yK" = (
+/obj/structure/reagent_dispensers/fueltank,
+/turf/open/floor/plating/almayer,
+/area/space)
+"yN" = (
+/obj/structure/machinery/door/airlock/almayer/generic{
+	name = "Equipment Locker"
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"yZ" = (
+/obj/structure/largecrate/random/barrel/red{
+	pixel_y = -6;
+	pixel_x = 2
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"zb" = (
+/turf/open/floor/strata{
+	icon_state = "blue4";
+	dir = 8
+	},
+/area/space)
+"zg" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/device/healthanalyzer{
+	pixel_y = 2
+	},
+/obj/item/clothing/glasses/hud/health{
+	pixel_y = 10;
+	pixel_x = -4
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"zt" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	layer = 3.33;
+	pixel_x = 2
+	},
+/turf/open/floor/strata{
+	icon_state = "red3";
+	dir = 4
+	},
+/area/space)
+"zD" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/turf/open/floor/strata{
+	dir = 8;
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"zO" = (
+/obj/structure/largecrate/random/barrel/white{
+	pixel_y = 11
+	},
+/obj/structure/largecrate/random/barrel/yellow{
+	pixel_x = 9
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"Aa" = (
+/obj/structure/prop/almayer/computers/sensor_computer2{
+	name = "Cargo crane control computer";
+	pixel_y = 12;
+	density = 0;
+	desc = "An IBM-10 series computer made to control the two deployable cargo cranes that can move cargo mounted internally and externally."
+	},
+/obj/structure/bed/chair/comfy/black{
+	dir = 1;
+	pixel_y = -7;
+	pixel_x = -16;
+	layer = 3.0000000000000001
+	},
+/turf/open/floor/strata{
+	icon_state = "blue1"
+	},
+/area/space)
+"AC" = (
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"AL" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	dir = 1
+	},
+/turf/open/floor/strata{
+	dir = 8;
+	icon_state = "blue3"
+	},
+/area/space)
+"AQ" = (
+/obj/structure/window{
+	dir = 8
+	},
+/obj/structure/machinery/prop/almayer/computer{
+	pixel_x = 3;
+	pixel_y = 18
+	},
+/turf/open/floor/strata{
+	dir = 8;
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"Bd" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/item/folder/white{
+	pixel_y = 3;
+	pixel_x = 2
+	},
+/obj/item/storage/fancy/cigar{
+	pixel_x = -4
+	},
+/obj/item/reagent_container/food/drinks/cans/classcola{
+	pixel_x = -19;
+	pixel_y = 8
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"Bh" = (
+/turf/closed/shuttle/escapepod{
+	icon_state = "wall9"
+	},
+/area/space)
+"Bi" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	dir = 1
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"Bk" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_y = 16
+	},
+/turf/open/floor/almayer_hull,
+/area/space)
+"BF" = (
+/obj/structure/bed/chair{
+	pixel_x = 1
+	},
+/turf/open/floor/strata,
+/area/space)
+"BR" = (
+/turf/open/floor/almayer{
+	dir = 4;
+	icon_state = "plating_striped"
+	},
+/area/space)
+"BS" = (
+/obj/structure/machinery/door/airlock/almayer/maint/colony/autoname{
+	dir = 2
+	},
+/turf/open/floor/plating,
+/area/space)
+"BZ" = (
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 4
+	},
+/obj/structure/platform{
+	layer = 2.14;
+	density = 0;
+	climb_delay = 0
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
+	},
+/area/space)
+"Cd" = (
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 8
+	},
+/obj/structure/window{
+	name = "display case window";
+	dir = 8
+	},
+/obj/structure/closet/emcloset{
+	pixel_y = 7
+	},
+/turf/open/floor/plating/plating_catwalk{
+	color = "#bdbdbd "
+	},
+/area/space)
+"Co" = (
+/turf/open/floor/strata{
+	icon_state = "blue3";
+	dir = 8
+	},
+/area/space)
+"Cq" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out"
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"Cr" = (
+/obj/structure/platform{
+	layer = 2.16;
+	density = 0;
+	climb_delay = 0;
+	dir = 4
+	},
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 1
+	},
+/obj/structure/window{
+	name = "display case window";
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk{
+	color = "#bdbdbd "
+	},
+/area/space)
+"CJ" = (
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0
+	},
+/obj/structure/prop/server_equipment{
+	pixel_y = 12
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms";
+	color = "#bbbee8"
+	},
+/area/space)
+"CY" = (
+/obj/structure/machinery/power/smes{
+	pixel_y = 4;
+	pixel_x = 1
+	},
+/obj/structure/machinery/power/smes{
+	pixel_y = 21;
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata{
+	icon_state = "yellow1"
+	},
+/area/space)
+"De" = (
+/turf/open/floor/strata{
+	icon_state = "red1"
+	},
+/area/space)
+"Dk" = (
+/obj/structure/stairs{
+	dir = 8;
+	icon_state = "ramptop"
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"Dm" = (
+/turf/open/floor/strata{
+	icon_state = "blue4";
+	dir = 4
+	},
+/area/space)
+"Du" = (
+/obj/structure/machinery/cryopod/evacuation,
+/turf/open/shuttle/escapepod,
+/area/space)
+"DB" = (
+/obj/structure/machinery/telecomms/server{
+	pixel_y = 18
+	},
+/obj/structure/window,
+/turf/open/floor/plating/plating_catwalk{
+	color = "#bdbdbd "
+	},
+/area/space)
+"Ea" = (
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
+	},
+/area/space)
+"Ej" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	dir = 1;
+	icon_state = "plating_striped"
+	},
+/area/space)
+"EC" = (
+/obj/structure/largecrate/random/barrel/blue{
+	pixel_y = 11;
+	pixel_x = 9
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"ED" = (
+/turf/open/floor/strata{
+	icon_state = "yellow2";
+	dir = 8
+	},
+/area/space)
+"EM" = (
+/obj/structure/machinery/computer/telecomms/monitor{
+	pixel_y = 14
+	},
+/turf/open/floor/strata{
+	icon_state = "blue1"
+	},
+/area/space)
+"EP" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	dir = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	dir = 1
+	},
+/obj/structure/sink{
+	pixel_y = 24
+	},
+/obj/structure/mirror{
+	pixel_y = 37
+	},
+/turf/open/floor{
+	icon_state = "freezerfloor"
+	},
+/area/space)
+"ET" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/prop/almayer/computer{
+	dir = 8;
+	pixel_x = 1;
+	icon_state = "guest";
+	pixel_y = 20
+	},
+/obj/structure/machinery/prop/almayer/computer{
+	dir = 8;
+	pixel_x = 1;
+	icon_state = "guest";
+	pixel_y = 8
+	},
+/obj/structure/prop/almayer/computers/sensor_computer1{
+	name = "systems computer";
+	icon_state = "mps";
+	pixel_x = 17;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/machinery/computer/cameras/wooden_tv{
+	pixel_x = 16;
+	pixel_y = 28;
+	dir = 8;
+	layer = 3
+	},
+/obj/structure/machinery/computer/cameras/wooden_tv{
+	pixel_x = 16;
+	pixel_y = 16;
+	dir = 8;
+	layer = 3
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"EX" = (
+/obj/structure/surface/rack,
+/obj/item/clothing/suit/armor/bulletproof{
+	pixel_x = 6;
+	pixel_y = -8
+	},
+/obj/item/clothing/suit/armor/bulletproof{
+	pixel_y = -4;
+	pixel_x = 6
+	},
+/obj/item/clothing/accessory/storage/webbing,
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"Fc" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 2
+	},
+/obj/structure/sign/safety/elevator{
+	pixel_y = 31;
+	pixel_x = 11
+	},
+/turf/open/floor/strata{
+	icon_state = "blue1"
+	},
+/area/space)
+"Fj" = (
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"Fl" = (
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"Fz" = (
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"FE" = (
+/obj/structure/machinery/telecomms/bus{
+	pixel_y = 19
+	},
+/obj/structure/machinery/door/window/eastleft{
+	dir = 2
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms";
+	color = "#bbbee8"
+	},
+/area/space)
+"FT" = (
+/obj/structure/machinery/sentry_holder/colony{
+	pixel_y = 26
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"FZ" = (
+/obj/structure/closet/coffin/woodencrate,
+/obj/item/storage/beer_pack,
+/obj/item/storage/beer_pack{
+	pixel_y = 9
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"Ga" = (
+/obj/effect/decal/cleanable/blood,
+/obj/item/storage/toolbox/mechanical/green{
+	pixel_y = 14;
+	pixel_x = -5
+	},
+/obj/effect/spawner/random/tool,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/prison{
+	color = "#bbbee8"
+	},
+/area/space)
+"Gc" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out"
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"Gd" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/machinery/vending/cigarette/colony{
+	layer = 3.0000001
+	},
+/turf/open/floor/strata{
+	dir = 8;
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"Gi" = (
+/obj/structure/machinery/door/poddoor/almayer{
+	name = "\improper Bridge Podlock"
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
+	},
+/area/space)
+"Gk" = (
+/obj/structure/machinery/cm_vending/sorted/medical/marinemed{
+	pixel_y = 22;
+	name = "\improper Wey-Med Mini";
+	desc = "A cheap version of the Wey-Med Plus Medical Pharmaceutical dispenser with basic medical supplies."
+	},
+/turf/open/floor/strata{
+	icon_state = "white_cyan2"
+	},
+/area/space)
+"Gl" = (
+/turf/closed/wall/strata_outpost/reinforced{
+	name = "bulkhead walls"
+	},
+/area/space)
+"Gw" = (
+/obj/structure/machinery/autolathe,
+/turf/open/floor/plating/almayer,
+/area/space)
+"GC" = (
+/obj/structure/machinery/shower{
+	dir = 4
+	},
+/obj/structure/window/reinforced/tinted,
+/obj/structure/window/reinforced/tinted{
+	dir = 1;
+	layer = 2.5
+	},
+/obj/structure/window/reinforced/tinted{
+	dir = 8;
+	layer = 2.6
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"GH" = (
+/obj/item/trash/cigbutt/cigarbutt{
+	pixel_x = 5;
+	pixel_y = 11
+	},
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"GI" = (
+/turf/closed/shuttle/elevator{
+	dir = 8
+	},
+/area/space)
+"GJ" = (
+/obj/structure/machinery/photocopier,
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"GK" = (
+/obj/structure/machinery/door/airlock/multi_tile/almayer/generic2{
+	dir = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	dir = 1
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"GM" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/recharger/unanchored{
+	pixel_x = -5
+	},
+/obj/item/reagent_container/food/drinks/cans/waterbottle{
+	pixel_y = 19
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"GP" = (
+/obj/structure/filingcabinet{
+	density = 0;
+	icon_state = "chestdrawer";
+	pixel_x = -7;
+	pixel_y = 16;
+	name = "cabinet"
+	},
+/obj/structure/filingcabinet{
+	density = 0;
+	icon_state = "chestdrawer";
+	pixel_x = 8;
+	pixel_y = 16;
+	name = "cabinet"
+	},
+/obj/item/device/flashlight/lamp/green{
+	pixel_x = 8;
+	pixel_y = 21;
+	layer = 5
+	},
+/obj/item/prop/helmetgarb/prescription_bottle{
+	pixel_x = -1;
+	pixel_y = 23
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"GW" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/reagent_container/food/drinks/coffeecup{
+	pixel_x = 8;
+	pixel_y = -10
+	},
+/obj/item/clipboard{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"Ha" = (
+/obj/structure/machinery/power/breakerbox{
+	icon = 'icons/obj/structures/machinery/breakerbox.dmi';
+	icon_state = "powerbox";
+	dir = 8;
+	density = 0;
+	pixel_y = 17
+	},
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"Hn" = (
+/obj/structure/machinery/door/airlock/almayer/command{
+	name = "Bridge";
+	dir = 1
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"Hp" = (
+/obj/structure/machinery/computer/telecomms/traffic{
+	pixel_y = 14
+	},
+/turf/open/floor/strata{
+	dir = 8;
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"Hx" = (
+/obj/structure/surface/table/almayer,
+/obj/structure/machinery/prop/almayer/computer{
+	dir = 1;
+	pixel_x = 3
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"HT" = (
+/obj/structure/machinery/suit_storage_unit/compression_suit{
+	pixel_y = 20;
+	density = 0;
+	pixel_x = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	dir = 1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"HU" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	dir = 1
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"HV" = (
+/obj/structure/bed/chair/dropship/passenger{
+	dir = 8
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/space)
+"HW" = (
+/obj/structure/surface/table/almayer,
+/obj/item/storage/toolbox/mechanical,
+/turf/open/floor/plating/almayer,
+/area/space)
+"Ib" = (
+/obj/structure/prop/invuln/lattice_prop,
+/turf/open/floor/almayer_hull,
+/area/space)
+"Ik" = (
+/turf/closed/wall/r_wall/elevator/dorm,
+/area/space)
+"IA" = (
+/obj/structure/bed/chair/office/light{
+	dir = 1
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"IF" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/ashtray/bronze{
+	icon_state = "ashtray_full_bl";
+	pixel_x = 8;
+	pixel_y = -3
+	},
+/obj/item/reagent_container/food/drinks/cans/iced_tea{
+	pixel_y = 5;
+	pixel_x = -3
+	},
+/turf/open/floor/strata,
+/area/space)
+"IH" = (
+/turf/open/floor/strata{
+	icon_state = "blue3";
+	dir = 9
+	},
+/area/space)
+"IJ" = (
+/obj/structure/prop/server_equipment,
+/obj/structure/window{
+	dir = 8
+	},
+/obj/structure/window{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk{
+	color = "#bdbdbd "
+	},
+/area/space)
+"IM" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	dir = 1
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"IP" = (
+/turf/closed/shuttle/escapepod{
+	icon_state = "wall4"
+	},
+/area/space)
+"IW" = (
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 4
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
+	},
+/area/space)
+"JD" = (
+/obj/structure/machinery/shower{
+	dir = 4
+	},
+/obj/structure/toilet{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"JG" = (
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"JO" = (
+/obj/structure/window/framed/almayer/white,
+/turf/open/floor/plating,
+/area/space)
+"JU" = (
+/obj/structure/bed/chair{
+	pixel_y = 13;
+	dir = 4;
+	pixel_x = -12
+	},
+/turf/open/floor/strata{
+	icon_state = "yellow1"
+	},
+/area/space)
+"JW" = (
+/obj/structure/toilet,
+/turf/open/floor{
+	icon_state = "freezerfloor"
+	},
+/area/space)
+"Kf" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/turf/open/floor/strata{
+	icon_state = "red3";
+	dir = 8
+	},
+/area/space)
+"Kg" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/machinery/computer/emails{
+	pixel_y = 6
+	},
+/turf/open/floor/strata,
+/area/space)
+"Kj" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	dir = 1
+	},
+/turf/open/floor/strata{
+	icon_state = "blue4";
+	dir = 1
+	},
+/area/space)
+"Kt" = (
+/obj/structure/window/framed/almayer/hull,
+/obj/structure/window/framed/almayer/hull,
+/turf/closed/wall/strata_outpost/reinforced/hull{
+	desc = "A thick plasteel wall that seperates the ship from space.";
+	name = "hull wall"
+	},
+/area/space)
+"KE" = (
+/turf/open/floor/strata{
+	icon_state = "blue3"
+	},
+/area/space)
+"KI" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/machinery/recharger/unanchored{
+	pixel_x = -5
+	},
+/obj/structure/machinery/recharger/unanchored{
+	pixel_x = 12
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"KK" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	dir = 1
+	},
+/turf/open/floor/strata{
+	dir = 4;
+	icon_state = "blue3"
+	},
+/area/space)
+"KL" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out";
+	pixel_x = 1;
+	dir = 1
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"KO" = (
+/obj/structure/surface/rack,
+/obj/structure/largecrate/random/case/small{
+	pixel_y = 14
+	},
+/obj/item/storage/toolbox/mechanical/green{
+	pixel_y = 8
+	},
+/obj/item/storage/toolbox/electrical{
+	pixel_y = -6
+	},
+/turf/open/floor/strata{
+	icon_state = "yellow1"
+	},
+/area/space)
+"KQ" = (
+/obj/structure/largecrate/random/barrel/red{
+	pixel_x = -8;
+	pixel_y = -5
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"KT" = (
+/obj/structure/flora/pottedplant{
+	desc = "It is made of Fiberbush(tm). It contains asbestos.";
+	icon_state = "pottedplant_22";
+	name = "synthetic potted plant";
+	pixel_y = 20;
+	pixel_x = -9
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"La" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/item/prop/magazine/dirty/torn{
+	pixel_x = -7
+	},
+/obj/item/storage/fancy/cigar/matchbook/koorlander{
+	pixel_y = -2;
+	pixel_x = 9
+	},
+/obj/item/storage/fancy/cigarettes/kpack{
+	pixel_x = -2;
+	pixel_y = 12
+	},
+/obj/item/reagent_container/food/drinks/cans/lemon_lime{
+	pixel_y = -1;
+	pixel_x = -9
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"Ld" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/turf/open/floor/strata{
+	icon_state = "white_cyan2"
+	},
+/area/space)
+"Lf" = (
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"Li" = (
+/obj/structure/largecrate/random/barrel/blue{
+	pixel_y = 11;
+	pixel_x = 9
+	},
+/obj/structure/bed/chair{
+	pixel_x = 1;
+	dir = 4
+	},
+/turf/open/floor/strata{
+	icon_state = "blue3"
+	},
+/area/space)
+"Ll" = (
+/turf/open/floor/almayer{
+	icon_state = "tcomms";
+	color = "#bbbee8"
+	},
+/area/space)
+"Lm" = (
+/obj/structure/machinery/door/airlock/almayer/generic{
+	dir = 8;
+	name = "\improper Bridge Server room"
+	},
+/turf/open/floor/plating,
+/area/space)
+"Lo" = (
+/obj/structure/closet/crate/supply,
+/obj/item/stack/folding_barricade/three{
+	pixel_y = 9;
+	pixel_x = -6
+	},
+/obj/item/stack/folding_barricade/three{
+	pixel_x = -6
+	},
+/obj/item/stack/folding_barricade/three{
+	pixel_x = -4;
+	pixel_y = -6
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"Lx" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/circuitboard,
+/obj/item/tool/screwdriver{
+	pixel_x = -7;
+	pixel_y = 6
+	},
+/obj/item/stack/cable_coil{
+	pixel_x = 10;
+	pixel_y = 11
+	},
+/obj/structure/window{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk{
+	color = "#bdbdbd "
+	},
+/area/space)
+"Ly" = (
+/obj/structure/surface/table/almayer,
+/obj/item/paper_bin{
+	pixel_x = 5;
+	pixel_y = 10
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/space)
+"LB" = (
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/space)
+"LF" = (
+/obj/structure/window/framed/almayer/hull,
+/turf/open/space/basic,
+/area/space)
+"LL" = (
+/obj/structure/flora/pottedplant{
+	desc = "It is made of Fiberbush(tm). It contains asbestos. Studies say that greenery calms the mind due to some sort evolved mechanism in the brain. This plant is not calming.";
+	icon_state = "pottedplant_21";
+	layer = 3.1;
+	name = "synthethic potted plant";
+	pixel_x = -2;
+	pixel_y = 16
+	},
+/turf/open/floor/strata{
+	icon_state = "blue1"
+	},
+/area/space)
+"LR" = (
+/obj/structure/reagent_dispensers/watertank,
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"Mh" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out";
+	layer = 2.5
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"Mr" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	dir = 1
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"MB" = (
+/obj/structure/safe,
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"MD" = (
+/obj/structure/machinery/telecomms/receiver,
+/obj/structure/window{
+	dir = 4
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/space)
+"MF" = (
+/obj/structure/platform{
+	density = 0;
+	climb_delay = 0;
+	dir = 8
+	},
+/obj/structure/machinery/power/monitor{
+	name = "Main Power Grid Monitoring";
+	desc = "It monitors power levels across the ship";
+	pixel_x = 4
+	},
+/turf/open/floor/strata{
+	icon_state = "blue1"
+	},
+/area/space)
+"MH" = (
+/turf/closed/shuttle/elevator/button/dorm,
+/area/space)
+"ML" = (
+/obj/structure/machinery/cm_vending/sorted/medical/marinemed{
+	pixel_y = 13;
+	name = "\improper Wey-Med Mini";
+	desc = "A cheap version of the Wey-Med Plus Medical Pharmaceutical dispenser with basic medical supplies."
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"MN" = (
+/obj/structure/machinery/door/airlock/almayer/generic{
+	name = "Bathroom"
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"MU" = (
+/obj/structure/closet/firecloset/full{
+	pixel_y = 18;
+	pixel_x = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/prison{
+	color = "#bbbee8"
+	},
+/area/space)
+"MX" = (
+/turf/open/floor/strata{
+	icon_state = "blue3";
+	dir = 6
+	},
+/area/space)
+"Nf" = (
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk{
+	color = "#bdbdbd "
+	},
+/area/space)
+"Nh" = (
+/obj/structure/machinery/cryopod/evacuation,
+/obj/structure/sign/safety/cryo{
+	pixel_x = 8;
+	pixel_y = 28
+	},
+/turf/open/shuttle/escapepod,
+/area/space)
+"Ni" = (
+/obj/structure/stairs{
+	dir = 4;
+	icon_state = "ramptop"
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"Nl" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 2
+	},
+/turf/open/floor/strata{
+	icon_state = "blue1"
+	},
+/area/space)
+"Nn" = (
+/obj/structure/window{
+	dir = 1;
+	layer = 2.6;
+	pixel_y = 8
+	},
+/obj/structure/prop/almayer/computers/sensor_computer2{
+	name = "sensors computer";
+	pixel_y = 12;
+	density = 0;
+	layer = 4;
+	icon_state = "sensor_comp1"
+	},
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/bed/chair/comfy/black{
+	dir = 1;
+	pixel_y = -7;
+	layer = 4.00001
+	},
+/turf/open/floor/almayer{
+	dir = 1;
+	icon_state = "plating_striped"
+	},
+/area/space)
+"Nt" = (
+/obj/structure/machinery/door/airlock/almayer/command/reinforced{
+	dir = 1;
+	name = "\improper Bridge Storage"
+	},
+/turf/open/floor/plating,
+/area/space)
+"NQ" = (
+/obj/item/tool/mop,
+/obj/structure/janitorialcart,
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"Oc" = (
+/obj/structure/bed/chair{
+	pixel_x = 1;
+	dir = 8
+	},
+/turf/open/floor/strata,
+/area/space)
+"Of" = (
+/turf/open/floor/strata{
+	icon_state = "blue3";
+	dir = 4
+	},
+/area/space)
+"Om" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_y = 2
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"Op" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_y = 16
+	},
+/turf/open/space/basic,
+/area/space)
+"Os" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/machinery/computer/emails{
+	pixel_y = 15;
+	pixel_x = 5
+	},
+/obj/item/reagent_container/food/drinks/coffeecup{
+	pixel_y = 1;
+	pixel_x = -5
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"Ow" = (
+/turf/closed/shuttle/escapepod{
+	icon_state = "wall3"
+	},
+/area/space)
+"OE" = (
+/obj/structure/surface/table/almayer,
+/obj/structure/machinery/prop/almayer/computer{
+	dir = 8;
+	pixel_x = 1;
+	icon_state = "guest";
+	pixel_y = 8
+	},
+/turf/open/floor/strata{
+	icon_state = "yellow2";
+	dir = 8
+	},
+/area/space)
+"OG" = (
+/obj/structure/surface/table/almayer,
+/obj/structure/machinery/computer/card,
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/space)
+"OK" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out";
+	pixel_x = 1
+	},
+/turf/open/floor/strata{
+	icon_state = "red3";
+	dir = 8
+	},
+/area/space)
+"OL" = (
+/obj/structure/prop/almayer/computers/sensor_computer2{
+	name = "Cargo crane control computer";
+	pixel_y = 12;
+	density = 0;
+	desc = "An IBM-10 series computer made to control the two deployable cargo cranes that can move cargo mounted internally and externally."
+	},
+/turf/open/floor/strata{
+	icon_state = "blue1"
+	},
+/area/space)
+"Pa" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	dir = 1
+	},
+/obj/structure/largecrate/random/barrel/green{
+	pixel_x = 3
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"Pb" = (
+/turf/closed/shuttle/escapepod{
+	icon_state = "wall6"
+	},
+/area/space)
+"Pc" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/folder/blue{
+	name = "Matson Intersystems SOP"
+	},
+/turf/open/floor/strata,
+/area/space)
+"Pi" = (
+/obj/structure/closet,
+/obj/item/clothing/suit/armor/bulletproof{
+	pixel_y = 8
+	},
+/obj/item/clothing/suit/armor/bulletproof{
+	pixel_y = 8
+	},
+/obj/item/storage/toolbox/electrical{
+	pixel_y = 2
+	},
+/obj/item/reagent_container/food/drinks/cans/beer{
+	pixel_x = 1;
+	pixel_y = 8
+	},
+/turf/open/floor/strata{
+	icon_state = "red3";
+	dir = 8
+	},
+/area/space)
+"Pj" = (
+/obj/structure/machinery/door/airlock/almayer/generic{
+	dir = 8;
+	name = "\improper Executive Officer's Quarters"
+	},
+/turf/open/floor/plating,
+/area/space)
+"Pp" = (
+/obj/structure/closet/crate/ammo,
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"Pq" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_x = -1;
+	pixel_y = 2
+	},
+/turf/open/floor/strata{
+	icon_state = "blue3";
+	dir = 4
+	},
+/area/space)
+"Py" = (
+/obj/structure/bed/chair/office/light{
+	dir = 4
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/space)
+"PD" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/window,
+/obj/structure/window{
+	dir = 8
+	},
+/obj/structure/machinery/prop/almayer/computer/PC{
+	dir = 1;
+	pixel_y = 5
+	},
+/turf/open/floor/almayer{
+	icon_state = "plating_striped"
+	},
+/area/space)
+"PR" = (
+/turf/open/shuttle/escapepod{
+	icon_state = "floor11"
+	},
+/area/space)
+"PV" = (
+/obj/structure/bed/chair/comfy/black{
+	pixel_x = -13
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"PY" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 3
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"Qh" = (
+/obj/structure/machinery/door/airlock/multi_tile/almayer/comdoor/solid,
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
+	},
+/area/space)
+"Qp" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/machinery/sentry_holder/colony{
+	pixel_y = 26
+	},
+/turf/open/floor/strata{
+	icon_state = "red3";
+	dir = 8
+	},
+/area/space)
+"Qs" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/stack/cable_coil{
+	pixel_x = -10;
+	pixel_y = 13
+	},
+/obj/item/storage/box/m94{
+	pixel_y = 15;
+	pixel_x = 8
+	},
+/obj/item/stack/sheet/metal/med_small_stack{
+	pixel_x = -2;
+	pixel_y = -5
+	},
+/obj/item/storage/toolbox/emergency,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/prison{
+	color = "#bbbee8"
+	},
+/area/space)
+"Qt" = (
+/turf/closed/shuttle/escapepod{
+	icon_state = "wall14"
+	},
+/area/space)
+"Qu" = (
+/obj/structure/machinery/door/airlock/almayer/medical/glass/colony{
+	dir = 2;
+	name = "\improper Airlock"
+	},
+/turf/open/floor/plating,
+/area/space)
+"Qy" = (
+/obj/structure/window{
+	dir = 1;
+	layer = 2.6;
+	pixel_y = 8
+	},
+/obj/structure/largecrate/random/mini/med{
+	pixel_y = 9;
+	pixel_x = 6
+	},
+/obj/item/storage/belt/medical/full/with_defib_and_analyzer{
+	pixel_y = -3
+	},
+/obj/item/storage/box/masks{
+	layer = 3.1;
+	pixel_x = -7;
+	pixel_y = 2
+	},
+/obj/structure/surface/rack,
+/turf/open/floor/strata{
+	icon_state = "red1"
+	},
+/area/space)
+"QA" = (
+/obj/structure/machinery/door/airlock/almayer/generic{
+	dir = 1;
+	name = "Bathroom"
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"QH" = (
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 8
+	},
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 1
+	},
+/obj/structure/window{
+	name = "display case window";
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk{
+	color = "#bdbdbd "
+	},
+/area/space)
+"QM" = (
+/turf/open/floor{
+	icon_state = "freezerfloor"
+	},
+/area/space)
+"QQ" = (
+/obj/structure/bed/chair/office/light{
+	dir = 4
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"QT" = (
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms";
+	color = "#bbbee8"
+	},
+/area/space)
+"Rq" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/window{
+	dir = 4
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/space)
+"Rs" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/prop/almayer/computer{
+	dir = 8;
+	icon_state = "overwatch"
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"Rt" = (
+/obj/structure/window/framed/almayer/hull,
+/turf/open/floor/plating,
+/area/space)
+"Rx" = (
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -14;
+	pixel_y = -3
+	},
+/obj/structure/reagent_dispensers/water_cooler/stacks{
+	density = 0;
+	pixel_x = 2;
+	pixel_y = 25
+	},
+/turf/open/floor/strata,
+/area/space)
+"RD" = (
+/obj/structure/flora/pottedplant{
+	icon_state = "pottedplant_17";
+	pixel_x = 7;
+	pixel_y = 14
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"RG" = (
+/obj/docking_port/mobile/crashable/escape_shuttle/s,
+/turf/closed/shuttle/escapepod{
+	icon_state = "wall9"
+	},
+/area/space)
+"RI" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ashtray/bronze{
+	pixel_x = -15
+	},
+/obj/structure/machinery/computer/card{
+	pixel_x = 5
+	},
+/obj/structure/prop/invuln{
+	icon = 'icons/obj/structures/machinery/computer.dmi';
+	icon_state = "cant_b_onedir";
+	pixel_y = 26;
+	desc = "A large overhead display showing information about the ship's enegines and power generation";
+	name = "systems display";
+	pixel_x = 4
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"RM" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out"
+	},
+/turf/open/floor/strata{
+	icon_state = "blue3";
+	dir = 1
+	},
+/area/space)
+"Sk" = (
+/turf/open/floor/strata,
+/area/space)
+"Sl" = (
+/obj/structure/largecrate/random/barrel/red,
+/obj/structure/largecrate/random/barrel/white{
+	pixel_y = 22;
+	pixel_x = -12
+	},
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"Ss" = (
+/turf/open/floor/almayer_hull{
+	dir = 4;
+	icon_state = "outerhull_dir"
+	},
+/area/space)
+"St" = (
+/obj,
+/turf/open/space/basic,
+/area/space)
+"Sz" = (
+/obj/structure/machinery/computer/shuttle/escape_pod_panel{
+	pixel_x = 30
+	},
+/turf/open/shuttle/escapepod{
+	icon_state = "floor2"
+	},
+/area/space)
+"SJ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out"
+	},
+/turf/open/floor/strata{
+	icon_state = "blue3";
+	dir = 6
+	},
+/area/space)
+"SN" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_y = 16
+	},
+/turf/open/floor/almayer_hull{
+	dir = 4;
+	icon_state = "outerhull_dir"
+	},
+/area/space)
+"SS" = (
+/obj/structure/machinery/door/airlock/almayer/medical,
+/turf/open/floor/plating/almayer,
+/area/space)
+"Tm" = (
+/obj/structure/platform_decoration,
+/turf/open/floor/almayer{
+	icon_state = "plating_striped"
+	},
+/area/space)
+"Tr" = (
+/obj/structure/machinery/portable_atmospherics/powered/scrubber,
+/turf/open/floor/strata{
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"Tw" = (
+/obj/structure/surface/rack,
+/obj/item/storage/toolbox/mechanical,
+/obj/item/storage/toolbox/mechanical/green{
+	pixel_y = 8
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"TC" = (
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	icon_state = "plating_striped"
+	},
+/area/space)
+"TJ" = (
+/obj/structure/window/framed/strata,
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"TQ" = (
+/obj/structure/window{
+	dir = 8
+	},
+/obj/structure/machinery/telecomms/hub{
+	pixel_y = 21
+	},
+/obj/structure/window{
+	dir = 4
+	},
+/obj/structure/machinery/door/window/eastleft{
+	dir = 2
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms";
+	color = "#bbbee8"
+	},
+/area/space)
+"TX" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/machinery/cm_vending/sorted/medical/wall_med{
+	pixel_x = -1;
+	pixel_y = 26
+	},
+/turf/open/floor/strata,
+/area/space)
+"Ua" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	dir = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	dir = 1
+	},
+/obj/structure/machinery/door/airlock/multi_tile/almayer/generic2{
+	dir = 1;
+	name = "\improper Avorion Shuttle"
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"Uf" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	pixel_y = 2
+	},
+/turf/open/floor/strata{
+	icon_state = "blue3"
+	},
+/area/space)
+"Uo" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	dir = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	dir = 1
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"Uz" = (
+/turf/open/floor/strata{
+	icon_state = "yellow1"
+	},
+/area/space)
+"UC" = (
+/obj/structure/machinery/door/airlock/almayer/maint/colony/autoname{
+	dir = 2
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"UG" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/turf/open/floor/almayer{
+	icon_state = "test_floor4"
+	},
+/area/space)
+"UH" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_y = 16
+	},
+/turf/open/floor/almayer_hull{
+	dir = 8;
+	icon_state = "outerhull_dir"
+	},
+/area/space)
+"UL" = (
+/obj/structure/window/framed/strata,
+/turf/open/floor/plating,
+/area/space)
+"UQ" = (
+/turf/open/floor/strata{
+	dir = 8;
+	icon_state = "multi_tiles"
+	},
+/area/space)
+"UX" = (
+/obj/structure/machinery/cm_vending/sorted/tech/electronics_storage,
+/turf/open/floor/plating/almayer,
+/area/space)
+"UY" = (
+/obj/structure/prop/server_equipment/yutani_server{
+	density = 0;
+	desc = "A powerful server tower housing various functions.";
+	name = "server tower";
+	pixel_y = 23
+	},
+/turf/open/floor/strata{
+	icon_state = "blue1"
+	},
+/area/space)
+"Va" = (
+/obj/structure/surface/rack,
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"Vg" = (
+/obj/structure/bed/chair/office/light{
+	dir = 1
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/space)
+"VJ" = (
+/obj/structure/bed,
+/obj/item/bedsheet/clown,
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"VN" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 1;
+	pixel_x = -13
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"Wg" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 1;
+	pixel_y = 6
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"Wm" = (
+/obj/structure/machinery/blackbox_recorder,
+/obj/item/prop/almayer/flight_recorder/colony{
+	pixel_x = -6;
+	pixel_y = 10;
+	name = "\improper SIR-77 ship information recorder";
+	desc = "A small red box that records ship communications, crew statuses, system monitoring and other key readouts. Usually refered to the black box, although this one comes in bloody red."
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/space)
+"Wn" = (
+/obj/structure/bed,
+/obj/item/bedsheet/medical,
+/turf/open/floor/strata{
+	icon_state = "white_cyan2"
+	},
+/area/space)
+"Wv" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/obj/structure/sink{
+	pixel_y = 20
+	},
+/obj/item/tool/soap/nanotrasen{
+	pixel_y = 19;
+	pixel_x = -4
+	},
+/obj/structure/mirror{
+	pixel_y = 35
+	},
+/turf/open/floor/strata{
+	icon_state = "white_cyan2"
+	},
+/area/space)
+"Wx" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/folder/blue{
+	pixel_y = 12;
+	pixel_x = -5
+	},
+/obj/item/paper_bin/uscm{
+	pixel_y = 7
+	},
+/obj/item/tool/pen{
+	pixel_y = 7
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"WF" = (
+/obj/structure/window{
+	dir = 4
+	},
+/obj/structure/prop/server_equipment,
+/obj/structure/window{
+	dir = 8
+	},
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/space)
+"WJ" = (
+/obj/structure/filingcabinet/security{
+	pixel_y = 24;
+	density = 0;
+	pixel_x = 11
+	},
+/obj/structure/filingcabinet/chestdrawer{
+	pixel_y = 24;
+	pixel_x = -4;
+	density = 0
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"Xb" = (
+/obj/structure/closet/hydrant{
+	pixel_y = 32
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	dir = 1
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"Xe" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice4"
+	},
+/turf/open/floor/almayer_hull,
+/area/space)
+"Xj" = (
+/obj/structure/machinery/cm_vending/sorted/medical/wall_med{
+	pixel_x = -1;
+	pixel_y = 26
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	dir = 1
+	},
+/turf/open/floor/plating/almayer,
+/area/space)
+"Xk" = (
+/obj/structure/bed/chair{
+	pixel_x = 1;
+	dir = 4
+	},
+/turf/open/floor/strata,
+/area/space)
+"Xr" = (
+/obj/structure/prop/almayer/computers/sensor_computer1{
+	icon_state = "techweb";
+	icon = 'icons/obj/structures/machinery/computer.dmi';
+	name = "LIM-6300 Helm Console";
+	desc = "A helm console that allows for manual control and navigation of the ship via the plotting of waypoints on a 3D hologram. While manual navigation has gone to the wayside over increasingly trusted and reliable AI helm systems, it is often preferred or in some casesrequired to have at least a basic control station as a redundancy."
+	},
+/obj/structure/prop/invuln{
+	icon = 'icons/obj/structures/machinery/computer.dmi';
+	icon_state = "cant_b_onedir";
+	pixel_y = 35;
+	desc = "A large overhead display showing information about the ship's enegines and power generation";
+	name = "systems display";
+	dir = 1;
+	pixel_x = 4
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"Xy" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	dir = 1
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"Xz" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata{
+	icon_state = "yellow1"
+	},
+/area/space)
+"XB" = (
+/obj/structure/machinery/light{
+	dir = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/obj/structure/toilet{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
+"XE" = (
+/obj/structure/machinery/cm_vending/sorted/medical/wall_med{
+	pixel_x = -1;
+	pixel_y = 26
+	},
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/storage/firstaid/robust,
+/obj/item/device/healthanalyzer{
+	pixel_y = 2
+	},
+/obj/item/storage/pill_bottle/peridaxon/skillless{
+	pixel_y = 14;
+	pixel_x = 10
+	},
+/obj/item/clothing/glasses/hud/health{
+	pixel_y = -2;
+	pixel_x = 5
+	},
+/turf/open/floor/strata{
+	icon_state = "white_cyan2"
+	},
+/area/space)
+"XK" = (
+/obj/structure/machinery/door/airlock/almayer/generic{
+	dir = 2
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"XO" = (
+/obj/structure/surface/table/almayer,
+/obj/structure/machinery/computer/secure_data{
+	dir = 4
+	},
+/obj/item/tool/pen,
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/space)
+"XQ" = (
+/obj/structure/window{
+	name = "display case window";
+	dir = 4
+	},
+/obj/structure/platform{
+	layer = 2.15;
+	density = 0;
+	climb_delay = 0;
+	dir = 4
+	},
+/obj/structure/closet/emcloset{
+	pixel_y = 7
+	},
+/turf/open/floor/plating/plating_catwalk{
+	color = "#bdbdbd "
+	},
+/area/space)
+"Yd" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/item/ashtray/bronze{
+	pixel_x = 5;
+	pixel_y = 5
+	},
+/obj/item/paper{
+	pixel_y = -2;
+	pixel_x = -6
+	},
+/obj/item/tool/pen{
+	pixel_y = -5
+	},
+/obj/item/reagent_container/food/drinks/coffeecup/wy{
+	pixel_x = -39;
+	pixel_y = -1
+	},
+/obj/structure/machinery/status_display{
+	pixel_y = 27
+	},
+/obj/item/device/flashlight/lamp{
+	pixel_y = 12;
+	pixel_x = -6
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"Yl" = (
+/obj/structure/closet/secure_closet/personal/cabinet{
+	density = 0;
+	pixel_y = 16;
+	pixel_x = 8
+	},
+/obj/item/clothing/under/color/grey,
+/obj/item/clothing/accessory/armband/hydro,
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"Ys" = (
+/turf/closed/shuttle/escapepod{
+	icon_state = "wall1"
+	},
+/area/space)
+"Yv" = (
+/turf/open/floor/plating/almayer,
+/area/space)
+"YC" = (
+/obj/structure/machinery/computer/crew,
+/turf/open/floor/almayer{
+	icon_state = "tcomms"
+	},
+/area/space)
+"YG" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	dir = 1
+	},
+/turf/open/floor/strata{
+	icon_state = "blue3";
+	dir = 4
+	},
+/area/space)
+"YM" = (
+/obj/structure/machinery/door/airlock/multi_tile/almayer/secdoor/glass/reinforced/colony{
+	dir = 1;
+	name = "Bridge Emergency Storage"
+	},
+/turf/open/floor/plating,
+/area/space)
+"YQ" = (
+/obj/structure/surface/table/woodentable/fancy,
+/obj/structure/machinery/computer/emails{
+	pixel_y = 15;
+	pixel_x = 5
+	},
+/turf/open/floor/strata{
+	icon_state = "fake_wood"
+	},
+/area/space)
+"YV" = (
+/obj/structure/prop/structure_lattice{
+	color = "#627278"
+	},
+/obj/structure/prop/structure_lattice{
+	color = "#627278"
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"YX" = (
+/obj/item/reagent_container/food/drinks/cans/waterbottle{
+	pixel_y = 19
+	},
+/obj/item/reagent_container/food/drinks/cans/waterbottle{
+	pixel_y = 19
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"Zk" = (
+/obj/structure/window/framed/almayer/hull,
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
+/area/space)
+"Zr" = (
+/turf/open/floor/strata{
+	dir = 4;
+	icon_state = "blue3"
+	},
+/area/space)
+"Zy" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/computer/crew/alt,
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"ZA" = (
+/obj/structure/prop/almayer/computers/sensor_computer2{
+	name = "LockMart 'Lionel' Radar control station";
+	desc = "A radar system for the LockMart 'Lionel' Passive Electronically Scanned Radar Array (PESA) radar that was once popular on UAAC vessels way back in 2100, just before the USCM was born. While vastly outdated today, it still is more powerful than many cheaper civilian systems and it's military features could be easily reactivated again with simple modifications.";
+	icon_state = "sensor_comp3"
+	},
+/turf/open/floor/almayer{
+	dir = 5;
+	icon_state = "plating"
+	},
+/area/space)
+"ZK" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ashtray/bronze{
+	icon_state = "ashtray_full_bl";
+	pixel_x = -7;
+	pixel_y = 5
+	},
+/obj/item/trash/cigbutt/cigarbutt{
+	pixel_x = 5;
+	pixel_y = 11
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
+	},
+/area/space)
+"ZS" = (
+/obj/structure/reagent_dispensers/fueltank,
+/turf/open/floor/strata{
+	icon_state = "yellow1"
+	},
+/area/space)
+"ZV" = (
+/turf/open/floor/almayer_hull{
+	color = "#444444"
+	},
+/area/space)
+
+(1,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(2,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(3,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(4,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(5,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(6,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(7,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(8,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(9,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(10,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(11,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(12,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(13,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(14,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+og
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(15,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+St
+tc
+tc
+tc
+tc
+tc
+og
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(16,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(17,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(18,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tP
+Gl
+kl
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(19,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(20,1,1) = {"
+og
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(21,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(22,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(23,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(24,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+nS
+tc
+nS
+tc
+tc
+tc
+tc
+tc
+kl
+Gl
+lG
+lG
+lo
+lo
+lo
+lo
+lo
+lG
+lG
+lo
+lo
+lo
+lo
+lo
+lG
+lG
+lo
+lo
+lo
+lo
+lo
+lG
+lG
+lo
+lo
+kl
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(25,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+tc
+tc
+tc
+tc
+tc
+tc
+Op
+tc
+Op
+tc
+tc
+tc
+tc
+tc
+kl
+Gl
+lo
+lo
+lo
+lo
+lG
+lo
+lo
+lo
+lo
+lo
+lo
+lG
+lo
+lo
+lo
+lo
+lo
+lo
+lG
+lo
+lo
+lo
+lo
+lo
+lo
+kl
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(26,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+LF
+kl
+Gl
+uM
+hx
+Tr
+nP
+kl
+kl
+tc
+tc
+tc
+tc
+tc
+Op
+tc
+Op
+tc
+tc
+tc
+tc
+tc
+kl
+Gl
+lo
+hQ
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Om
+lo
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+tc
+tc
+tc
+tc
+"}
+(27,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+Kt
+rs
+lo
+tP
+Ha
+Fz
+Fz
+Fz
+LR
+kl
+kl
+rG
+rG
+rG
+rG
+UH
+rG
+UH
+rG
+rG
+rG
+rG
+kl
+kl
+Gl
+lo
+Xy
+og
+og
+og
+og
+og
+og
+og
+og
+og
+vo
+fq
+Ua
+vo
+JO
+vo
+vo
+vo
+vo
+og
+og
+og
+lA
+lo
+lo
+Gl
+mt
+cl
+oq
+cl
+he
+cl
+kl
+tc
+tc
+tc
+tc
+"}
+(28,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+rs
+rs
+lo
+lo
+up
+Fz
+Fz
+GH
+NQ
+pZ
+pZ
+kl
+kl
+uV
+uV
+uV
+Bk
+uV
+Bk
+Xe
+uV
+uV
+kl
+kl
+kl
+Gl
+lo
+Xy
+og
+og
+og
+og
+og
+og
+fN
+vo
+ag
+vo
+HT
+iT
+vo
+JW
+pw
+QM
+vo
+vo
+vo
+og
+og
+lA
+lo
+lo
+Gl
+oq
+cl
+oq
+cl
+CY
+ms
+kl
+tc
+tc
+tc
+tc
+"}
+(29,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+rs
+rs
+lo
+lo
+lo
+Gl
+Gl
+Gl
+le
+Gl
+wP
+ra
+Gl
+kl
+kl
+kl
+uV
+Bk
+uV
+Bk
+mA
+uV
+kl
+kl
+EP
+mv
+Gl
+lo
+Xy
+og
+og
+og
+fN
+ag
+ag
+fN
+bX
+Pi
+vo
+fq
+GK
+vo
+vo
+vo
+jL
+vo
+yK
+vo
+vo
+og
+lA
+lo
+lo
+Gl
+ZS
+jg
+Xz
+vP
+Xz
+vP
+kl
+kl
+kl
+kl
+kl
+"}
+(30,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+rs
+rs
+XQ
+im
+Dk
+Cr
+UL
+MB
+Lf
+Lf
+Gl
+Gl
+Gl
+Gl
+xb
+VJ
+kl
+qI
+uq
+uq
+Bh
+Ib
+kl
+kl
+Gl
+MN
+Gl
+Gl
+lo
+Xy
+og
+og
+fN
+fN
+Ly
+XO
+fN
+Tw
+Yv
+vo
+fq
+Yv
+jQ
+jQ
+jQ
+Yv
+vo
+Yv
+UX
+vo
+vo
+lA
+lo
+lo
+qj
+Uz
+ED
+KO
+jB
+JU
+OE
+Gl
+fL
+kY
+dR
+kl
+"}
+(31,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+rs
+rs
+GM
+nr
+Fl
+Fl
+Fl
+UL
+GJ
+Lf
+Lf
+Gl
+uc
+GC
+Gl
+GP
+Fj
+kl
+cg
+Du
+PR
+ni
+kl
+kl
+Rx
+tx
+Sk
+Gl
+lo
+lo
+Xy
+og
+og
+ag
+OG
+LB
+su
+fN
+vo
+yN
+vo
+Xb
+Yv
+KL
+HU
+HU
+HU
+vo
+Yv
+Yv
+Gw
+vo
+lA
+lo
+hQ
+Gl
+Gl
+lU
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+le
+kl
+"}
+(32,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+rs
+Zk
+CJ
+RI
+Fl
+Fl
+Fl
+Fl
+rH
+Lf
+Lf
+Lf
+Gl
+Wv
+Ld
+Gl
+pD
+Fj
+kl
+cg
+Nh
+PR
+ni
+kl
+kT
+Sk
+Sk
+Sk
+Qu
+lo
+lo
+Xy
+og
+og
+ag
+if
+Vg
+LB
+Hn
+ur
+mx
+ur
+tm
+Yv
+vw
+HV
+HV
+HV
+vo
+Yv
+Yv
+ya
+vo
+lA
+lo
+Xy
+gO
+lA
+lo
+Pa
+Gi
+pP
+KQ
+kc
+lo
+bl
+lo
+kl
+"}
+(33,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+Rt
+OL
+QT
+nh
+Wg
+Fl
+Fl
+Fl
+UL
+aX
+Lf
+Lf
+Gl
+Gl
+cu
+Gl
+Gl
+yt
+kl
+cg
+Du
+PR
+ni
+kl
+wu
+Sk
+Sk
+Xk
+UL
+lo
+lo
+Xy
+og
+og
+ag
+lL
+LB
+Py
+fN
+vo
+SS
+vo
+Xj
+yA
+vw
+pm
+pm
+pm
+vo
+Yv
+HW
+rL
+vo
+lA
+lo
+Xy
+Ea
+lA
+lo
+Xy
+Gi
+pP
+lo
+lo
+lo
+lo
+lo
+kl
+"}
+(34,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+Rt
+Aa
+QT
+wV
+Fl
+Fl
+Fl
+Fl
+UL
+dK
+bK
+Lf
+Gl
+WJ
+Fj
+Fj
+Fj
+Fj
+kl
+Ow
+IP
+yz
+Pb
+kl
+qY
+Sk
+BF
+IF
+TJ
+lo
+lo
+Xy
+og
+og
+fN
+fN
+YC
+eJ
+fN
+Gk
+fJ
+vo
+fq
+Yv
+vE
+Bi
+Bi
+Bi
+vo
+Yv
+Hx
+vo
+vo
+lA
+MX
+KK
+Ea
+ho
+Zr
+KK
+Gi
+pP
+Zr
+Zr
+Zr
+wy
+lo
+kl
+"}
+(35,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+Rt
+wt
+dj
+cG
+Fl
+Fl
+Fl
+Fl
+UL
+Wx
+Lf
+QQ
+Gl
+lj
+IA
+Fj
+Fj
+yJ
+kl
+kl
+kl
+fT
+kl
+kl
+kk
+Sk
+Sk
+Oc
+UL
+lo
+lo
+Xy
+og
+og
+og
+fN
+ag
+ag
+fN
+XE
+Wn
+vo
+fq
+GK
+vo
+HU
+HU
+HU
+uu
+Yv
+vo
+vo
+og
+lA
+KE
+hR
+Ea
+aD
+Co
+iJ
+Gi
+pP
+Co
+Co
+Dm
+lB
+lo
+kl
+"}
+(36,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+Rt
+vt
+IW
+BZ
+Nf
+Nf
+JG
+Fl
+UL
+py
+ec
+hc
+Gl
+dh
+Fj
+RD
+Fj
+Bd
+Gl
+pE
+bG
+pE
+pE
+kl
+kk
+Sk
+Sk
+dE
+UL
+lo
+lo
+Xy
+og
+og
+og
+og
+og
+og
+fN
+vo
+ag
+vo
+HT
+iT
+vo
+HV
+HV
+HV
+vo
+vo
+vo
+og
+og
+lA
+KE
+RM
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+Li
+lB
+lo
+kl
+"}
+(37,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+Rt
+GW
+Rs
+ZK
+TC
+cY
+hy
+Fl
+Gl
+Gl
+UL
+UL
+Gl
+Gl
+Gl
+Gl
+Pj
+Gl
+Gl
+Qp
+Kf
+Kf
+OK
+kl
+UL
+mV
+UL
+UL
+kl
+FT
+lo
+Xy
+og
+og
+og
+og
+og
+og
+og
+og
+og
+vo
+Uo
+Ua
+vo
+JO
+vo
+vo
+vo
+vo
+og
+og
+og
+lA
+KE
+lB
+kl
+np
+lN
+lN
+lN
+lN
+us
+kl
+ff
+lB
+lo
+kl
+"}
+(38,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+Rt
+qS
+jI
+Fl
+Fl
+PD
+Ej
+Fl
+Fl
+sM
+KT
+tC
+tC
+Lf
+oK
+LL
+tC
+tC
+UQ
+Gd
+tC
+tC
+wv
+cb
+ju
+UQ
+UQ
+UQ
+UQ
+lo
+lo
+Mh
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+SJ
+zb
+lB
+kl
+em
+yn
+yn
+yn
+sx
+GI
+kl
+Nl
+jx
+lo
+kl
+"}
+(39,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+Rt
+nD
+Fl
+Fl
+PV
+ap
+xB
+Fl
+Fl
+ov
+ps
+ps
+ps
+ps
+ov
+jx
+Of
+Of
+rq
+nW
+Of
+Of
+YG
+cb
+Pq
+Of
+Of
+Of
+zb
+jx
+cl
+jx
+jx
+cl
+jx
+jx
+jx
+cl
+jx
+jx
+jx
+cl
+jx
+jx
+jx
+cl
+jx
+jx
+jx
+cl
+jx
+jx
+jx
+jx
+jx
+lB
+kl
+MH
+yn
+yn
+yn
+sx
+vV
+Qh
+Nl
+jx
+cl
+kl
+"}
+(40,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+Rt
+eN
+VN
+Fl
+Fl
+gt
+Nn
+YX
+Fl
+cl
+BR
+BR
+BR
+BR
+cl
+jx
+kr
+kr
+tK
+tG
+kr
+kr
+AL
+cb
+in
+kr
+kr
+kr
+Dm
+jx
+cl
+jx
+jx
+cl
+jx
+jx
+jx
+cl
+jx
+jx
+jx
+cl
+jx
+jx
+jx
+cl
+jx
+jx
+jx
+cl
+jx
+jx
+jx
+jx
+jx
+lB
+kl
+Ik
+yn
+yn
+yn
+sx
+gu
+Ea
+Nl
+jx
+cl
+kl
+"}
+(41,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+Rt
+Xr
+jI
+Fl
+Fl
+ez
+Ej
+Fl
+Fl
+sM
+ot
+tC
+tC
+Lf
+oK
+kS
+tC
+tC
+UQ
+zD
+tC
+tC
+wv
+cb
+ju
+UQ
+UQ
+UQ
+UQ
+lo
+lo
+Gc
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+Mr
+jS
+Dm
+lB
+kl
+em
+yn
+yn
+yn
+sx
+fu
+kl
+Fc
+jx
+lo
+kl
+"}
+(42,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+Rt
+wH
+wf
+ET
+Tm
+cY
+kb
+Fl
+Gl
+Gl
+tP
+YM
+pI
+Gl
+Gl
+Gl
+Lm
+Gl
+Gl
+xQ
+zt
+zt
+hD
+kl
+Gl
+vs
+Gl
+Gl
+kl
+FT
+lo
+Xy
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+PY
+KE
+lB
+kl
+bR
+lN
+lN
+lN
+lN
+oo
+kl
+Uf
+lB
+lo
+kl
+"}
+(43,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+Rt
+MF
+cM
+wc
+wq
+wq
+AC
+Fl
+UL
+ML
+De
+De
+ks
+Gl
+Hp
+oG
+UQ
+qP
+Gl
+UG
+fr
+UG
+UG
+kl
+TX
+Sk
+kk
+xX
+Gl
+lo
+lo
+Xy
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+PY
+KE
+ku
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+KE
+lB
+lo
+kl
+"}
+(44,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+Rt
+jx
+wh
+cG
+Fl
+Fl
+Fl
+Fl
+UL
+Va
+De
+De
+lo
+Gl
+oj
+tC
+tC
+IJ
+kl
+kl
+kl
+fK
+kl
+kl
+Kg
+Sk
+Oc
+Pc
+UL
+lo
+lo
+Xy
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+PY
+KE
+Kj
+gO
+ho
+Zr
+KK
+Gi
+pP
+Zr
+Zr
+zb
+lB
+lo
+kl
+"}
+(45,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+Rt
+UY
+QT
+jZ
+Fl
+Fl
+Fl
+Fl
+UL
+Va
+De
+De
+Lo
+Gl
+qU
+qA
+wl
+WF
+kl
+qI
+uq
+ht
+Bh
+kl
+fg
+Sk
+Sk
+Sk
+UL
+lo
+lo
+Xy
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+PY
+dS
+iJ
+Ea
+aD
+Co
+iJ
+Gi
+pP
+Co
+Co
+Co
+IH
+lo
+kl
+"}
+(46,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+Rt
+EM
+QT
+ZA
+Wg
+Fl
+Fl
+Fl
+Nt
+lo
+De
+De
+KI
+Gl
+FE
+Ll
+Ll
+MD
+kl
+cg
+Du
+PR
+ni
+kl
+do
+Sk
+Sk
+Sk
+aR
+lo
+lo
+Xy
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+PY
+lo
+Xy
+Ea
+lA
+lo
+Xy
+Gi
+pP
+lo
+lo
+lo
+lo
+lo
+kl
+"}
+(47,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+rs
+rs
+wT
+Zy
+Fl
+Fl
+Fl
+Fl
+Gl
+EX
+De
+gd
+zg
+Gl
+DB
+tC
+tC
+Lx
+kl
+cg
+Nh
+PR
+ni
+kl
+Gl
+Gl
+Gl
+Gl
+Gl
+lo
+lo
+Xy
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+PY
+lo
+Xy
+Ea
+lA
+EC
+Xy
+Gi
+pP
+yZ
+zO
+lo
+fd
+lo
+kl
+"}
+(48,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+rs
+rs
+fw
+jj
+Fl
+Fl
+Fl
+Gl
+yG
+De
+gd
+lo
+Gl
+TQ
+Ll
+Ll
+Rq
+kl
+cg
+Du
+PR
+ni
+kl
+kl
+kl
+sL
+Ga
+Gl
+lo
+lo
+Xy
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+PY
+lo
+Cq
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+lo
+kl
+"}
+(49,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+rs
+rs
+Cd
+gY
+Ni
+QH
+Gl
+tP
+tz
+Qy
+Pp
+Gl
+pX
+Ll
+Ll
+Wm
+kl
+Ow
+IP
+IP
+Pb
+Ib
+kl
+kl
+MU
+kd
+gz
+lo
+lo
+Xy
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+PY
+lo
+lo
+ma
+Fj
+Fj
+Fj
+QA
+xp
+JD
+Gl
+wX
+wX
+wX
+kl
+"}
+(50,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+rs
+rs
+lo
+lo
+lo
+Gl
+Gl
+Gl
+Gl
+Gl
+Gl
+AQ
+UQ
+kl
+kl
+kl
+uV
+Bk
+uV
+Bk
+mA
+uV
+kl
+kl
+Qs
+Gl
+Gl
+lo
+Xy
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+PY
+lo
+lo
+Gl
+WJ
+Fj
+uz
+Gl
+Gl
+Gl
+kl
+kl
+kl
+kl
+kl
+"}
+(51,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+Kt
+rs
+lo
+lo
+BS
+Fz
+Fz
+hT
+hJ
+UC
+pR
+kl
+kl
+uW
+uV
+uV
+Bk
+uV
+Bk
+bx
+uV
+uV
+kl
+kl
+Gl
+Gl
+lo
+Xy
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+PY
+lo
+lo
+Gl
+wD
+Fj
+Fj
+XK
+Fj
+Fj
+kl
+tc
+tc
+tc
+tc
+"}
+(52,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+rs
+rs
+lo
+Gl
+Fz
+Fz
+Fz
+Sl
+Gl
+kl
+kl
+Ss
+Ss
+Ss
+Ss
+SN
+Ss
+SN
+Ss
+Ss
+Ss
+Ss
+kl
+kl
+Gl
+lo
+Xy
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+og
+PY
+lo
+lo
+Gl
+Os
+nc
+FZ
+Gl
+Yl
+bS
+kl
+tc
+tc
+tc
+tc
+"}
+(53,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+rs
+kl
+Gl
+ny
+gL
+eD
+lz
+Gl
+kl
+tc
+tc
+tc
+tc
+tc
+Op
+tc
+Op
+tc
+tc
+tc
+tc
+tc
+kl
+Gl
+lo
+Mh
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+IM
+iY
+lo
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+tc
+tc
+tc
+tc
+"}
+(54,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+tc
+tc
+tc
+tc
+tc
+tc
+Op
+tc
+Op
+tc
+tc
+tc
+tc
+tc
+kl
+Gl
+lo
+lo
+lo
+lo
+lG
+lo
+lo
+lo
+lo
+lo
+lG
+lo
+lo
+lo
+lo
+lo
+lo
+lG
+lo
+lo
+lo
+lo
+lo
+lo
+lo
+kl
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(55,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+va
+tc
+va
+tc
+tc
+tc
+tc
+tc
+kl
+Gl
+lG
+lG
+lo
+lo
+lo
+lo
+lG
+lG
+lo
+lo
+lo
+lo
+lo
+lG
+lG
+lo
+lo
+lo
+lo
+lo
+lo
+lG
+YV
+lo
+lo
+kl
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(56,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+ie
+tc
+tc
+tc
+tc
+tc
+ZV
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+kl
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(57,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(58,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(59,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(60,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(61,1,1) = {"
+tc
+tc
+tc
+tc
+qI
+uq
+uq
+RG
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(62,1,1) = {"
+tc
+tc
+tc
+tc
+cg
+Du
+vM
+oT
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(63,1,1) = {"
+tc
+tc
+tc
+tc
+Ys
+Nh
+PR
+tV
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(64,1,1) = {"
+tc
+tc
+tc
+tc
+cg
+Du
+Sz
+Qt
+tc
+tc
+tc
+tc
+tc
+tc
+tP
+tP
+tP
+tP
+cu
+tP
+Gl
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(65,1,1) = {"
+tc
+tc
+tc
+tc
+Ow
+IP
+IP
+Pb
+tc
+tc
+tc
+tc
+tc
+tc
+tP
+YQ
+IA
+Fj
+Fj
+La
+Gl
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(66,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tP
+Yd
+Fj
+Fj
+Fj
+Fj
+Gl
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(67,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tP
+lY
+Fj
+Fj
+Fj
+Fj
+Gl
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(68,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tP
+tP
+cu
+tP
+tP
+cu
+Gl
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(69,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tP
+lv
+fJ
+tP
+cy
+Fj
+Gl
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(70,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tP
+XB
+ij
+tP
+mO
+VJ
+Gl
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(71,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tP
+tP
+tP
+tP
+tP
+tP
+Gl
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(72,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(73,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(74,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
+(75,1,1) = {"
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+tc
+"}
