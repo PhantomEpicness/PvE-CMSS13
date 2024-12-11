@@ -687,7 +687,7 @@
 	if(.)
 		click_empty(user)
 	return FALSE
-
+// Vindicator, All damage, no pen. Considered a "higher tier" colony weapon. Replaces the stinky MP5s and MP24s used by marshals and freelancers, VAIPO. rare CLF SL+ spawn. Rare corp goon spawn. Corax flare launcher works on this too.
 /obj/item/weapon/gun/smg/vindicator
 	name = "\improper R27 Vindicator SMG"
 	desc = "A purpose built submachine gun for fighting in the confines of space faring vessels. It accomplishes this by primarily firing .45 caliber light explosive rounds for causing as much devestation as possible with minimal risk of collateral damage. As a result, these rounds are very poor at penetrating armor, though it can chamber any other .45 ACP rounds aswell."
@@ -741,7 +741,7 @@
 	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_1
 	recoil_unwielded = RECOIL_AMOUNT_TIER_5
 
-
+// Bullet hose SMG locked to full auto that's nearly impossible to control out of short bursts. Almost shotgun level falloff/accuracy
 /obj/item/weapon/gun/smg/thrasher
 	name = "\improper R29 Thrasher SMG"
 	desc = "The smallest and most vicious SMG in the R20 series of weapons has earned it's reputation as a true bullet hose, emptying a full magazine of forty 9mm rounds in a couple seconds. When tamed by a professional, it is undeniably devestating."
@@ -795,11 +795,12 @@
 	recoil_unwielded = RECOIL_AMOUNT_TIER_5
 
 
-// Funny RNG properties
+// More lore accurate 3D printed gun for insurgency type factions. Totally not based on the real life counterpart used for the exact same thing. RNG type should be used, but parent is kept as a back up. Should be extremely common among CLF.\
+// rimworld quality scales lol
 
 /obj/item/weapon/gun/smg/fgc9
-	name = "\improper Capri Submachinegun"
-	desc = "One of the only successful and widley avaliable 3D printed firearms, the Capri SMG has been the bane of security forces for decades now. Due to inperfections in printing and the fact that the blueprint files used to print most of these are likely low quality copies-of-copies, the quality for these are highly unpredictable and it suffers from accuracy problems. Some variants allieviate this by utilizing drum magazines."
+	name = "\improper Capri Submachinegun (good)"
+	desc = "One of the only successful and widley avaliable 3D printed firearms, the Capri SMG has been the bane of security forces for decades now. Due to inperfections in printing and the fact that the blueprint files used to print most of these copies-of-copies passed down through decades, the quality for these are highly unpredictable. Accuracy and reliability problems plauge these and it is not uncommon to hear of a story of some poor CLF fighter losing fingers from trying to fire them. Fortunately, the weird symbol on the bottom of the pistol grip is apparently the signature of a well-known CLF armorer - this is one of the good ones."
 	desc_lore = "The only thing known about these submachineguns is the designer, whom it was named after and the general shape and design. As it has been over 70 years since the original first popped up on the black market from stolen blueprints, each weapon is differant due to various modifications, recovery from bad floppy disks, and conversion between differant 3-D printer and autolathe models. Besides the frame, for most variants, basic interoperability between variants does not exist, meaning swapping parts or even magazines between them wont work. A Capri SMG's magazines used by pirates in UPP space won't be compatible with a Capri SMG made in a CLF warehouse in UA space and one in made for a Detriot gang on Earth certainly wouldn't work with attachments made in the Luna Colony. Reportedly, even CLF units on differant planets run into the same issues. This has attracted the curiousity of a niche gun enthusiast community, looking to obtain as many differant variants as possible due to pretty much every single one of them being unique and has it's own interesting history that is still being traced back to the original. In 2165, the newly established Advanced Automated Printing Consortium, a cartel of autolathe and 3-D printer producing megacorporations, teamed up to design a complex detection system within the their autolathe units to automatically detect and reject any parts that resemble any firearm parts to avoid UA and TWE regulations after increased scrutiny into weapons like the Capri SMG. ( The UPP have already barred personal use of Autholathes long before these were a problem). Naturally, anyone rich or influential enough has the ability to purchase a license to be \'authorized\' to be able to remove protections and print such items. "
 	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony.dmi'
 	icon_state = "fp9000"
@@ -808,7 +809,21 @@
 	fire_sound = 'sound/weapons/gun_p90.ogg'
 	current_mag = /obj/item/ammo_magazine/smg/fp9000
 
-// Rifle+ damage with mid fire rate. OK range
+// Now with accurate RNG stats
+
+/obj/item/weapon/gun/smg/fgc9/rng
+	name = "\improper Capri Submachinegun"
+	desc = "One of the only successful and widley avaliable 3D printed firearms, the Capri SMG has been the bane of security forces for decades now. Due to inperfections in printing and the fact that the blueprint files used to print most of these copies-of-copies passed down through decades, the quality for these are highly unpredictable. Accuracy and reliability problems plauge these and it is not uncommon to hear of a story of some poor CLF fighter losing fingers from trying to fire them. \n Looking closer, there's a slight bend to the barrel, which makes the addition of a drum magazine to this weapon make more sense."
+	desc_lore = "The only thing known about these submachineguns is the designer, whom it was named after and the general shape and design. As it has been over 70 years since the original first popped up on the black market from stolen blueprints, each weapon is differant due to various modifications, recovery from bad floppy disks, and conversion between differant 3-D printer and autolathe models. Besides the frame, for most variants, basic interoperability between variants does not exist, meaning swapping parts or even magazines between them wont work. A Capri SMG's magazines used by pirates in UPP space won't be compatible with a Capri SMG made in a CLF warehouse in UA space and one in made for a Detriot gang on Earth certainly wouldn't work with attachments made in the Luna Colony. Reportedly, even CLF units on differant planets run into the same issues. This has attracted the curiousity of a niche gun enthusiast community, looking to obtain as many differant variants as possible due to pretty much every single one of them being unique and has it's own interesting history that is still being traced back to the original. In 2165, the newly established Advanced Automated Printing Consortium, a cartel of autolathe and 3-D printer producing megacorporations, teamed up to design a complex detection system within the their autolathe units to automatically detect and reject any parts that resemble any firearm parts to avoid UA and TWE regulations after increased scrutiny into weapons like the Capri SMG. ( The UPP have already barred personal use of Autholathes long before these were a problem). Naturally, anyone rich or influential enough has the ability to purchase a license to be \'authorized\' to be able to remove protections and print such items. "
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/colony.dmi'
+	icon_state = "fp9000"
+	item_state = "fp9000"
+
+	fire_sound = 'sound/weapons/gun_p90.ogg'
+	current_mag = /obj/item/ammo_magazine/smg/fp9000
+
+
+// SMG that fires full rifle calibers at SMG falloff, range and accuracy. Standard issue for UPP police and uncommon for UPP reservists,freelancers and CLF. Any armed UPP civvies should have these (with permission from the local party headquarters of course!)
 
 /obj/item/weapon/gun/smg/heavy_smg
 	name = "\improper Type 26 Minsk Submachinegun"

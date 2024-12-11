@@ -1948,11 +1948,120 @@
 	update_attachable(f90_shotgun_barrel.slot)
 
 
-// MK1 with lower mag size and faster wield
+// MK1 with lower mag size and slightly faster wield and worse falloff. Not much better in terms of attachments and can't mount the UGL/masterkey. Can mount a proprietary flare launcher.
+// Used by CMB tactical teams and should have a couple in armories. Standard issue for high tier mercs like VAIPO and freelancer TL. CLF commander only preset.
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>> This & it's variants should replace all instances of the M16 <<<<<<<<<<<<<<<<<<<<<<<
+// 10% chance of spawning with a 6 round flare launcher. Flare version considered very powerful.
 /obj/item/weapon/gun/rifle/corax
 	name = "\improper R21 Corax Carabine"
-	desc = "An ergonomic pulse carabine that was originally meant to compete with the M41A for use by the USCM before being rejected due to underperformance in torture testing. Chambered in 10x24mm Caseless, with ammo compatibility with the M41."
-	desc_lore ="The Corax would have been scrapped entirely if it weren't for several large mercenary groups and CMB precincts buying it. While there has only been a few limited production runs for the Civilian market, the Corax can also be found occasional in black markets."
+	desc = "An ergonomic pulse carabine that was originally meant to compete with the M41A for use by the USCM, and was the number one choice based on price to performance, before being rejected due to allegedly failing torture tests. Chambered in 10x24mm Caseless, with ammo compatibility with the M41."
+	desc_lore ="The Corax would have been scrapped entirely if it weren't for several large mercenary groups and several CMB sections buying it. While there has only been a few limited production runs for the Civilian market, the Corax can also be found occasional in black markets. \n \n Fans of the Corax suspect foul play behind it's rejection in USCM trials, especially as it comes from a smaller arms manufacturer than the giants that are W-Y and ARMAT. The USCM has denied these claims, citing them as \"unfounded\" and \"disrespectufl\"."
+	icon_state = "abr40_tac"
+	item_state = "abr40_tac"
+	current_mag = /obj/item/ammo_magazine/rifle/l42a/ap
+	attachable_allowed = list(
+		//Barrel,
+		/obj/item/attachable/suppressor,
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/bayonet/upp,
+		/obj/item/attachable/bayonet/co2,
+		//Rail,
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/reflex,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/magnetic_harness,
+		/obj/item/attachable/scope,
+		/obj/item/attachable/scope/mini,
+		/obj/item/attachable/scope/mini/hunting,
+		//Under,
+		/obj/item/attachable/flashlight/grip,
+		//Stock,
+		/obj/item/attachable/stock/carbine,
+		/obj/item/attachable/stock/carbine/wood,
+		/obj/item/attachable/stock/carbine/wood/tactical,
+	)
+
+	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	wield_delay = WIELD_DELAY_VERY_FAST
+	aim_slowdown = SLOWDOWN_ADS_QUICK
+	starting_attachment_types = list(/obj/item/attachable/stock/carbine)
+	map_specific_decoration = TRUE
+
+/obj/item/weapon/gun/smg/rifle/corax/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 19,"rail_x" = 12, "rail_y" = 20, "under_x" = 18, "under_y" = 15, "stock_x" = 22, "stock_y" = 10)
+
+/obj/item/weapon/gun/smg/rifle/corax/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_11)
+	set_burst_amount(BURST_AMOUNT_TIER_4)
+	set_burst_delay(FIRE_DELAY_TIER_11)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_3
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
+	scatter = SCATTER_AMOUNT_TIER_9
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_9
+	scatter_unwielded = SCATTER_AMOUNT_TIER_2
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2
+	recoil_unwielded = RECOIL_AMOUNT_TIER_2
+
+
+// Corax with an M320-esque grenade launcher integrated into it. Holds 4 nades and uses overhand throwing/IFF. Worse wield delay and walkspeed.
+/obj/item/weapon/gun/rifle/corax/gl
+	name = "\improper R21 Corax Carabine"
+	desc = "An ergonomic pulse carabine that was originally meant to compete with the M41A for use by the USCM, and was the number one choice based on price to performance, before being rejected due to allegedly failing torture tests. Chambered in 10x24mm Caseless, with ammo compatibility with the M41."
+	desc_lore ="The Corax would have been scrapped entirely if it weren't for several large mercenary groups and several CMB sections buying it. While there has only been a few limited production runs for the Civilian market, the Corax can also be found occasional in black markets. \n \n Fans of the Corax suspect foul play behind it's rejection in USCM trials, especially as it comes from a smaller arms manufacturer than the giants that are W-Y and ARMAT. The USCM has denied these claims, citing them as \"unfounded\" and \"disrespectufl\"."
+	icon_state = "abr40_tac"
+	item_state = "abr40_tac"
+	current_mag = /obj/item/ammo_magazine/rifle/l42a/ap
+	attachable_allowed = list(
+		//Barrel,
+		/obj/item/attachable/suppressor,
+		/obj/item/attachable/bayonet,
+		/obj/item/attachable/bayonet/upp,
+		/obj/item/attachable/bayonet/co2,
+		//Rail,
+		/obj/item/attachable/reddot,
+		/obj/item/attachable/reflex,
+		/obj/item/attachable/flashlight,
+		/obj/item/attachable/magnetic_harness,
+		/obj/item/attachable/scope,
+		/obj/item/attachable/scope/mini,
+		/obj/item/attachable/scope/mini/hunting,
+		//Under,
+		/obj/item/attachable/flashlight/grip,
+		//Stock,
+		/obj/item/attachable/stock/carbine,
+		/obj/item/attachable/stock/carbine/wood,
+		/obj/item/attachable/stock/carbine/wood/tactical,
+	)
+
+	flags_gun_features = GUN_AUTO_EJECTOR|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	wield_delay = WIELD_DELAY_VERY_FAST
+	aim_slowdown = SLOWDOWN_ADS_QUICK
+	starting_attachment_types = list(/obj/item/attachable/stock/carbine)
+	map_specific_decoration = TRUE
+
+/obj/item/weapon/gun/smg/rifle/corax/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 19,"rail_x" = 12, "rail_y" = 20, "under_x" = 18, "under_y" = 15, "stock_x" = 22, "stock_y" = 10)
+
+/obj/item/weapon/gun/smg/rifle/corax/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_11)
+	set_burst_amount(BURST_AMOUNT_TIER_4)
+	set_burst_delay(FIRE_DELAY_TIER_11)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_3
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
+	scatter = SCATTER_AMOUNT_TIER_9
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_9
+	scatter_unwielded = SCATTER_AMOUNT_TIER_2
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2
+	recoil_unwielded = RECOIL_AMOUNT_TIER_2
+
+// "Civilian" Corax. Worse falloff and fire rate. Same wield delay/slowdown as the GL variant. Uncommon corp goon and merc spawn. Rare CLF spawn. Has a folding stock and nil customizability. No carryhandle :(
+// Very rare CLF spawn
+/obj/item/weapon/gun/rifle/corax/civissue
+	name = "\improper R21-B Corax Carabine"
+	desc = "An ergonomic pulse carabine that was originally meant to compete with the M41A for use by the USCM, and was the number one choice based on price to performance, before being rejected due to allegedly failing torture tests. Chambered in 10x24mm Caseless, with ammo compatibility with the M41. Seems to be the \'B\' civilian aftermarket variant, which uses much cheaper materials, a crappy stock, and is generally worse overall than standard military & police version"
+	desc_lore ="The Corax would have been scrapped entirely if it weren't for several large mercenary groups and several CMB sections buying it. While there has only been a few limited production runs for the Civilian market, the Corax can also be found occasional in black markets. \n \n Fans of the Corax suspect foul play behind it's rejection in USCM trials, especially as it comes from a smaller arms manufacturer than the giants that are W-Y and ARMAT. The USCM has denied these claims, citing them as \"unfounded\" and \"disrespectufl\"."
 	icon_state = "abr40_tac"
 	item_state = "abr40_tac"
 	current_mag = /obj/item/ammo_magazine/rifle/l42a/ap
