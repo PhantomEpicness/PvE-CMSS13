@@ -729,6 +729,8 @@
 	name = "plated grow box"
 	desc = "The planter box is empty."
 
+
+
 /obj/structure/prop/ice_colony/flamingo
 	density = FALSE
 	name = "lawn flamingo"
@@ -884,6 +886,36 @@
 	name = "ice slab tray"
 	icon_state = "ice_tray"
 	desc = "It is a tray filled with slabs of dark ice."
+
+/* assss
+* Utility boxes.
+* Fixable to achieve GM objectives. Not actually connected to anything (eww powercode)
+* Picks a random damage level when spawned. This only determines the amount of effort/stages needed to fully fix it.
+* RNG door doesn't lock because flavor (if you ever dealt with these IRL, you know)
+*
+* Important:
+* People(VIP) with the skills can tell marines which ones are actually important when rows of these are placed.
+* If that guy is dead, better defend the poor sob repairing all of them.
+*/
+
+/obj/structure/prop/invuln/dense/electricbox
+	name = "Utility cabinet"
+	desc = "Some sort of utility cabinet supplying power to a near by system"
+	icon = 'icons/obj/structures/machinery/breakerbox.dmi'
+	icon_state = "elecbox"
+	var/important = FALSE
+
+/obj/structure/prop/invuln/dense/electricbox/Initialize()
+	. = ..()
+
+/obj/structure/prop/invuln/dense/electricbox/get_examine_text(mob/user)
+	. = ..()
+	if(get_dist(src,user) < 1)
+		if(skillcheck(user, SKILL_ENGINEER, SKILL_ENGINEER_MASTER))
+			. += "Upon closer inspection, it seems to power some unimportant system."
+		else
+			. += "You have no idea what this box really does!"
+
 
 /obj/structure/prop/invuln/ice_prefab
 	name = "prefabricated structure"

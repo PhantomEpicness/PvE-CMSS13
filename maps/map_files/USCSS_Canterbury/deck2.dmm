@@ -98,19 +98,36 @@
 	},
 /area/space)
 "aK" = (
-/obj/structure/machinery/cm_vending/sorted/tech/comp_storage{
-	pixel_x = -4
+/obj/structure/window{
+	dir = 8
 	},
-/turf/open/floor/strata,
+/obj/structure/surface/rack,
+/obj/item/clothing/head/welding,
+/obj/item/tool/weldpack/minitank{
+	pixel_y = 11;
+	pixel_x = -2
+	},
+/obj/item/tool/weldpack/minitank{
+	pixel_x = 4;
+	pixel_y = 12
+	},
+/turf/open/floor/strata{
+	icon_state = "yellow1"
+	},
+/area/space)
+"aM" = (
+/obj/structure/machinery/mecha_part_fabricator{
+	color = "#A0A0A0"
+	},
+/turf/open/space/basic,
 /area/space)
 "aS" = (
 /turf/open/floor/almayer/empty,
 /area/space)
 "aZ" = (
 /obj/structure/closet/emcloset,
-/turf/open/floor/strata{
-	color = "#bbbee8";
-	icon_state = "multi_tiles"
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
 	},
 /area/space)
 "ba" = (
@@ -202,15 +219,18 @@
 	},
 /area/space)
 "bB" = (
-/obj/effect/spawner/random/toolbox,
-/turf/open/floor/strata{
-	dir = 4;
-	icon_state = "floor3"
+/obj/structure/closet/secure_closet/engineering_welding{
+	density = 0;
+	pixel_y = 16
 	},
+/turf/open/floor/strata,
 /area/space)
-"bC" = (
-/obj/structure/sign/poster/safety{
-	pixel_y = 33
+"bD" = (
+/obj/structure/prop/invuln/dense/electricbox{
+	layer = 3;
+	dir = 4;
+	pixel_y = 18;
+	density = 0
 	},
 /turf/open/floor/strata{
 	dir = 4;
@@ -242,6 +262,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/space)
+"bW" = (
+/obj/structure/surface/table/reinforced/black,
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
+	},
+/area/space)
 "bX" = (
 /obj/item/tool/warning_cone{
 	pixel_x = 4
@@ -266,8 +292,11 @@
 	},
 /area/space)
 "cp" = (
-/obj/structure/inflatable,
-/turf/open/floor/plating,
+/obj/structure/window/framed/strata/reinforced,
+/turf/open/floor/strata{
+	dir = 4;
+	icon_state = "floor3"
+	},
 /area/space)
 "cv" = (
 /obj/structure/largecrate/random/barrel/blue{
@@ -321,13 +350,6 @@
 	icon_state = "floor3"
 	},
 /area/space)
-"cV" = (
-/obj/structure/machinery/power/port_gen/pacman/mrs,
-/turf/open/floor/prison{
-	dir = 5;
-	icon_state = "darkyellow2"
-	},
-/area/space)
 "cZ" = (
 /obj/structure/closet/crate/science,
 /obj/structure/closet/crate/plastic{
@@ -338,10 +360,11 @@
 	},
 /area/space)
 "db" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/fueltank,
 /obj/structure/reagent_dispensers/fueltank{
 	pixel_y = 14
 	},
-/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/strata{
 	dir = 4;
 	icon_state = "floor3"
@@ -358,6 +381,17 @@
 	desc = "A thick plasteel wall that seperates the ship from space.";
 	name = "hull wall"
 	},
+/area/space)
+"df" = (
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = -7
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = 12
+	},
+/turf/open/floor/plating/plating_catwalk,
 /area/space)
 "di" = (
 /obj/structure/cargo_container/ferret/left,
@@ -391,7 +425,40 @@
 	},
 /area/space)
 "dx" = (
-/turf/open/floor/engine,
+/obj/structure/platform{
+	climb_delay = 0;
+	density = 0;
+	layer = 2.15
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 8;
+	pixel_y = 17;
+	color = "586c81";
+	layer = 2.141;
+	name = "pipe segment"
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 8;
+	pixel_y = -5;
+	color = "81586c";
+	layer = 2.141;
+	name = "pipe segment"
+	},
+/obj/structure/prop/invuln/dense/electricbox{
+	layer = 2.15;
+	dir = 8;
+	icon = 'icons/obj/pipes/disposal.dmi';
+	icon_state = "pipe-s";
+	name = "Large Pipe";
+	desc = "A large pipe"
+	},
+/obj/structure/platform{
+	climb_delay = 0;
+	density = 0;
+	dir = 8;
+	layer = 2.151
+	},
+/turf/open/floor/tdome,
 /area/space)
 "dF" = (
 /obj/structure/closet/crate/science,
@@ -427,8 +494,19 @@
 /turf/open/floor/plating,
 /area/space)
 "dT" = (
-/obj/item/tool/extinguisher/pyro/atmos_tank,
-/turf/open/floor/plating,
+/obj/structure/machinery/portable_atmospherics/powered/scrubber/huge/chan{
+	desc = "A large air scrubber, which filters the air for recirculation. A crucial part of the ship's life support system.";
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/obj/structure/machinery/portable_atmospherics/powered/scrubber/huge/chan{
+	desc = "A large air scrubber, which filters the air for recirculation. A crucial part of the ship's life support system.";
+	pixel_x = 19;
+	pixel_y = 4
+	},
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
+	},
 /area/space)
 "dX" = (
 /obj/structure/closet/crate/green{
@@ -461,6 +539,28 @@
 /area/space)
 "eC" = (
 /turf/closed/wall/hangar,
+/area/space)
+"eD" = (
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = -7
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = 12
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 5;
+	pixel_x = 1
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 37;
+	pixel_x = -10
+	},
+/turf/open/floor/strata{
+	dir = 6;
+	icon_state = "multi_tiles"
+	},
 /area/space)
 "eJ" = (
 /obj/structure/cargo_container/arious/rightmid,
@@ -542,9 +642,6 @@
 	},
 /area/space)
 "fg" = (
-/obj/structure/machinery/power/terminal{
-	dir = 8
-	},
 /obj/structure/sign/safety/maint{
 	pixel_x = 7;
 	pixel_y = 31
@@ -559,10 +656,20 @@
 /turf/open/floor/plating,
 /area/space)
 "fj" = (
-/obj/effect/decal/cleanable/blood/oil,
-/turf/open/floor/strata{
-	dir = 4;
-	icon_state = "floor3"
+/obj/structure/window/framed/strata/reinforced,
+/obj/structure/window/framed/strata/reinforced,
+/turf/open/space/basic,
+/area/space)
+"fn" = (
+/obj/structure/machinery/portable_atmospherics/canister/air{
+	pixel_y = -4
+	},
+/obj/structure/machinery/portable_atmospherics/canister/air{
+	pixel_y = 17;
+	layer = 4.01
+	},
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
 	},
 /area/space)
 "fw" = (
@@ -591,6 +698,12 @@
 	},
 /turf/open/floor/strata{
 	icon_state = "floor3"
+	},
+/area/space)
+"fI" = (
+/turf/open/floor/strata{
+	icon_state = "orange_icorner";
+	dir = 4
 	},
 /area/space)
 "fK" = (
@@ -675,11 +788,32 @@
 	},
 /area/space)
 "gC" = (
-/obj/effect/spawner/random/tool,
-/turf/open/floor/strata{
-	dir = 4;
-	icon_state = "floor3"
+/obj/structure/platform{
+	climb_delay = 0;
+	density = 0;
+	dir = 1;
+	layer = 2.15
 	},
+/obj/structure/platform{
+	climb_delay = 0;
+	density = 0;
+	dir = 8;
+	layer = 2.151
+	},
+/obj/structure/prop/invuln/dense/electricbox{
+	layer = 2.15;
+	dir = 8;
+	icon = 'icons/obj/pipes/disposal.dmi';
+	icon_state = "pipe-s";
+	name = "Large Pipe";
+	desc = "A large pipe"
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = 6;
+	pixel_y = -9
+	},
+/turf/open/floor/tdome,
 /area/space)
 "gE" = (
 /obj/structure/barricade/handrail/wire{
@@ -932,6 +1066,21 @@
 	icon_state = "warnplate"
 	},
 /area/space)
+"iX" = (
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = -1
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 5;
+	pixel_x = -10
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 37;
+	pixel_x = -10
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
 "jh" = (
 /obj/structure/machinery/mech_bay_recharge_port,
 /turf/open/floor/plating,
@@ -1006,10 +1155,8 @@
 	color = "#6b675e";
 	layer = 2.79
 	},
-/turf/open/floor/strata{
-	color = "#bbbee8";
-	dir = 8;
-	icon_state = "multi_tiles"
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
 	},
 /area/space)
 "jW" = (
@@ -1088,6 +1235,10 @@
 	icon_state = "floor3"
 	},
 /area/space)
+"kF" = (
+/obj/structure/surface/table/reinforced/black,
+/turf/open/floor/strata,
+/area/space)
 "kI" = (
 /obj/structure/reagent_dispensers/beerkeg/alt_dark{
 	pixel_y = 14
@@ -1139,9 +1290,8 @@
 	pixel_x = -5;
 	pixel_y = 15
 	},
-/turf/open/floor/strata{
-	color = "#bbbee8";
-	icon_state = "multi_tiles"
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
 	},
 /area/space)
 "lg" = (
@@ -1206,11 +1356,9 @@
 	},
 /area/space)
 "lD" = (
-/obj/structure/surface/table/reinforced/black,
-/obj/effect/spawner/random/tool,
-/turf/open/floor/prison{
-	dir = 6;
-	icon_state = "darkyellow2"
+/turf/open/floor/strata{
+	dir = 4;
+	icon_state = "cyan1"
 	},
 /area/space)
 "lG" = (
@@ -1245,7 +1393,7 @@
 	},
 /area/space)
 "lO" = (
-/obj/structure/machinery/power/terminal{
+/obj/structure/platform{
 	dir = 4
 	},
 /turf/open/floor/strata,
@@ -1286,20 +1434,17 @@
 "ma" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/fueltank{
+	pixel_y = 14
+	},
 /turf/open/floor/strata{
 	dir = 4;
 	icon_state = "floor3"
 	},
 /area/space)
 "md" = (
-/obj/structure/prop/turbine{
-	desc = "A massive engine for a fan buried below. Seems to be for pushing air through the filtration system.";
-	name = "Fan motor"
-	},
-/obj/structure/prop/turbine_extras/border,
-/turf/open/floor/strata{
-	dir = 4;
-	icon_state = "floor3"
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
 	},
 /area/space)
 "mo" = (
@@ -1525,8 +1670,24 @@
 	},
 /area/space)
 "op" = (
-/obj/effect/decal/cleanable/greenglow,
-/turf/open/floor/plating,
+/turf/open/floor/strata{
+	dir = 1;
+	icon_state = "cyan3"
+	},
+/area/space)
+"ox" = (
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = -7
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = 12
+	},
+/turf/open/floor/strata{
+	dir = 6;
+	icon_state = "multi_tiles"
+	},
 /area/space)
 "oA" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1567,7 +1728,10 @@
 	},
 /area/space)
 "oK" = (
-/obj/structure/foamed_metal/iron,
+/obj/structure/stairs{
+	dir = 4;
+	icon_state = "ramptop"
+	},
 /turf/open/floor/plating,
 /area/space)
 "oS" = (
@@ -1614,6 +1778,23 @@
 	icon_state = "multi_tiles"
 	},
 /area/space)
+"pw" = (
+/obj/structure/window{
+	dir = 4
+	},
+/obj/structure/surface/rack,
+/obj/item/tool/weldingtool/largetank{
+	pixel_x = 8
+	},
+/obj/item/clothing/head/welding,
+/obj/item/tool/weldpack/minitank{
+	pixel_x = -5;
+	pixel_y = 14
+	},
+/turf/open/floor/strata{
+	icon_state = "yellow1"
+	},
+/area/space)
 "py" = (
 /obj/structure/sign/safety/stairs{
 	pixel_x = -17;
@@ -1632,13 +1813,40 @@
 	icon_state = "warnplate"
 	},
 /area/space)
+"pB" = (
+/obj/structure/machinery/power/smes{
+	pixel_y = 4;
+	pixel_x = 1
+	},
+/obj/structure/machinery/power/smes{
+	pixel_y = 21;
+	pixel_x = 1
+	},
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
+	},
+/area/space)
+"pF" = (
+/turf/open/floor/strata{
+	dir = 4;
+	icon_state = "cyan2"
+	},
+/area/space)
 "pI" = (
 /obj/structure/window{
-	dir = 4
+	dir = 8
 	},
-/obj/structure/closet/secure_closet/engineering_personal,
+/obj/structure/surface/rack,
+/obj/item/tool/weldingtool/largetank{
+	pixel_x = 8
+	},
+/obj/item/clothing/head/welding,
+/obj/item/tool/weldpack/minitank{
+	pixel_x = -5;
+	pixel_y = 14
+	},
 /turf/open/floor/strata{
-	icon_state = "fake_wood"
+	icon_state = "yellow1"
 	},
 /area/space)
 "pN" = (
@@ -1654,12 +1862,11 @@
 	},
 /area/space)
 "pV" = (
-/obj/structure/platform_decoration/strata/metal{
-	dir = 4
+/obj/structure/stairs{
+	icon_state = "ramptop";
+	dir = 1
 	},
-/turf/open/floor/strata{
-	icon_state = "multi_tiles"
-	},
+/turf/open/floor/plating,
 /area/space)
 "pW" = (
 /obj/structure/largecrate/random/barrel/red{
@@ -1682,17 +1889,10 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/space)
 "ql" = (
-/obj/structure/prop/invuln/dense{
-	name = "Machinery Cabinet";
-	desc = "A big closet containing a variety of electromechanical machinery";
-	icon = 'icons/obj/structures/machinery/breakerbox.dmi';
-	icon_state = "elecbox";
-	dir = 1
+/obj/structure/machinery/door/airlock/multi_tile/almayer/engidoor{
+	name = "\improper Engineering Staging Bay"
 	},
-/turf/open/floor/strata{
-	dir = 4;
-	icon_state = "floor3"
-	},
+/turf/open/floor/plating,
 /area/space)
 "qp" = (
 /obj/effect/decal/warning_stripes{
@@ -1711,6 +1911,19 @@
 	},
 /turf/open/floor/strata{
 	icon_state = "floor2"
+	},
+/area/space)
+"qt" = (
+/obj/structure/prop/invuln/dense/electricbox{
+	layer = 3;
+	dir = 1;
+	pixel_y = 18;
+	density = 0;
+	icon_state = "bbox_on"
+	},
+/turf/open/floor/strata{
+	dir = 4;
+	icon_state = "floor3"
 	},
 /area/space)
 "qy" = (
@@ -1865,21 +2078,8 @@
 	},
 /area/space)
 "sh" = (
-/obj/structure/platform{
-	layer = 2.15;
-	density = 0;
-	climb_delay = 0
-	},
-/obj/structure/platform{
-	layer = 2.15;
-	density = 0;
-	climb_delay = 0;
-	dir = 8
-	},
-/turf/open/floor/strata{
-	dir = 4;
-	icon_state = "floor3"
-	},
+/obj/structure/prop/dam/crane,
+/turf/open/floor/strata,
 /area/space)
 "sm" = (
 /obj/structure/urinal{
@@ -1905,6 +2105,18 @@
 	icon_state = "multi_tiles"
 	},
 /area/space)
+"sH" = (
+/obj/structure/prop/invuln/dense{
+	name = "Machinery Cabinet";
+	desc = "A big closet containing a variety of electromechanical machinery";
+	icon = 'icons/obj/structures/machinery/breakerbox.dmi';
+	icon_state = "elecbox";
+	dir = 1
+	},
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
+	},
+/area/space)
 "sL" = (
 /obj/structure/cargo_container/wy/right,
 /turf/open/floor/strata{
@@ -1923,30 +2135,11 @@
 	icon_state = "multi_tiles"
 	},
 /area/space)
-"sQ" = (
-/obj/structure/machinery/cm_vending/sorted/tech/tool_storage{
-	pixel_x = -7
-	},
-/turf/open/floor/strata,
-/area/space)
 "sT" = (
 /obj/structure/platform_decoration{
 	dir = 4
 	},
 /turf/open/floor/strata,
-/area/space)
-"sU" = (
-/obj/structure/prop/invuln/dense{
-	name = "Machinery Cabinet";
-	desc = "A big closet containing a variety of electromechanical machinery";
-	icon = 'icons/obj/structures/machinery/breakerbox.dmi';
-	icon_state = "elecbox";
-	dir = 8
-	},
-/turf/open/floor/strata{
-	dir = 4;
-	icon_state = "floor3"
-	},
 /area/space)
 "sW" = (
 /obj/structure/reagent_dispensers/watertank{
@@ -1956,14 +2149,55 @@
 	pixel_x = -6;
 	pixel_y = 27
 	},
-/turf/open/floor/strata{
-	color = "#bbbee8";
-	icon_state = "multi_tiles"
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
 	},
 /area/space)
 "tj" = (
-/obj/structure/window/framed/strata/hull,
-/turf/open/floor/engine,
+/obj/structure/platform{
+	climb_delay = 0;
+	density = 0;
+	layer = 2.15
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 8;
+	pixel_y = 17;
+	color = "586c81";
+	layer = 2.141;
+	name = "pipe segment"
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 8;
+	pixel_y = -5;
+	color = "81586c";
+	layer = 2.141;
+	name = "pipe segment"
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	pixel_x = 3;
+	pixel_y = 6;
+	color = "6c8158";
+	layer = 2.152;
+	name = "pipe segment"
+	},
+/obj/structure/prop/invuln/dense/electricbox{
+	layer = 2.15;
+	dir = 8;
+	icon = 'icons/obj/pipes/disposal.dmi';
+	icon_state = "pipe-s";
+	name = "Large Pipe";
+	desc = "A large pipe"
+	},
+/obj/structure/prop/invuln/dense/electricbox{
+	layer = 2.15;
+	dir = 1;
+	icon = 'icons/obj/pipes/disposal.dmi';
+	icon_state = "pipe-s";
+	name = "Large Pipe";
+	desc = "A large pipe";
+	pixel_y = 6
+	},
+/turf/open/floor/tdome,
 /area/space)
 "to" = (
 /obj/structure/cargo_container/kelland/left,
@@ -1997,13 +2231,12 @@
 	},
 /area/space)
 "tD" = (
-/obj/structure/machinery/door/airlock/almayer/engineering{
-	dir = 1;
-	name = "\improper Bridge Auxilary Power"
+/obj/structure/window{
+	dir = 4
 	},
+/obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/strata{
-	dir = 4;
-	icon_state = "floor3"
+	icon_state = "yellow1"
 	},
 /area/space)
 "tE" = (
@@ -2019,11 +2252,9 @@
 	},
 /area/space)
 "tJ" = (
-/obj/structure/surface/rack,
-/obj/effect/spawner/random/tool,
-/turf/open/floor/prison{
-	dir = 4;
-	icon_state = "darkyellow2"
+/turf/open/floor/strata{
+	dir = 8;
+	icon_state = "cyan3"
 	},
 /area/space)
 "tN" = (
@@ -2089,6 +2320,10 @@
 	icon_state = "floor3"
 	},
 /area/space)
+"uh" = (
+/obj/structure/machinery/cm_vending/sorted/tech/comp_storage,
+/turf/open/floor/strata,
+/area/space)
 "uj" = (
 /obj/structure/largecrate/random/barrel/white,
 /turf/open/floor/strata{
@@ -2118,10 +2353,8 @@
 /turf/open/floor/plating,
 /area/space)
 "ux" = (
-/obj/structure/machinery/portable_atmospherics/powered/scrubber/huge/chan{
-	desc = "A large air scrubber, which filters the air for recirculation. A crucial part of the ship's life support system."
-	},
-/turf/open/floor/strata,
+/obj/structure/stairs,
+/turf/open/space/basic,
 /area/space)
 "uA" = (
 /obj/structure/machinery/door/airlock/multi_tile/almayer/almayer{
@@ -2139,9 +2372,8 @@
 /obj/structure/machinery/power/port_gen/pacman/super{
 	pixel_y = 15
 	},
-/turf/open/floor/strata{
-	color = "#bbbee8";
-	icon_state = "multi_tiles"
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
 	},
 /area/space)
 "uH" = (
@@ -2154,8 +2386,21 @@
 	},
 /area/space)
 "uL" = (
-/obj/structure/machinery/power/port_gen/pacman/mrs,
-/turf/open/floor/strata,
+/obj/structure/window{
+	dir = 4
+	},
+/obj/structure/surface/rack,
+/obj/item/tool/weldingtool/largetank{
+	pixel_x = 8
+	},
+/obj/item/clothing/head/welding,
+/obj/item/tool/weldpack/minitank{
+	pixel_y = 11;
+	pixel_x = -2
+	},
+/turf/open/floor/strata{
+	icon_state = "yellow1"
+	},
 /area/space)
 "uO" = (
 /obj/structure/cargo_container/wy/left,
@@ -2436,6 +2681,21 @@
 	icon_state = "warnplate"
 	},
 /area/space)
+"xl" = (
+/obj/structure/machinery/portable_atmospherics/powered/pump{
+	name = "air pump";
+	pixel_y = 3;
+	icon_state = "siphon:0"
+	},
+/obj/structure/machinery/portable_atmospherics/powered/scrubber{
+	pixel_y = 20;
+	name = "air filters";
+	layer = 4.01
+	},
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
+	},
+/area/space)
 "xn" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
@@ -2485,14 +2745,13 @@
 /turf/open/floor/almayer/empty,
 /area/space)
 "xE" = (
-/obj/structure/machinery/power/terminal{
-	dir = 4
+/obj/structure/window{
+	dir = 8
 	},
-/obj/structure/sign/safety/maint{
-	pixel_x = 7;
-	pixel_y = 31
+/obj/structure/surface/table/reinforced/almayer_B,
+/turf/open/floor/strata{
+	icon_state = "yellow1"
 	},
-/turf/open/floor/strata,
 /area/space)
 "xG" = (
 /obj/structure/largecrate/random,
@@ -2555,6 +2814,12 @@
 	icon_state = "floor2"
 	},
 /area/space)
+"ym" = (
+/turf/open/floor/strata{
+	dir = 1;
+	icon_state = "cyan4"
+	},
+/area/space)
 "yq" = (
 /obj/structure/platform{
 	dir = 4
@@ -2612,11 +2877,8 @@
 	},
 /area/space)
 "yI" = (
-/obj/item/tool/warning_cone{
-	pixel_x = -16;
-	pixel_y = 7
-	},
-/turf/open/floor/plating,
+/obj/structure/window/framed/strata/reinforced,
+/turf/open/space/basic,
 /area/space)
 "yJ" = (
 /obj/structure/largecrate/random/secure{
@@ -2707,9 +2969,8 @@
 	anchored = 1;
 	pixel_y = 29
 	},
-/turf/open/floor/strata{
-	color = "#bbbee8";
-	icon_state = "multi_tiles"
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
 	},
 /area/space)
 "zn" = (
@@ -2744,13 +3005,10 @@
 /obj/structure/platform/strata/metal,
 /turf/open/floor/plating,
 /area/space)
-"zO" = (
-/obj/structure/machinery/portable_atmospherics/powered/pump{
-	name = "Oxygen Generator";
-	desc = "An oxygen generator which "
-	},
+"zS" = (
 /turf/open/floor/strata{
-	icon_state = "floor2"
+	dir = 9;
+	icon_state = "yellow3"
 	},
 /area/space)
 "zU" = (
@@ -2966,6 +3224,24 @@
 	},
 /turf/open/floor/plating,
 /area/space)
+"BG" = (
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = -1
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 5;
+	pixel_x = -10
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 37;
+	pixel_x = 3
+	},
+/turf/open/floor/strata{
+	dir = 6;
+	icon_state = "multi_tiles"
+	},
+/area/space)
 "BK" = (
 /obj/item/device/flashlight/lamp/tripod/grey,
 /turf/open/floor/plating,
@@ -3099,6 +3375,12 @@
 	icon_state = "darkyellowfull2"
 	},
 /area/space)
+"Dz" = (
+/turf/open/floor/strata{
+	icon_state = "orange_icorner";
+	dir = 8
+	},
+/area/space)
 "DA" = (
 /obj/structure/cargo_container/kelland/right,
 /turf/open/floor/strata{
@@ -3128,9 +3410,8 @@
 /obj/structure/reagent_dispensers/fueltank{
 	pixel_y = 14
 	},
-/turf/open/floor/strata{
-	color = "#bbbee8";
-	icon_state = "multi_tiles"
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
 	},
 /area/space)
 "DP" = (
@@ -3338,7 +3619,6 @@
 	},
 /area/space)
 "Fe" = (
-/obj/structure/machinery/power/smes,
 /obj/structure/platform{
 	dir = 8
 	},
@@ -3430,6 +3710,28 @@
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/plating,
 /area/space)
+"FT" = (
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = -7
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = 12
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 5;
+	pixel_x = 1
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 37;
+	pixel_x = 3
+	},
+/turf/open/floor/strata{
+	dir = 6;
+	icon_state = "multi_tiles"
+	},
+/area/space)
 "FV" = (
 /obj/structure/platform/strata/metal{
 	dir = 8
@@ -3453,13 +3755,42 @@
 	},
 /area/space)
 "Gh" = (
-/obj/structure/machinery/portable_atmospherics/powered/scrubber/huge/chan{
-	desc = "A large air scrubber, which filters the air for recirculation. A crucial part of the ship's life support system."
+/obj/structure/platform{
+	climb_delay = 0;
+	density = 0;
+	dir = 1;
+	layer = 2.15
 	},
-/turf/open/floor/strata{
-	dir = 4;
-	icon_state = "floor3"
+/obj/structure/prop/invuln/dense/electricbox{
+	layer = 2.15;
+	dir = 8;
+	icon = 'icons/obj/pipes/disposal.dmi';
+	icon_state = "pipe-s";
+	name = "Large Pipe";
+	desc = "A large pipe"
 	},
+/obj/structure/prop/invuln/overhead_pipe{
+	pixel_x = 3;
+	pixel_y = -8;
+	color = "6c8158";
+	layer = 2.152;
+	name = "pipe segment"
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = 6;
+	pixel_y = -9
+	},
+/obj/structure/prop/invuln/dense/electricbox{
+	layer = 2.15;
+	dir = 1;
+	icon = 'icons/obj/pipes/disposal.dmi';
+	icon_state = "pipe-s";
+	name = "Large Pipe";
+	desc = "A large pipe";
+	pixel_y = -8
+	},
+/turf/open/floor/tdome,
 /area/space)
 "Gk" = (
 /turf/open/floor/strata{
@@ -3468,12 +3799,29 @@
 	icon_state = "multi_tiles"
 	},
 /area/space)
-"Go" = (
-/obj/structure/machinery/power/smes,
-/obj/structure/platform{
-	dir = 4
+"Gm" = (
+/obj/structure/closet/firecloset/full,
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
 	},
+/area/space)
+"Go" = (
+/obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/strata,
+/area/space)
+"Gq" = (
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = -7
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 5;
+	pixel_x = -10
+	},
+/turf/open/floor/strata{
+	dir = 4;
+	icon_state = "floor3"
+	},
 /area/space)
 "GH" = (
 /obj/structure/cargo_container/seegson/right,
@@ -3562,39 +3910,52 @@
 	icon_state = "floor3"
 	},
 /area/space)
-"Hr" = (
-/obj/structure/machinery/cm_vending/sorted/tech/electronics_storage{
-	pixel_x = -1
-	},
-/turf/open/floor/strata,
-/area/space)
-"Hu" = (
-/obj/structure/prop/invuln/dense{
-	name = "Machinery Cabinet";
-	desc = "A big closet containing a variety of electromechanical machinery";
-	icon = 'icons/obj/structures/machinery/breakerbox.dmi';
-	icon_state = "elecbox"
-	},
-/turf/open/space/basic,
-/area/space)
 "HC" = (
 /obj/structure/sign/poster/safety{
 	pixel_y = 33
 	},
-/turf/open/floor/strata{
-	color = "#bbbee8";
-	icon_state = "multi_tiles"
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
 	},
 /area/space)
 "HK" = (
-/obj/structure/platform{
-	layer = 2.15;
-	density = 0;
-	climb_delay = 0
+/obj/structure/machinery/portable_atmospherics/canister/oxygen,
+/obj/structure/machinery/portable_atmospherics/canister/oxygen{
+	pixel_y = 22
 	},
-/turf/open/floor/strata{
-	icon_state = "floor2"
+/obj/structure/machinery/portable_atmospherics/canister/oxygen{
+	pixel_x = 18
 	},
+/obj/structure/machinery/portable_atmospherics/canister/oxygen{
+	pixel_x = 18;
+	pixel_y = 21
+	},
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
+	},
+/area/space)
+"HR" = (
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = -7
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = 12
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 5;
+	pixel_x = 1
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 37;
+	pixel_x = -10
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 37;
+	pixel_x = 11
+	},
+/turf/open/floor/plating/plating_catwalk,
 /area/space)
 "HT" = (
 /obj/structure/surface/table/reinforced/black,
@@ -3612,12 +3973,6 @@
 /area/space)
 "Ig" = (
 /turf/open/floor/plating/plating_catwalk,
-/area/space)
-"Ip" = (
-/obj/structure/machinery/power/terminal{
-	dir = 8
-	},
-/turf/open/floor/strata,
 /area/space)
 "Iq" = (
 /turf/open/floor/strata,
@@ -3724,6 +4079,15 @@
 /obj/structure/powerloader_wreckage,
 /turf/open/floor/plating,
 /area/space)
+"JC" = (
+/obj/structure/machinery/portable_atmospherics/canister/air,
+/obj/structure/machinery/portable_atmospherics/canister/air{
+	pixel_x = 17
+	},
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
+	},
+/area/space)
 "JD" = (
 /obj/structure/cargo_container/kelland/right,
 /turf/open/floor/plating,
@@ -3803,6 +4167,14 @@
 	icon_state = "multi_tiles"
 	},
 /area/space)
+"Kl" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/fueltank,
+/turf/open/floor/strata{
+	dir = 6;
+	icon_state = "multi_tiles"
+	},
+/area/space)
 "Ku" = (
 /obj/structure/cargo_container/seegson/right,
 /turf/open/floor/strata{
@@ -3832,35 +4204,31 @@
 /turf/open/floor/strata,
 /area/space)
 "KU" = (
-/obj/structure/surface/table/reinforced/black,
-/obj/effect/spawner/random/tool,
-/obj/effect/spawner/random/tool,
-/turf/open/floor/prison{
-	dir = 4;
-	icon_state = "darkyellow2"
+/turf/open/floor/strata{
+	icon_state = "cyan3"
 	},
 /area/space)
 "KX" = (
-/obj/structure/prop/invuln/dense{
-	name = "Machinery Cabinet";
-	desc = "A big closet containing a variety of electromechanical machinery";
-	icon = 'icons/obj/structures/machinery/breakerbox.dmi';
-	icon_state = "elecbox";
-	dir = 4
+/obj/structure/prop/invuln/overhead_pipe{
+	pixel_x = 12;
+	pixel_y = 12
 	},
-/turf/open/floor/strata{
-	dir = 4;
-	icon_state = "floor3"
+/obj/structure/prop/invuln/overhead_pipe{
+	pixel_x = 6;
+	pixel_y = -6
+	},
+/turf/closed/wall/strata_outpost/reinforced/hull{
+	desc = "A thick plasteel wall that seperates the ship from space.";
+	name = "hull wall"
 	},
 /area/space)
 "Lc" = (
-/obj/structure/surface/table/reinforced/black,
-/obj/structure/machinery/cell_charger{
-	pixel_y = 10
+/obj/structure/sign/nosmoking_1{
+	pixel_y = 31
 	},
-/turf/open/floor/prison{
-	dir = 4;
-	icon_state = "darkyellow2"
+/turf/open/floor/strata{
+	dir = 8;
+	icon_state = "multi_tiles"
 	},
 /area/space)
 "Li" = (
@@ -3953,11 +4321,6 @@
 	icon_state = "multi_tiles"
 	},
 /area/space)
-"LT" = (
-/obj/effect/spawner/random/tool,
-/obj/structure/platform,
-/turf/open/floor/strata,
-/area/space)
 "Mc" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/structure/reagent_dispensers/fueltank{
@@ -4036,6 +4399,24 @@
 	icon_state = "multi_tiles"
 	},
 /area/space)
+"MP" = (
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = -7
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = 12
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 5;
+	pixel_x = -10
+	},
+/turf/open/floor/strata{
+	dir = 6;
+	icon_state = "multi_tiles"
+	},
+/area/space)
 "MQ" = (
 /turf/open/floor/strata{
 	icon_state = "blue4"
@@ -4054,15 +4435,14 @@
 	},
 /area/space)
 "Na" = (
-/obj/structure/platform{
-	layer = 2.15;
-	density = 0;
-	climb_delay = 0;
-	dir = 8
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = 16;
+	pixel_y = -8
 	},
-/turf/open/floor/strata{
-	dir = 4;
-	icon_state = "floor3"
+/turf/closed/wall/strata_outpost/reinforced/hull{
+	desc = "A thick plasteel wall that seperates the ship from space.";
+	name = "hull wall"
 	},
 /area/space)
 "Nd" = (
@@ -4083,6 +4463,20 @@
 "NF" = (
 /obj/item/clothing/head/soft/ferret,
 /turf/open/floor/plating,
+/area/space)
+"NM" = (
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = 12
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 5;
+	pixel_x = 1
+	},
+/turf/open/floor/strata{
+	dir = 4;
+	icon_state = "floor3"
+	},
 /area/space)
 "NV" = (
 /obj/structure/cargo_container/arious/left,
@@ -4115,9 +4509,8 @@
 	anchored = 1;
 	pixel_y = 33
 	},
-/turf/open/floor/strata{
-	color = "#bbbee8";
-	icon_state = "multi_tiles"
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
 	},
 /area/space)
 "Oi" = (
@@ -4256,6 +4649,20 @@
 	icon_state = "blue4"
 	},
 /area/space)
+"Pq" = (
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = -1
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 5;
+	pixel_x = -10
+	},
+/turf/open/floor/strata{
+	dir = 6;
+	icon_state = "multi_tiles"
+	},
+/area/space)
 "Ps" = (
 /obj/structure/stairs,
 /turf/open/floor/strata,
@@ -4272,9 +4679,9 @@
 	},
 /area/space)
 "PB" = (
-/obj/effect/spawner/random/tool,
-/turf/open/floor/prison{
-	icon_state = "darkyellowfull2"
+/turf/open/floor/strata{
+	dir = 5;
+	icon_state = "yellow3"
 	},
 /area/space)
 "PE" = (
@@ -4391,12 +4798,9 @@
 	},
 /area/space)
 "QF" = (
-/obj/structure/window{
-	dir = 8
-	},
-/obj/structure/closet/secure_closet/engineering_personal,
 /turf/open/floor/strata{
-	icon_state = "fake_wood"
+	icon_state = "yellow3";
+	dir = 8
 	},
 /area/space)
 "QI" = (
@@ -4498,16 +4902,9 @@
 	},
 /area/space)
 "RA" = (
-/obj/structure/prop/power_transformer,
-/obj/structure/platform{
-	layer = 2.15;
-	density = 0;
-	climb_delay = 0;
-	dir = 8
-	},
 /turf/open/floor/strata{
 	dir = 4;
-	icon_state = "floor3"
+	icon_state = "cyan3"
 	},
 /area/space)
 "RD" = (
@@ -4520,8 +4917,32 @@
 	},
 /area/space)
 "RL" = (
-/obj/structure/inflatable/door,
-/turf/open/floor/plating,
+/obj/structure/platform{
+	climb_delay = 0;
+	density = 0;
+	dir = 1;
+	layer = 2.15
+	},
+/obj/structure/platform{
+	climb_delay = 0;
+	density = 0;
+	dir = 4;
+	layer = 2.151
+	},
+/obj/structure/prop/invuln/dense/electricbox{
+	layer = 2.15;
+	dir = 8;
+	icon = 'icons/obj/pipes/disposal.dmi';
+	icon_state = "pipe-s";
+	name = "Large Pipe";
+	desc = "A large pipe"
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = -7;
+	pixel_y = -9
+	},
+/turf/open/floor/tdome,
 /area/space)
 "RO" = (
 /turf/closed/wall/mineral/diamond,
@@ -4584,10 +5005,15 @@
 /turf/open/floor/plating,
 /area/space)
 "SD" = (
-/obj/structure/prop/power_transformer,
-/turf/open/floor/strata{
-	dir = 4;
-	icon_state = "floor3"
+/obj/structure/prop/invuln/dense{
+	name = "Machinery Cabinet";
+	desc = "A big closet containing a variety of electromechanical machinery";
+	icon = 'icons/obj/structures/machinery/breakerbox.dmi';
+	icon_state = "elecbox";
+	dir = 4
+	},
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
 	},
 /area/space)
 "SF" = (
@@ -4597,6 +5023,42 @@
 /turf/open/floor/strata{
 	icon_state = "fake_wood"
 	},
+/area/space)
+"SK" = (
+/obj/structure/platform{
+	climb_delay = 0;
+	density = 0;
+	layer = 2.15
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 8;
+	pixel_y = 17;
+	color = "586c81";
+	layer = 2.141;
+	name = "pipe segment"
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 8;
+	pixel_y = -5;
+	color = "81586c";
+	layer = 2.141;
+	name = "pipe segment"
+	},
+/obj/structure/prop/invuln/dense/electricbox{
+	layer = 2.15;
+	dir = 4;
+	icon = 'icons/obj/pipes/disposal.dmi';
+	icon_state = "pipe-s";
+	name = "Large Pipe";
+	desc = "A large pipe"
+	},
+/obj/structure/platform{
+	climb_delay = 0;
+	density = 0;
+	dir = 4;
+	layer = 2.151
+	},
+/turf/open/floor/tdome,
 /area/space)
 "SP" = (
 /obj/structure/cargo_container/arious/mid,
@@ -4625,9 +5087,24 @@
 /turf/open/floor/strata,
 /area/space)
 "SZ" = (
-/obj/structure/foamed_metal/iron,
-/turf/open/floor/plating{
-	icon_state = "platingdmg3"
+/obj/structure/window{
+	dir = 8
+	},
+/obj/structure/surface/rack,
+/obj/item/tool/weldingtool/largetank{
+	pixel_x = 8
+	},
+/obj/item/clothing/head/welding,
+/obj/item/tool/weldpack/minitank{
+	pixel_y = 11;
+	pixel_x = -2
+	},
+/obj/item/tool/weldpack/minitank{
+	pixel_x = 4;
+	pixel_y = 12
+	},
+/turf/open/floor/strata{
+	icon_state = "yellow1"
 	},
 /area/space)
 "Tb" = (
@@ -4670,10 +5147,73 @@
 	},
 /area/space)
 "Tw" = (
-/obj/structure/foamed_metal/iron,
-/obj/structure/inflatable/popped,
-/turf/open/floor/plating{
-	icon_state = "platingdmg3"
+/obj/structure/platform{
+	climb_delay = 0;
+	density = 0;
+	layer = 2.15
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 8;
+	pixel_y = 17;
+	color = "586c81";
+	layer = 2.141;
+	name = "pipe segment"
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 8;
+	pixel_y = -5;
+	color = "81586c";
+	layer = 2.141;
+	name = "pipe segment"
+	},
+/obj/structure/prop/invuln/dense/electricbox{
+	layer = 2.15;
+	dir = 8;
+	icon = 'icons/obj/pipes/disposal.dmi';
+	icon_state = "pipe-s";
+	name = "Large Pipe";
+	desc = "A large pipe"
+	},
+/obj/structure/platform{
+	climb_delay = 0;
+	density = 0;
+	dir = 4;
+	layer = 2.151
+	},
+/turf/open/floor/tdome,
+/area/space)
+"TB" = (
+/obj/structure/window{
+	dir = 4
+	},
+/obj/structure/surface/rack,
+/obj/item/tool/weldingtool/largetank{
+	pixel_x = 8
+	},
+/obj/item/tool/weldpack/minitank{
+	pixel_x = 4;
+	pixel_y = 12
+	},
+/obj/item/tool/weldpack/minitank{
+	pixel_x = -5;
+	pixel_y = 14
+	},
+/turf/open/floor/strata{
+	icon_state = "yellow1"
+	},
+/area/space)
+"TH" = (
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = -1
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 5;
+	pixel_x = -10
+	},
+/turf/open/floor/strata{
+	dir = 4;
+	icon_state = "floor3"
 	},
 /area/space)
 "TI" = (
@@ -4686,10 +5226,13 @@
 	},
 /area/space)
 "TL" = (
-/obj/structure/surface/rack,
-/obj/effect/spawner/random/toolbox,
-/obj/effect/spawner/random/toolbox,
-/turf/open/floor/strata,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/tool/weldingtool/largetank{
+	pixel_x = 8
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
+	},
 /area/space)
 "TM" = (
 /turf/open/floor/strata{
@@ -4764,6 +5307,13 @@
 	icon_state = "floor3"
 	},
 /area/space)
+"Uk" = (
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = -1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
 "Ul" = (
 /obj/structure/barricade/wooden{
 	dir = 4
@@ -4782,12 +5332,17 @@
 	},
 /area/space)
 "Uz" = (
-/obj/structure/prop/invuln/joey{
-	desc = "stempts have been made to modify the janitorial synthetic to serve as a crude bartender, but with little success."
+/obj/structure/machinery/power/smes{
+	pixel_x = 1;
+	pixel_y = -2
 	},
-/turf/open/floor/prison{
-	dir = 4;
-	icon_state = "darkyellow2"
+/obj/structure/machinery/power/smes{
+	pixel_x = 1;
+	pixel_y = 15;
+	layer = 4.01
+	},
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
 	},
 /area/space)
 "UA" = (
@@ -4822,6 +5377,16 @@
 	icon_state = "floor2"
 	},
 /area/space)
+"UW" = (
+/obj/structure/machinery/portable_atmospherics/powered/scrubber/huge/chan{
+	desc = "A large air scrubber, which filters the air for recirculation. A crucial part of the ship's life support system.";
+	pixel_x = -2;
+	pixel_y = 4
+	},
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
+	},
+/area/space)
 "UX" = (
 /obj/structure/platform_decoration{
 	dir = 8
@@ -4847,9 +5412,7 @@
 /turf/open/floor/strata,
 /area/space)
 "Vl" = (
-/obj/structure/prop/turbine_extras/left{
-	name = "struts"
-	},
+/obj/structure/reagent_dispensers/fueltank/oxygentank,
 /turf/open/floor/strata{
 	dir = 4;
 	icon_state = "floor3"
@@ -4880,12 +5443,10 @@
 	},
 /area/space)
 "Vx" = (
-/obj/structure/prop/turbine_extras{
-	name = "struts"
-	},
-/turf/open/floor/strata{
-	dir = 4;
-	icon_state = "floor3"
+/turf/open/floor/plating{
+	color = "#444444";
+	desc = "That's a long way down.";
+	name = "depths"
 	},
 /area/space)
 "Vz" = (
@@ -4946,6 +5507,16 @@
 	icon_state = "floor3"
 	},
 /area/space)
+"Wn" = (
+/obj/effect/decal/cleanable/blood/oil,
+/obj/structure/machinery/portable_atmospherics/canister/air,
+/obj/structure/machinery/portable_atmospherics/canister/air{
+	pixel_x = 17
+	},
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
+	},
+/area/space)
 "Wq" = (
 /obj/structure/platform{
 	dir = 1
@@ -4953,12 +5524,15 @@
 /turf/open/floor/strata,
 /area/space)
 "Wu" = (
-/obj/structure/sign/nosmoking_1{
-	pixel_y = 31
+/obj/structure/machinery/portable_atmospherics/powered/pump{
+	name = "Oxygen Generator";
+	pixel_x = 10;
+	pixel_y = 4;
+	icon_state = "siphon:0";
+	desc = "Essential life support machinery required to recycle air into oxygen."
 	},
-/turf/open/floor/strata{
-	icon_state = "yellow3";
-	dir = 4
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
 	},
 /area/space)
 "Wx" = (
@@ -5016,10 +5590,38 @@
 /obj/structure/cargo_container/watatsumi/mid,
 /turf/open/floor/plating,
 /area/space)
+"WS" = (
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 17;
+	pixel_x = -1
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 5;
+	pixel_x = -10
+	},
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 37;
+	pixel_x = -10
+	},
+/turf/open/floor/strata{
+	dir = 6;
+	icon_state = "multi_tiles"
+	},
+/area/space)
 "WT" = (
 /obj/structure/cargo_container/seegson/mid,
 /turf/open/floor/strata{
 	icon_state = "floor2"
+	},
+/area/space)
+"WU" = (
+/obj/structure/machinery/portable_atmospherics/canister/empty/phoron{
+	pixel_y = 5;
+	pixel_x = 1
+	},
+/turf/open/floor/strata{
+	dir = 4;
+	icon_state = "floor3"
 	},
 /area/space)
 "WY" = (
@@ -5193,10 +5795,8 @@
 /obj/structure/sign/poster/hunk{
 	pixel_y = 34
 	},
-/turf/open/floor/strata{
-	dir = 4;
-	icon_state = "floor3"
-	},
+/obj/structure/machinery/cm_vending/sorted/tech/electronics_storage/antag,
+/turf/open/floor/strata,
 /area/space)
 "Ys" = (
 /obj/structure/largecrate/random/barrel/white{
@@ -5283,9 +5883,11 @@
 	},
 /area/space)
 "YZ" = (
-/obj/structure/machinery/portable_atmospherics/powered/pump{
-	name = "Oxygen Generator";
-	desc = "An oxygen generator which "
+/obj/structure/prop/invuln/dense/electricbox{
+	layer = 3;
+	dir = 1;
+	pixel_y = 18;
+	density = 0
 	},
 /turf/open/floor/strata{
 	dir = 4;
@@ -5300,10 +5902,15 @@
 	},
 /area/space)
 "Zk" = (
-/obj/structure/barricade/wooden{
-	dir = 8
+/obj/structure/machinery/portable_atmospherics/powered/pump{
+	name = "Oxygen Generator";
+	pixel_x = 10;
+	pixel_y = 4;
+	icon_state = "siphon:0"
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating/prison{
+	color = "#d6d7f5"
+	},
 /area/space)
 "Zs" = (
 /obj/structure/surface/table,
@@ -5312,6 +5919,14 @@
 	},
 /turf/open/floor/strata{
 	icon_state = "fake_wood"
+	},
+/area/space)
+"Zy" = (
+/obj/structure/sign/poster/safety{
+	pixel_y = 33
+	},
+/turf/open/floor/strata{
+	icon_state = "floor2"
 	},
 /area/space)
 "Zz" = (
@@ -5445,10 +6060,10 @@ wW
 wW
 wW
 wW
-Zz
-kk
-nc
-PL
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -5573,10 +6188,10 @@ wW
 wW
 wW
 wW
-Zz
-wp
-DP
-DP
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -5701,10 +6316,10 @@ wW
 wW
 wW
 wW
-Zz
-DP
-DP
-SF
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -5829,10 +6444,10 @@ wW
 wW
 wW
 wW
-Zz
-DP
-Vz
-Vg
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -5957,10 +6572,10 @@ wW
 wW
 wW
 wW
-Zz
-DP
-Vz
-YM
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -6085,10 +6700,10 @@ wW
 wW
 wW
 wW
-Zz
-DP
-DP
-OJ
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -6213,10 +6828,10 @@ wW
 wW
 wW
 wW
-Zz
-DP
-DP
-DP
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -6341,10 +6956,6 @@ wW
 wW
 wW
 wW
-Zz
-ZX
-QT
-Zs
 wW
 wW
 wW
@@ -6375,19 +6986,23 @@ wW
 wW
 wW
 wW
-Iq
-SS
-Iq
-Iq
-Iq
-Iq
-Cu
-SS
-SS
-SS
-SS
-SS
-SS
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -6503,19 +7118,19 @@ wW
 wW
 wW
 wW
-Iq
-Iq
-Iq
-Qi
-vo
-GX
-ni
-hB
-yq
-vo
-ni
-SS
-cF
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -6631,19 +7246,19 @@ wW
 wW
 wW
 wW
-Iq
-Iq
-Iq
-pN
-vZ
-dS
-gp
-kZ
-vZ
-vZ
-gp
-SS
-bf
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -6759,19 +7374,19 @@ wW
 wW
 wW
 wW
-Iq
-Iq
-Iq
-pN
-vZ
-vZ
-gp
-kZ
-vZ
-vZ
-gp
-SS
-wY
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -6827,10 +7442,10 @@ wW
 wW
 wW
 wW
-wW
-wW
-wW
-wW
+Zz
+kk
+nc
+PL
 wW
 wW
 wW
@@ -6887,19 +7502,19 @@ wW
 wW
 wW
 wW
-Iq
-Iq
-Iq
-pN
-vZ
-vZ
-Oj
-kZ
-vZ
-vZ
-ZW
-SS
-Rs
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -6955,6 +7570,57 @@ wW
 wW
 wW
 wW
+Zz
+wp
+DP
+DP
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
+de
 wW
 wW
 wW
@@ -6977,57 +7643,6 @@ wW
 wW
 wW
 wW
-wW
-SS
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-Hu
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-Iq
-Iq
-Iq
-Iq
-Cu
-Cu
-TM
-XU
-Cu
-Cu
-TM
-SS
-yJ
 wW
 wW
 wW
@@ -7083,6 +7698,57 @@ wW
 wW
 wW
 wW
+Zz
+DP
+DP
+SF
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+de
+yD
+QS
+Zz
+pB
+md
+Uz
+md
+Zz
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+md
+de
 wW
 wW
 wW
@@ -7105,57 +7771,6 @@ wW
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-Iq
-Iq
-Iq
-Iq
-Cu
-Cu
-TM
-TM
-Cu
-Cu
-TM
-SS
-Xg
 wW
 wW
 wW
@@ -7211,6 +7826,57 @@ wW
 wW
 wW
 wW
+Zz
+DP
+Vz
+Vg
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+de
+wW
+wW
+Zz
+pB
+md
+Uz
+md
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+md
+md
+de
 wW
 wW
 wW
@@ -7223,45 +7889,6 @@ wW
 wW
 wW
 wW
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
-de
 wW
 wW
 wW
@@ -7271,19 +7898,7 @@ wW
 wW
 wW
 wW
-Iq
-Iq
-Iq
-Iq
-Cu
-Cu
-TM
-TM
-Cu
-Cu
-TM
-hs
-iM
+wW
 wW
 wW
 wW
@@ -7339,10 +7954,10 @@ wW
 wW
 wW
 wW
-wW
-wW
-wW
-wW
+Zz
+DP
+Vz
+YM
 wW
 wW
 wW
@@ -7352,66 +7967,66 @@ wW
 wW
 wW
 de
-yD
-QS
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-ls
-ls
-de
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-Cu
-Cu
-Cu
-vC
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-zr
+Zz
+md
+md
+md
+md
+Zz
+Yp
+Iq
+Iq
+kF
+Iq
+kF
 SS
-lX
+Kb
+Kb
+Kb
+fn
+Kb
+fn
+Kb
+fn
+Kb
+Kb
+sH
+Kb
+sH
+Kb
+SD
+Zz
+ls
+ls
+Zz
+Zz
+md
+md
+de
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -7467,10 +8082,10 @@ wW
 wW
 wW
 wW
-wW
-wW
-wW
-wW
+Zz
+DP
+DP
+OJ
 wW
 wW
 wW
@@ -7488,35 +8103,35 @@ Iq
 Iq
 Iq
 Zz
-uL
-TL
-TL
-Hr
-aK
-sQ
+Zz
+bB
+Iq
+kF
+Iq
+kF
 SS
-wp
-zO
-Kb
-zO
-Kb
-zO
-Kb
-zO
+Zy
 Kb
 Kb
+fn
+Kb
+fn
+Kb
+fn
 Kb
 Kb
+xl
 Kb
+xl
 Kb
-Kb
+xl
 SS
 KA
 ls
 ls
 nG
-Gk
-Gk
+md
+md
 de
 wW
 wW
@@ -7527,19 +8142,19 @@ wW
 wW
 wW
 wW
-Cu
-Cu
-Cu
-tV
-Cu
-Cu
-Cu
-Cu
-Cu
-Cu
-TM
-SS
-SS
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -7595,10 +8210,10 @@ wW
 wW
 wW
 wW
-wW
-wW
-wW
-wW
+Zz
+DP
+DP
+DP
 wW
 wW
 wW
@@ -7611,40 +8226,40 @@ de
 ls
 ls
 Zz
-xE
 lO
+lO
+UX
 Iq
-Iq
-Zz
-Zz
-Iq
-Iq
-Iq
-Iq
-Iq
+wp
+yU
+vF
+vF
+vF
+vF
+vF
 SS
-bC
-zO
-Kb
-YZ
-Kb
-zO
-Kb
-zO
 Kb
 Kb
-wp
-wp
-wp
-wp
-wp
+lD
+lD
+tJ
+tJ
+tJ
+tJ
+lD
+lD
+tJ
+tJ
+tJ
+tJ
+tJ
 SS
 Is
 ls
 ls
 Zz
-ls
-ls
+md
+md
 de
 wW
 wW
@@ -7655,19 +8270,19 @@ wW
 wW
 wW
 wW
-Iq
-Iq
-Iq
-Iq
-Cu
-Cu
-TM
-TM
-Cu
-Cu
-TM
-SS
-SS
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -7723,10 +8338,10 @@ wW
 wW
 wW
 wW
-wW
-wW
-wW
-wW
+Zz
+ZX
+QT
+Zs
 wW
 wW
 wW
@@ -7741,38 +8356,38 @@ ls
 Zz
 Go
 Go
-UX
-Iq
-Iq
-yU
-Iq
-Iq
-Iq
-Iq
-Iq
-tD
+Wq
 wp
 wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
+Zz
+Lc
+vF
+vF
+vF
+vF
+SS
+Kb
+Kb
+lD
+lD
+RA
+RA
+RA
+RA
+lD
+lD
+RA
+RA
+RA
+RA
+RA
 hs
 ls
 ls
 is
 Zz
-ls
-ls
+md
+md
 de
 wW
 wW
@@ -7783,19 +8398,19 @@ wW
 wW
 wW
 wW
-Iq
-Iq
-Iq
-Iq
-Cu
-Cu
-TM
-TM
-Cu
-Cu
-TM
-TM
-TM
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -7867,40 +8482,40 @@ de
 ls
 ls
 Zz
-Zz
+Go
 Iq
-Wq
-Iq
-Iq
-Zz
-Wu
+Ps
+wp
+wp
+wP
 Mp
 Mp
 Mp
+PB
 Iq
-tD
-wp
-wp
-wp
-bB
-wp
-fj
-wp
-gC
-wp
-wp
-wp
-wp
+wP
+Kb
+Kb
+op
+KU
 Kb
 Kb
 Kb
+Kb
+op
+KU
+JC
+wp
+uX
+Wn
+wp
 SS
 SS
 SS
 SS
 Zz
-Bg
-ls
+jT
+md
 de
 wW
 wW
@@ -7911,19 +8526,19 @@ wW
 wW
 wW
 wW
-Iq
-mR
-TM
-Cu
-Dv
-TM
-TM
-uC
-Cu
-TM
-SS
-SS
-SS
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -7980,9 +8595,9 @@ wW
 wW
 wW
 wW
-wW
-wW
-wW
+aM
+aM
+aM
 wW
 wW
 wW
@@ -7995,40 +8610,40 @@ de
 ls
 ls
 Zz
-Iq
+Go
 Iq
 Ps
-Iq
-Iq
+wp
+wp
 wP
-DP
-DP
-DP
-Mp
+tD
+uL
+TB
+pw
 Iq
-wP
+ql
+lD
+lD
+op
+KU
+de
+fj
+yI
+de
+op
+KU
+Wu
+wp
+uX
+Wu
 wp
 wp
 wp
-wp
-wp
-wp
-Vx
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-sU
-wp
-wp
+qt
 wp
 Zz
-Bg
-ls
+jT
+md
 de
 wW
 wW
@@ -8039,19 +8654,19 @@ wW
 wW
 wW
 wW
-Fa
-SS
-kZ
-vZ
-vZ
-gp
-kZ
-vZ
-vZ
-gp
-UH
-WY
-bl
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -8123,40 +8738,40 @@ de
 Zz
 ER
 Zz
-Iq
+Go
 Iq
 Ps
-Iq
-Iq
+wp
+wp
 wP
+xE
 pI
-pI
-pI
-DP
+aK
+SZ
 Iq
-wP
+vZ
+lD
+lD
+op
+KU
+yI
+Vx
+Vx
+yI
+op
+KU
+UW
+wp
+uX
+UW
 wp
 wp
 wp
+YZ
 wp
-wp
-wp
+Zz
 md
-wp
-wp
-Zz
-tj
-tj
-Zz
-wp
-wp
-ql
-wp
-wp
-wp
-Zz
-ls
-ls
+md
 de
 wW
 wW
@@ -8167,19 +8782,19 @@ wW
 wW
 wW
 wW
-xG
-SS
-kZ
-vZ
-vZ
-gp
-kZ
-vZ
-XA
-gp
-if
-TM
-yF
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -8251,63 +8866,63 @@ de
 Bg
 ls
 Zz
-Iq
+Go
 Iq
 Ps
-Iq
-Iq
+wp
+wp
 wP
 QF
 QF
 QF
-DP
+zS
 Iq
 wP
 XY
 wp
-wp
-wp
-wp
-ql
-Vl
-wp
-wp
-tj
+op
+KU
+yI
+Vx
+Vx
+yI
+op
+KU
+gC
 dx
+uX
+gC
 dx
-tj
 wp
 wp
-KX
-wp
-wp
+bD
 wp
 Zz
-ls
-ls
+md
+md
 de
-wW
-wW
-wW
-wW
-wW
-wW
 wW
 wW
 wW
 Iq
 SS
-kZ
-vZ
-vZ
-Oj
-kZ
-vZ
-vZ
-ZW
-TM
-RP
-yF
+Iq
+Iq
+Iq
+Iq
+Cu
+SS
+SS
+SS
+SS
+SS
+SS
+SS
+wW
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -8379,63 +8994,63 @@ de
 Bg
 ls
 Zz
+Go
 Iq
-Iq
-Ps
-Iq
-Iq
-wP
-DP
-DP
-DP
-Iq
-Iq
-wP
+ux
 wp
 wp
+Zz
+Qx
+vF
+vF
+vF
+vF
+SS
 wp
 wp
-wp
-wp
-wp
-wp
-wp
+op
+KU
+de
+cp
+cp
+de
+op
+KU
+Gh
 tj
-dx
-dx
+uX
+Gh
 tj
-wp
-wp
 wp
 wp
 wp
 wp
 Zz
-ls
-ls
+md
+md
 de
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
 Iq
-Cl
-zU
-dI
-lg
-Wx
-nT
-lg
-lg
-sT
-rx
-TM
-EK
+Iq
+Iq
+Qi
+vo
+GX
+ni
+hB
+yq
+vo
+ni
+SS
+cF
+iM
+wW
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -8507,33 +9122,33 @@ de
 ls
 ls
 Zz
-Zz
-Iq
+Go
+Go
 Wq
-Iq
-Iq
-Zz
-Qx
+wp
+wp
+yU
 vF
 vF
 vF
-Iq
+vF
+vF
 SS
-Na
-RA
-sh
 wp
 wp
+op
+KU
 wp
-wp
-wp
-wp
-Zz
-tj
-tj
-Zz
-wp
-wp
+Vl
+Vl
+Vl
+op
+KU
+RL
+SK
+uX
+RL
+Tw
 wp
 wp
 wp
@@ -8545,25 +9160,25 @@ de
 wW
 wW
 wW
+Iq
+Iq
+Iq
+pN
+vZ
+dS
+gp
+kZ
+vZ
+vZ
+gp
+SS
+bf
+iM
 wW
 wW
 wW
 wW
 wW
-wW
-Iq
-Cl
-Hh
-Iq
-Iq
-Iq
-Iq
-Iq
-Iq
-cN
-TM
-Yy
-yF
 wW
 wW
 wW
@@ -8638,60 +9253,60 @@ Zz
 Fe
 Fe
 sT
+wp
+Zz
+Zz
+bB
 Iq
+kF
 Iq
-yU
-wp
-wp
-wp
-wp
-wp
+kF
 SS
 wp
 wp
-HK
-Kb
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
+lD
+lD
+tJ
+tJ
+tJ
+tJ
+lD
+lD
+tJ
+tJ
+tJ
+tJ
+tJ
 wp
 wp
 wp
 wp
 Zz
-ls
-ls
+md
+md
 de
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
 Iq
+Iq
+Iq
+pN
+vZ
+vZ
+gp
+kZ
+vZ
+vZ
+gp
 SS
-oS
-if
-TM
-TM
-TM
-Iq
-Iq
-RP
-EP
-rx
-yF
+wY
+iM
+wW
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -8764,62 +9379,62 @@ xi
 ls
 Zz
 fg
-Ip
+Iq
 Iq
 Iq
 Zz
-Zz
-Yp
-wp
-wp
-wp
-wp
+uh
+Iq
+Iq
+kF
+Iq
+kF
 SS
 wp
-SD
-HK
-Kb
 wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
+lD
+lD
+RA
+RA
+RA
+RA
+lD
+lD
+RA
+RA
+RA
+RA
+RA
 wp
 wp
 wp
 wp
 Zz
-ls
-ls
+md
+md
 de
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
 Iq
+Iq
+Iq
+pN
+vZ
+vZ
+Oj
+kZ
+vZ
+vZ
+ZW
 SS
-on
-gn
-Yy
-rx
-TM
-Iq
-Iq
-mw
-dj
-bT
-jq
+Rs
+iM
+wW
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -8895,59 +9510,59 @@ Iq
 Iq
 Iq
 Iq
-Zz
-cV
-tJ
-Uz
-Lc
-KU
-lD
+SS
+SS
+SS
+SS
+SS
+SS
+SS
 SS
 wp
 wp
-HK
 Kb
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
-wp
+Kb
+lD
+lD
+Kb
+Kb
+Kb
+Kb
+Kb
+Kb
+pF
+Iq
+Iq
+pF
+tJ
+tJ
+tJ
 Zz
-xU
-ls
+bW
+md
 de
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
-ZM
+Iq
+Iq
+Iq
+Iq
+Cu
+Cu
+TM
+XU
+Cu
+Cu
+TM
 SS
-SS
-Py
-JA
-pf
-up
-pf
-pf
-eO
-wr
-Br
-HT
+yJ
+iM
+wW
+wW
+wW
+wW
+wW
 wW
 wW
 wW
@@ -9038,39 +9653,39 @@ Zz
 Zz
 Zz
 Zz
+Zz
+Zz
+Zz
+Zz
+sH
+pF
+sH
 Iq
-Iq
-Gh
-wp
-Gh
-wp
-ux
-Iq
-Iq
+pF
 SS
 SS
 SS
 Zz
-xU
-ls
+bW
+md
 de
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
+Iq
+Iq
+Iq
+Iq
+Cu
+Cu
+TM
+TM
+Cu
+Cu
+TM
+SS
+Xg
+iM
 wW
 wW
 wW
@@ -9168,37 +9783,37 @@ Iq
 Zz
 Iq
 Iq
-ux
-wp
-ux
 Iq
-ux
+Zz
+dT
+pF
+dT
 Iq
-Iq
+pF
 SS
 DN
-ls
-KA
-ls
-ls
+md
+Gm
+md
+md
 de
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
+Iq
+Iq
+Iq
+Iq
+Cu
+Cu
+TM
+TM
+Cu
+Cu
+TM
+hs
+iM
+iM
 wW
 wW
 wW
@@ -9296,37 +9911,37 @@ Iq
 Zz
 Iq
 Iq
-ux
 Iq
-ux
+Zz
+Wu
+pF
+Zk
 Iq
-ux
-Iq
-Iq
+pF
 SS
 sW
-ls
+md
 aZ
-ls
-ls
+md
+md
 de
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
+Cu
+Cu
+Cu
+vC
+Cu
+Cu
+Cu
+Cu
+Cu
+Cu
+zr
+SS
+lX
+iM
 wW
 wW
 wW
@@ -9425,36 +10040,36 @@ Zz
 Iq
 Iq
 Iq
+Zz
+md
+pF
+md
 Iq
-Iq
-Iq
-Iq
-Iq
-Iq
+pF
 SS
 lf
-ls
-ls
-ls
-ls
+md
+md
+md
+md
 de
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
+Cu
+Cu
+Cu
+tV
+Cu
+Cu
+Cu
+Cu
+Cu
+Cu
+TM
+SS
+SS
+iM
 wW
 wW
 wW
@@ -9550,39 +10165,39 @@ jx
 Qu
 Iq
 Zz
+Iq
+Iq
+Iq
 Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
-Zz
+HK
+pF
+HK
+Iq
+pF
 SS
 Oh
-ls
-ls
-ls
-ls
+md
+md
+md
+md
 de
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
+Iq
+Iq
+mR
+TM
+Cu
+Dv
+TM
+TM
+uC
+Cu
+TM
+SS
+SS
+SS
 wW
 wW
 wW
@@ -9681,36 +10296,36 @@ Zz
 Iq
 Iq
 Iq
+Zz
+md
+pF
+md
 Iq
-Iq
-Iq
-Iq
-Iq
-Iq
+pF
 SS
 zl
-ls
-ls
-ls
-ls
+md
+md
+md
+md
 de
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
+Iq
+Fa
+SS
+kZ
+vZ
+vZ
+gp
+kZ
+vZ
+vZ
+gp
+UH
+WY
+bl
 wW
 wW
 wW
@@ -9806,39 +10421,39 @@ jx
 Qu
 Iq
 Zz
-Iq
-Iq
-Iq
-Iq
-Iq
-Iq
-Iq
-Iq
-Iq
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
+Zz
 SS
 HC
-ls
-ls
-ls
-ls
+md
+md
+md
+md
 de
 wW
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
+xG
+SS
+kZ
+vZ
+vZ
+gp
+kZ
+vZ
+XA
+gp
+if
+TM
+yF
 wW
 wW
 wW
@@ -9944,29 +10559,29 @@ Iq
 Iq
 Iq
 hs
-Gk
-Gk
-Gk
-Gk
+md
+md
+md
+md
 jT
 de
 wW
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
+Iq
+SS
+kZ
+vZ
+vZ
+Oj
+kZ
+vZ
+vZ
+ZW
+TM
+RP
+yF
 wW
 wW
 wW
@@ -10061,7 +10676,7 @@ wl
 jx
 jx
 jx
-Iq
+jx
 jx
 jx
 jx
@@ -10073,28 +10688,28 @@ Iq
 Iq
 SS
 uD
-ls
-ls
-ls
-Bg
+md
+md
+md
+jT
 de
 wW
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
+Iq
+Cl
+zU
+dI
+lg
+Wx
+nT
+lg
+lg
+sT
+rx
+TM
+EK
 wW
 wW
 wW
@@ -10201,28 +10816,28 @@ Iq
 Iq
 SS
 SS
-Bg
-Bg
-ls
-ls
+jT
+jT
+md
+md
 de
 wW
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
+Iq
+Cl
+Hh
+Iq
+Iq
+Iq
+Iq
+Iq
+Iq
+cN
+TM
+Yy
+yF
 wW
 wW
 wW
@@ -10320,10 +10935,10 @@ Iq
 Zz
 Iq
 Iq
+sh
 Iq
 Iq
-Iq
-Iq
+sh
 Iq
 Iq
 Iq
@@ -10331,26 +10946,26 @@ SS
 SS
 SS
 Zz
-ls
-ls
+md
+md
 de
 wW
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
+Iq
+SS
+oS
+if
+TM
+TM
+TM
+Iq
+Iq
+RP
+EP
+rx
+yF
 wW
 wW
 wW
@@ -10459,26 +11074,26 @@ TM
 TM
 TM
 Zz
-ls
-ls
+md
+md
 de
 wW
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
+Iq
+SS
+on
+gn
+Yy
+rx
+TM
+Iq
+Iq
+mw
+dj
+bT
+jq
 wW
 wW
 wW
@@ -10594,19 +11209,19 @@ wW
 wW
 wW
 wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
+ZM
+SS
+SS
+Py
+JA
+pf
+up
+pf
+pf
+eO
+wr
+Br
+HT
 wW
 wW
 wW
@@ -10700,19 +11315,19 @@ OB
 jx
 jx
 Qu
-Fa
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
+Iq
+KI
+KI
+pV
+pV
+pV
+pV
+pV
+pV
+pV
+Xf
+Xf
+fI
 de
 ls
 ls
@@ -10812,7 +11427,7 @@ ls
 ls
 Zz
 Kd
-LT
+pN
 BF
 Wi
 xS
@@ -10828,19 +11443,19 @@ OB
 jx
 jx
 Qu
-xG
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
+Iq
+KI
+KI
+pV
+pV
+pV
+pV
+pV
+pV
+pV
+Kb
+Kb
+Qu
 de
 ls
 ls
@@ -10957,18 +11572,18 @@ jx
 jx
 Qu
 Iq
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
+KI
+KI
+pV
+pV
+pV
+pV
+pV
+pV
+pV
+Kb
+Kb
+Qu
 de
 ls
 ls
@@ -11085,6 +11700,7 @@ jx
 jx
 Qu
 Iq
+Iq
 de
 de
 de
@@ -11093,10 +11709,9 @@ de
 de
 de
 de
-de
-de
-vZ
-vZ
+KI
+KI
+KI
 de
 ls
 ls
@@ -11201,7 +11816,7 @@ Cu
 Cu
 uC
 Cu
-PB
+Cu
 Cu
 Cu
 Cu
@@ -11213,18 +11828,18 @@ gA
 jx
 Qu
 Iq
+Fa
 de
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+Kb
+Kb
+Qu
 de
 ls
 ls
@@ -11328,7 +11943,7 @@ TM
 TM
 Iq
 Iq
-nl
+TL
 la
 VO
 TM
@@ -11341,18 +11956,18 @@ jx
 jx
 Qu
 Iq
+xG
 de
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+Kb
+Kb
+Qu
 de
 ls
 ls
@@ -11460,7 +12075,7 @@ Uh
 qy
 TM
 RP
-Yy
+TM
 SS
 JH
 Iq
@@ -11469,18 +12084,18 @@ jx
 jx
 Qu
 Iq
+Iq
 de
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
-vZ
+wF
+wF
+wF
+wF
+wF
+wF
+wF
+vs
+vs
+GT
 de
 ls
 xU
@@ -11582,7 +12197,7 @@ Zz
 kZ
 tx
 ZW
-Yy
+TM
 TM
 TM
 TM
@@ -11597,7 +12212,7 @@ Nd
 ty
 Kf
 ZM
-de
+Iq
 de
 de
 de
@@ -11725,7 +12340,7 @@ jx
 jx
 Qu
 nM
-pV
+oe
 wB
 wB
 wB
@@ -11842,7 +12457,7 @@ uX
 kI
 wB
 Mc
-pq
+Kl
 pq
 Mc
 wB
@@ -12354,7 +12969,7 @@ uX
 Xs
 wB
 Mc
-pq
+Kl
 pq
 Mc
 kP
@@ -13378,9 +13993,9 @@ uX
 Li
 wB
 wB
-uX
-uX
-wp
+eD
+ox
+Gq
 wB
 EX
 EX
@@ -13506,9 +14121,9 @@ pq
 wp
 wB
 wB
-uX
-uX
-wp
+WS
+Pq
+NM
 wB
 EX
 EX
@@ -13634,9 +14249,9 @@ qd
 wp
 wB
 wB
-Ig
-Ig
-wp
+HR
+df
+WU
 wB
 Lz
 EX
@@ -13762,9 +14377,9 @@ pq
 wp
 wB
 wB
-uX
-uX
-wp
+BG
+Pq
+WU
 kP
 SP
 EX
@@ -13890,9 +14505,9 @@ uX
 wp
 wB
 wB
-uX
-uX
-wp
+FT
+MP
+WU
 kP
 rG
 EX
@@ -14018,9 +14633,9 @@ Ig
 Li
 wB
 wB
-Ig
-Ig
-wp
+iX
+Uk
+TH
 wB
 vv
 EX
@@ -27588,19 +28203,19 @@ TM
 TM
 TM
 TM
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
 TM
 TM
 TM
@@ -27716,19 +28331,19 @@ TM
 TM
 TM
 TM
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
-wW
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
 TM
 TM
 TM
@@ -27844,19 +28459,19 @@ SS
 SS
 SS
 SS
-wW
-wW
-de
-de
-de
-de
-de
-SZ
 vZ
-Tw
-de
-wW
-wW
+vZ
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+vZ
+vZ
 SS
 SS
 SS
@@ -27972,19 +28587,19 @@ vZ
 vZ
 vZ
 vZ
-wW
-wW
-de
 vZ
 vZ
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
 vZ
-de
-oK
-oK
-SZ
-de
-wW
-wW
+vZ
 vZ
 vZ
 vZ
@@ -28100,19 +28715,19 @@ vZ
 vZ
 vZ
 vZ
-wW
-wW
-de
 vZ
 vZ
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
+TM
 vZ
-de
 vZ
-oK
-oK
-de
-wW
-wW
 vZ
 vZ
 vZ
@@ -28228,19 +28843,19 @@ vZ
 vZ
 vZ
 vZ
-wW
-wW
-de
-vZ
 vZ
 vZ
 de
-oK
-oK
-oK
 de
-wW
-wW
+de
+de
+de
+fi
+fi
+fi
+de
+vZ
+vZ
 vZ
 vZ
 vZ
@@ -28356,19 +28971,19 @@ vZ
 vZ
 vZ
 vZ
-wW
-wW
-de
-vZ
 vZ
 vZ
 de
-vZ
+oK
 oK
 oK
 de
-wW
-wW
+fi
+fi
+fi
+de
+vZ
+vZ
 vZ
 vZ
 vZ
@@ -28484,19 +29099,19 @@ vZ
 vZ
 vZ
 vZ
-wW
-wW
-de
-vZ
 vZ
 vZ
 de
-vZ
 oK
-vZ
+oK
+oK
 de
-wW
-wW
+fi
+fi
+fi
+de
+vZ
+vZ
 vZ
 vZ
 vZ
@@ -28612,19 +29227,19 @@ vZ
 vZ
 vZ
 vZ
-wW
-wW
-de
-vZ
 vZ
 vZ
 de
-vZ
-vZ
-op
+oK
+oK
+oK
 de
-wW
-wW
+fi
+fi
+fi
+de
+vZ
+vZ
 vZ
 vZ
 vZ
@@ -28740,19 +29355,19 @@ vZ
 vZ
 vZ
 vZ
-wW
-wW
-de
-vZ
 vZ
 vZ
 de
 oK
-vZ
-vZ
+oK
+oK
 de
-wW
-wW
+fi
+fi
+fi
+KX
+vZ
+vZ
 vZ
 vZ
 vZ
@@ -28868,19 +29483,19 @@ vZ
 vZ
 vZ
 vZ
-wW
-wW
-de
-vZ
 vZ
 vZ
 de
-cp
-RL
-cp
+oK
+oK
+oK
 de
-wW
-wW
+fi
+fi
+fi
+de
+vZ
+vZ
 vZ
 vZ
 vZ
@@ -28996,19 +29611,19 @@ vZ
 vZ
 vZ
 vZ
-wW
-wW
-de
-vZ
 vZ
 vZ
 de
-Zk
-Zk
-Zk
+oK
+oK
+oK
 de
-wW
-wW
+fi
+fi
+fi
+de
+vZ
+vZ
 vZ
 vZ
 vZ
@@ -29124,19 +29739,19 @@ de
 vZ
 vZ
 vZ
-wW
-wW
-de
-vZ
 vZ
 vZ
 de
-vZ
-cI
-vZ
+oK
+oK
+oK
 de
-wW
-wW
+fi
+fi
+fi
+de
+vZ
+vZ
 vZ
 vZ
 vZ
@@ -29252,19 +29867,19 @@ de
 de
 vZ
 vZ
-wW
-wW
-de
-vZ
-vZ
-vZ
-IB
-vZ
 vZ
 vZ
 de
-wW
-wW
+op
+Kb
+Kb
+uX
+Kb
+Kb
+Qu
+de
+vZ
+vZ
 vZ
 vZ
 de
@@ -29380,19 +29995,19 @@ wW
 de
 de
 vZ
-wW
-wW
+vZ
+vZ
+de
+op
+Kb
+Kb
+uX
+Kb
+Kb
+Qu
 de
 vZ
 vZ
-vZ
-yI
-vZ
-dT
-vZ
-de
-wW
-wW
 vZ
 de
 de
@@ -29508,19 +30123,19 @@ wW
 wW
 de
 de
-wW
-wW
-de
-vZ
-vZ
-vZ
-yI
-vZ
 vZ
 vZ
 de
-wW
-wW
+ym
+RA
+RA
+uX
+vs
+vs
+Dz
+de
+vZ
+vZ
 de
 de
 wW
@@ -29642,13 +30257,13 @@ de
 de
 de
 de
+Na
+de
+Na
 de
 de
 de
 de
-de
-wW
-wW
 de
 wW
 wW

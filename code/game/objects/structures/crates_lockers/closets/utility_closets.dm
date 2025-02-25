@@ -240,3 +240,28 @@
 		icon_state = icon_closed
 	else
 		icon_state = icon_opened
+
+/*
+ * Oxygen
+ */
+/obj/structure/closet/oxygen //wall mounted Oxygen/Emergency Closet
+	name = "depressurization closet"
+	desc = "It's a storage unit for depressurization emergencies."
+	icon_state = "o2closet"
+	icon_closed = "o2closet"
+	icon_opened = "o2closet_open"
+	anchored = TRUE
+	density = FALSE
+	wall_mounted = 1
+	store_mobs = FALSE
+
+/obj/structure/closet/oxygen/Initialize()
+	. = ..()
+	new /obj/item/inflatable(src)
+	new /obj/item/inflatable(src)
+	new /obj/item/inflatable(src)
+	if(prob(10))
+		new /obj/item/tank/emergency_oxygen/engi(src)
+	else
+		new /obj/item/tank/emergency_oxygen(src)
+	new /obj/item/clothing/mask/breath(src)

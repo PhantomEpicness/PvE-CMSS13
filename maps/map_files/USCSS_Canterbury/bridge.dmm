@@ -25,7 +25,8 @@
 	name = "ICC Contraband Regulations 2180"
 	},
 /obj/item/folder/blue{
-	name = "Matson Intersystems SOP"
+	name = "NavStar Intersystems SOP";
+	desc = "A blue folder containing the SOP for NavStar Intersystem crew."
 	},
 /turf/open/floor/almayer{
 	icon_state = "plating_striped"
@@ -118,18 +119,16 @@
 	},
 /area/space)
 "bX" = (
-/obj/item/weapon/gun/energy/rxfm5_eva{
-	pixel_y = -2;
-	pixel_x = 2
-	},
 /obj/structure/surface/table/almayer,
-/obj/item/weapon/gun/energy/rxfm5_eva{
+/obj/item/storage/box/wy_mre{
+	pixel_y = 17;
+	pixel_x = 9
+	},
+/obj/item/storage/box/wy_mre{
 	pixel_y = 6
 	},
-/turf/open/floor/strata{
-	icon_state = "red3";
-	dir = 8
-	},
+/obj/item/storage/box/wy_mre,
+/turf/open/floor/plating/almayer,
 /area/space)
 "cb" = (
 /obj/structure/machinery/door/poddoor/almayer{
@@ -215,6 +214,18 @@
 /turf/open/floor/almayer{
 	dir = 5;
 	icon_state = "plating"
+	},
+/area/space)
+"db" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	dir = 1
+	},
+/obj/structure/prop/structure_lattice{
+	color = "#627278"
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
 	},
 /area/space)
 "dh" = (
@@ -604,8 +615,30 @@
 	dir = 8;
 	pixel_y = 8
 	},
+/obj/item/reagent_container/food/drinks/cans/waterbottle{
+	pixel_x = -7;
+	pixel_y = 25
+	},
 /turf/open/floor/strata{
 	icon_state = "floor2"
+	},
+/area/space)
+"hd" = (
+/obj/structure/prop{
+	icon = 'icons/obj/structures/props/almayer_props.dmi';
+	icon_state = "equip_base";
+	name = "access port";
+	pixel_x = 12;
+	pixel_y = 16;
+	color = "#444444"
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_y = 16;
+	color = "#444444"
+	},
+/turf/open/floor/almayer_hull{
+	color = "#444444"
 	},
 /area/space)
 "he" = (
@@ -723,13 +756,19 @@
 /obj/structure/prop/structure_lattice{
 	color = "#627278"
 	},
-/turf/open/space/basic,
+/turf/open/floor/almayer_hull{
+	color = "#444444"
+	},
 /area/space)
 "if" = (
 /obj/structure/machinery/computer/shuttle/ert/broken,
 /turf/open/floor/almayer{
 	icon_state = "tcomms"
 	},
+/area/space)
+"ig" = (
+/obj/item/tank/emergency_oxygen,
+/turf/open/floor/strata,
 /area/space)
 "ij" = (
 /obj/structure/machinery/shower{
@@ -779,6 +818,19 @@
 /turf/open/floor/strata{
 	dir = 8;
 	icon_state = "blue3"
+	},
+/area/space)
+"ip" = (
+/obj/structure/prop{
+	icon = 'icons/obj/structures/props/almayer_props.dmi';
+	icon_state = "equip_base";
+	name = "access port";
+	pixel_x = 12;
+	pixel_y = 16;
+	color = "#444444"
+	},
+/turf/open/floor/almayer_hull{
+	color = "#444444"
 	},
 /area/space)
 "iJ" = (
@@ -853,6 +905,35 @@
 	dir = 8
 	},
 /area/space)
+"jG" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_y = 3;
+	color = "#444444"
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice13";
+	pixel_y = 3;
+	color = "#444444"
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice3";
+	pixel_x = 16;
+	pixel_y = 24;
+	layer = 7.1;
+	color = "#444444"
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice3";
+	pixel_x = 16;
+	pixel_y = 24;
+	layer = 7.1;
+	color = "#444444"
+	},
+/turf/open/floor/almayer_hull{
+	color = "#444444"
+	},
+/area/space)
 "jI" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 1
@@ -867,7 +948,7 @@
 	dir = 8;
 	name = "Restroom"
 	},
-/turf/open/floor/plating/almayer,
+/turf/open/floor/plating,
 /area/space)
 "jQ" = (
 /obj/structure/closet,
@@ -1006,8 +1087,8 @@
 	pixel_x = 15
 	},
 /obj/item/folder/blue{
-	name = "On Cross Border Shipping";
-	desc = "A blue folder detailing how to properly deal with interborder shipping as a hauler."
+	name = "NavStar Intersystems SOP";
+	desc = "A blue folder containing the SOP for NavStar Intersystem crew."
 	},
 /turf/open/floor/strata{
 	icon_state = "fake_wood"
@@ -1025,10 +1106,6 @@
 /obj/structure/mirror{
 	pixel_y = 37;
 	icon_state = "mirror_broke"
-	},
-/obj/item/tool/soap/nanotrasen{
-	pixel_y = 19;
-	pixel_x = -4
 	},
 /turf/open/floor/strata{
 	icon_state = "white_cyan2"
@@ -1065,8 +1142,8 @@
 	},
 /area/space)
 "lL" = (
-/obj/structure/surface/table/almayer,
 /obj/structure/machinery/computer/communications,
+/obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/almayer{
 	icon_state = "tcomms"
 	},
@@ -1275,13 +1352,33 @@
 	icon_state = "multi_tiles"
 	},
 /area/space)
+"nR" = (
+/obj/structure/prop{
+	icon = 'icons/obj/structures/props/almayer_props.dmi';
+	icon_state = "equip_base";
+	name = "access port";
+	pixel_x = 12;
+	pixel_y = 16;
+	color = "#444444"
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_y = 3;
+	color = "#444444"
+	},
+/turf/open/floor/almayer_hull{
+	color = "#444444"
+	},
+/area/space)
 "nS" = (
 /obj/structure/prop/invuln/lattice_prop{
 	icon_state = "lattice4";
 	pixel_x = 1;
 	pixel_y = 16
 	},
-/turf/open/space/basic,
+/turf/open/floor/almayer_hull{
+	color = "#444444"
+	},
 /area/space)
 "nW" = (
 /obj/structure/platform_decoration{
@@ -1303,15 +1400,34 @@
 	color = "#bdbdbd "
 	},
 /area/space)
+"om" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_y = 3;
+	color = "#444444"
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_y = 3;
+	color = "#444444"
+	},
+/turf/open/floor/almayer_hull{
+	color = "#444444"
+	},
+/area/space)
 "oo" = (
 /turf/closed/shuttle/elevator{
 	dir = 6
 	},
 /area/space)
 "oq" = (
-/obj/structure/machinery/power/fusion_engine,
-/turf/open/floor/strata{
-	icon_state = "yellow1"
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_y = 16;
+	color = "#444444"
+	},
+/turf/open/floor/almayer_hull{
+	color = "#444444"
 	},
 /area/space)
 "ot" = (
@@ -1366,20 +1482,20 @@
 	icon_state = "plating_striped"
 	},
 /area/space)
-"pw" = (
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = 11
-	},
-/turf/open/floor{
-	icon_state = "freezerfloor"
-	},
-/area/space)
 "py" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/folder/white{
 	pixel_y = 3;
 	pixel_x = 2
+	},
+/obj/item/folder/blue{
+	name = "NavStar Intersystems SOP";
+	desc = "A blue folder containing the SOP for NavStar Intersystem crew."
+	},
+/obj/item/folder/green{
+	pixel_y = -8;
+	name = "Empowering your workplace";
+	desc = "A green folder containing papers upon papers of corporate HR bullshit." "
 	},
 /turf/open/floor/strata{
 	icon_state = "floor2"
@@ -1479,6 +1595,12 @@
 	},
 /turf/open/floor/strata{
 	icon_state = "floor3"
+	},
+/area/space)
+"qr" = (
+/turf/open/floor/almayer_hull{
+	dir = 9;
+	icon_state = "outerhull_dir"
 	},
 /area/space)
 "qA" = (
@@ -1591,6 +1713,7 @@
 /obj/item/clothing/accessory/storage/webbing,
 /obj/item/clothing/glasses/welding,
 /obj/item/clothing/glasses/welding,
+/obj/structure/surface/table/almayer,
 /turf/open/floor/almayer{
 	icon_state = "plate"
 	},
@@ -1608,7 +1731,9 @@
 	icon_state = "S";
 	pixel_y = -1
 	},
-/turf/open/shuttle/escapepod,
+/turf/open/shuttle/vehicle{
+	color = "#bdbdbd "
+	},
 /area/space)
 "sL" = (
 /obj/structure/surface/rack{
@@ -1761,11 +1886,9 @@
 	},
 /area/space)
 "uu" = (
-/obj/structure/machinery/door/airlock/almayer/engineering{
-	name = "Aft Storage";
-	dir = 2
+/turf/open/floor/almayer{
+	icon_state = "plate"
 	},
-/turf/open/floor/plating/almayer,
 /area/space)
 "uz" = (
 /obj/structure/flora/pottedplant,
@@ -1800,7 +1923,22 @@
 	pixel_y = 16;
 	layer = 6.1
 	},
-/turf/open/space/basic,
+/turf/open/floor/almayer_hull{
+	color = "#444444"
+	},
+/area/space)
+"vb" = (
+/obj/structure/surface/rack,
+/obj/item/stack/cable_coil{
+	pixel_y = -5;
+	pixel_x = -1
+	},
+/obj/structure/largecrate/random/case/small{
+	pixel_y = 14
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
 /area/space)
 "vo" = (
 /turf/closed/wall/almayer/white/outer_tile,
@@ -1853,6 +1991,25 @@
 "vV" = (
 /obj/structure/machinery/door/airlock/multi_tile/almayer/almayer,
 /turf/open/shuttle/elevator,
+/area/space)
+"vY" = (
+/obj/structure/prop/structure_lattice{
+	color = "#444444"
+	},
+/obj/structure/prop/structure_lattice{
+	color = "#444444";
+	pixel_x = -16
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice3";
+	pixel_x = 16;
+	pixel_y = 24;
+	layer = 7.1;
+	color = "#444444"
+	},
+/turf/open/floor/almayer_hull{
+	color = "#444444"
+	},
 /area/space)
 "wc" = (
 /obj/structure/platform{
@@ -2057,6 +2214,18 @@
 	icon_state = "white_cyan2"
 	},
 /area/space)
+"xx" = (
+/obj/structure/prop/invuln/dense/electricbox{
+	layer = 3;
+	dir = 1;
+	pixel_y = 18;
+	density = 0;
+	icon_state = "bbox_broken"
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
+/area/space)
 "xB" = (
 /obj/structure/prop/almayer/computers/sensor_computer1{
 	name = "Life support systems computer";
@@ -2102,15 +2271,25 @@
 	},
 /turf/open/floor/strata,
 /area/space)
+"xY" = (
+/turf/open/floor/almayer_hull{
+	dir = 1;
+	icon_state = "outerhull_dir"
+	},
+/area/space)
 "ya" = (
 /obj/structure/machinery/power/apc/almayer{
 	cell_type = /obj/item/cell/hyper
 	},
 /obj/structure/closet/crate/plastic,
-/turf/open/floor/plating/almayer,
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
 /area/space)
 "yn" = (
-/turf/open/shuttle/escapepod,
+/turf/open/shuttle/vehicle{
+	color = "#bdbdbd "
+	},
 /area/space)
 "yt" = (
 /obj/structure/machinery/door/airlock/almayer/generic{
@@ -2150,8 +2329,30 @@
 	},
 /area/space)
 "yK" = (
-/obj/structure/reagent_dispensers/fueltank,
-/turf/open/floor/plating/almayer,
+/obj/structure/surface/rack,
+/obj/item/tool/weldpack/minitank{
+	pixel_x = -5;
+	pixel_y = 14
+	},
+/obj/item/tool/weldpack/minitank{
+	pixel_x = -11;
+	pixel_y = -3
+	},
+/obj/item/tool/weldpack/minitank{
+	pixel_y = 11;
+	pixel_x = -2
+	},
+/obj/item/tool/weldpack/minitank{
+	pixel_x = 4;
+	pixel_y = 12
+	},
+/obj/item/clothing/head/welding,
+/obj/item/tool/weldingtool/largetank{
+	pixel_x = 8
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
 /area/space)
 "yN" = (
 /obj/structure/machinery/door/airlock/almayer/generic{
@@ -2198,6 +2399,10 @@
 	dir = 4
 	},
 /area/space)
+"zx" = (
+/obj/item/tank/emergency_oxygen/engi,
+/turf/open/floor/strata,
+/area/space)
 "zD" = (
 /obj/structure/platform{
 	dir = 1
@@ -2233,6 +2438,18 @@
 	},
 /turf/open/floor/strata{
 	icon_state = "blue1"
+	},
+/area/space)
+"Ah" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	dir = 1
+	},
+/obj/structure/prop/structure_lattice{
+	color = "#627278"
+	},
+/turf/open/floor/strata{
+	icon_state = "floor3"
 	},
 /area/space)
 "AC" = (
@@ -2303,11 +2520,34 @@
 	},
 /turf/open/floor/almayer_hull,
 /area/space)
+"BB" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_y = 3;
+	color = "#444444"
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice3";
+	pixel_x = 16;
+	pixel_y = 24;
+	layer = 7.1;
+	color = "#444444"
+	},
+/turf/open/floor/almayer_hull{
+	color = "#444444"
+	},
+/area/space)
 "BF" = (
 /obj/structure/bed/chair{
 	pixel_x = 1
 	},
 /turf/open/floor/strata,
+/area/space)
+"BN" = (
+/turf/open/shuttle/escapepod{
+	icon_state = "floor1";
+	dir = 4
+	},
 /area/space)
 "BR" = (
 /turf/open/floor/almayer{
@@ -2404,6 +2644,15 @@
 	color = "#bbbee8"
 	},
 /area/space)
+"CO" = (
+/obj/structure/prop/invuln/lattice_prop{
+	pixel_y = 16;
+	color = "#444444"
+	},
+/turf/open/floor/almayer_hull{
+	color = "#444444"
+	},
+/area/space)
 "CY" = (
 /obj/structure/machinery/power/smes{
 	pixel_y = 4;
@@ -2463,6 +2712,20 @@
 /turf/open/floor/almayer{
 	dir = 1;
 	icon_state = "plating_striped"
+	},
+/area/space)
+"Ey" = (
+/obj/structure/prop/invuln/dense/electricbox{
+	layer = 3;
+	dir = 1;
+	pixel_y = 18;
+	density = 0;
+	icon = 'icons/obj/structures/machinery/fusion_eng.dmi';
+	icon_state = "off";
+	name = "S-73 Micro Reactor"
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
 	},
 /area/space)
 "EC" = (
@@ -2608,6 +2871,18 @@
 	icon_state = "floor3"
 	},
 /area/space)
+"FU" = (
+/obj/structure/prop/structure_lattice{
+	color = "#444444"
+	},
+/obj/structure/prop/structure_lattice{
+	color = "#444444";
+	pixel_x = -16
+	},
+/turf/open/floor/almayer_hull{
+	color = "#444444"
+	},
+/area/space)
 "FZ" = (
 /obj/structure/closet/coffin/woodencrate,
 /obj/item/storage/beer_pack,
@@ -2675,7 +2950,9 @@
 /area/space)
 "Gw" = (
 /obj/structure/machinery/autolathe,
-/turf/open/floor/plating/almayer,
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
 /area/space)
 "GC" = (
 /obj/structure/machinery/shower{
@@ -2806,12 +3083,14 @@
 	},
 /area/space)
 "Hx" = (
-/obj/structure/surface/table/almayer,
 /obj/structure/machinery/prop/almayer/computer{
-	dir = 1;
-	pixel_x = 3
+	dir = 8;
+	pixel_x = 12;
+	pixel_y = 5
 	},
-/turf/open/floor/plating/almayer,
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
 /area/space)
 "HT" = (
 /obj/structure/machinery/suit_storage_unit/compression_suit{
@@ -2842,8 +3121,21 @@
 /area/space)
 "HW" = (
 /obj/structure/surface/table/almayer,
+/obj/item/tool/extinguisher/mini{
+	pixel_x = 16
+	},
+/obj/item/inflatable{
+	pixel_x = -6;
+	pixel_y = 11
+	},
+/obj/item/inflatable/door{
+	pixel_x = -6;
+	pixel_y = 13
+	},
 /obj/item/storage/toolbox/mechanical,
-/turf/open/floor/plating/almayer,
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
 /area/space)
 "Ib" = (
 /obj/structure/prop/invuln/lattice_prop,
@@ -2905,6 +3197,15 @@
 	icon_state = "wall4"
 	},
 /area/space)
+"IV" = (
+/obj/structure/prop/structure_lattice{
+	color = "#444444";
+	pixel_x = -16
+	},
+/turf/open/floor/almayer_hull{
+	color = "#444444"
+	},
+/area/space)
 "IW" = (
 /obj/structure/platform{
 	layer = 2.15;
@@ -2914,6 +3215,20 @@
 	},
 /turf/open/floor/almayer{
 	icon_state = "test_floor4"
+	},
+/area/space)
+"Jq" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_y = 3;
+	color = "#444444"
+	},
+/obj/structure/prop/structure_lattice{
+	color = "#444444";
+	pixel_x = -16
+	},
+/turf/open/floor/almayer_hull{
+	color = "#444444"
 	},
 /area/space)
 "JD" = (
@@ -2949,7 +3264,14 @@
 	},
 /area/space)
 "JW" = (
-/obj/structure/toilet,
+/obj/structure/toilet{
+	pixel_y = 14;
+	pixel_x = 2
+	},
+/obj/structure/sink{
+	dir = 8;
+	pixel_x = -11
+	},
 /turf/open/floor{
 	icon_state = "freezerfloor"
 	},
@@ -3249,7 +3571,7 @@
 /area/space)
 "ML" = (
 /obj/structure/machinery/cm_vending/sorted/medical/marinemed{
-	pixel_y = 13;
+	pixel_y = 1;
 	name = "\improper Wey-Med Mini";
 	desc = "A cheap version of the Wey-Med Plus Medical Pharmaceutical dispenser with basic medical supplies."
 	},
@@ -3385,7 +3707,9 @@
 	icon_state = "lattice12";
 	pixel_y = 16
 	},
-/turf/open/space/basic,
+/turf/open/floor/almayer_hull{
+	color = "#444444"
+	},
 /area/space)
 "Os" = (
 /obj/structure/surface/table/woodentable/fancy,
@@ -3420,8 +3744,8 @@
 	},
 /area/space)
 "OG" = (
-/obj/structure/surface/table/almayer,
 /obj/structure/machinery/computer/card,
+/obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/almayer{
 	icon_state = "tcomms"
 	},
@@ -3489,10 +3813,12 @@
 	pixel_x = 1;
 	pixel_y = 8
 	},
-/turf/open/floor/strata{
-	icon_state = "red3";
-	dir = 8
+/obj/item/weapon/gun/energy/rxfm5_eva{
+	pixel_y = -2;
+	pixel_x = 2
 	},
+/obj/item/restraint/handcuffs/zip,
+/turf/open/floor/plating/almayer,
 /area/space)
 "Pj" = (
 /obj/structure/machinery/door/airlock/almayer/generic{
@@ -3667,9 +3993,16 @@
 	},
 /area/space)
 "QM" = (
-/turf/open/floor{
-	icon_state = "freezerfloor"
+/obj/structure/surface/rack,
+/obj/item/stack/sheet/metal/med_large_stack,
+/obj/item/stack/sheet/plasteel/med_large_stack{
+	pixel_y = 7
 	},
+/obj/item/inflatable{
+	pixel_x = -6;
+	pixel_y = 11
+	},
+/turf/open/floor/plating/almayer,
 /area/space)
 "QQ" = (
 /obj/structure/bed/chair/office/light{
@@ -3726,6 +4059,13 @@
 	},
 /turf/open/floor/strata,
 /area/space)
+"RC" = (
+/obj/structure/machinery/door/airlock/almayer/engineering{
+	name = "Aft Storage";
+	dir = 2
+	},
+/turf/open/floor/plating,
+/area/space)
 "RD" = (
 /obj/structure/flora/pottedplant{
 	icon_state = "pottedplant_17";
@@ -3734,6 +4074,12 @@
 	},
 /turf/open/floor/strata{
 	icon_state = "fake_wood"
+	},
+/area/space)
+"RE" = (
+/turf/open/floor/almayer_hull{
+	dir = 5;
+	icon_state = "outerhull_dir"
 	},
 /area/space)
 "RG" = (
@@ -3793,8 +4139,14 @@
 	},
 /area/space)
 "St" = (
-/obj,
-/turf/open/space/basic,
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_y = 3;
+	color = "#444444"
+	},
+/turf/open/floor/almayer_hull{
+	color = "#444444"
+	},
 /area/space)
 "Sz" = (
 /obj/structure/machinery/computer/shuttle/escape_pod_panel{
@@ -3804,6 +4156,28 @@
 	icon_state = "floor2"
 	},
 /area/space)
+"SI" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_y = 3;
+	color = "#444444"
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice13";
+	pixel_y = 3;
+	color = "#444444"
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice3";
+	pixel_x = 16;
+	pixel_y = 24;
+	layer = 7.1;
+	color = "#444444"
+	},
+/turf/open/floor/almayer_hull{
+	color = "#444444"
+	},
+/area/space)
 "SJ" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "NW-out"
@@ -3811,6 +4185,17 @@
 /turf/open/floor/strata{
 	icon_state = "blue3";
 	dir = 6
+	},
+/area/space)
+"SL" = (
+/obj/structure/prop/invuln/dense/electricbox{
+	layer = 3;
+	dir = 4;
+	pixel_y = 18;
+	density = 0
+	},
+/turf/open/floor/almayer{
+	icon_state = "plate"
 	},
 /area/space)
 "SN" = (
@@ -3841,9 +4226,8 @@
 /area/space)
 "Tw" = (
 /obj/structure/surface/rack,
-/obj/item/storage/toolbox/mechanical,
-/obj/item/storage/toolbox/mechanical/green{
-	pixel_y = 8
+/obj/item/storage/toolbox/electrical{
+	pixel_y = -4
 	},
 /turf/open/floor/strata{
 	icon_state = "floor2"
@@ -3967,7 +4351,9 @@
 /area/space)
 "UX" = (
 /obj/structure/machinery/cm_vending/sorted/tech/electronics_storage,
-/turf/open/floor/plating/almayer,
+/turf/open/floor/almayer{
+	icon_state = "plate"
+	},
 /area/space)
 "UY" = (
 /obj/structure/prop/server_equipment/yutani_server{
@@ -4048,15 +4434,18 @@
 /obj/structure/sink{
 	pixel_y = 20
 	},
-/obj/item/tool/soap/nanotrasen{
-	pixel_y = 19;
-	pixel_x = -4
-	},
 /obj/structure/mirror{
 	pixel_y = 35
 	},
 /turf/open/floor/strata{
 	icon_state = "white_cyan2"
+	},
+/area/space)
+"Ww" = (
+/obj/structure/machinery/cryopod/evacuation,
+/turf/open/shuttle/escapepod{
+	icon_state = "floor1";
+	dir = 4
 	},
 /area/space)
 "Wx" = (
@@ -4268,6 +4657,18 @@
 	},
 /turf/open/floor/strata{
 	icon_state = "fake_wood"
+	},
+/area/space)
+"Yf" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice3";
+	pixel_x = 16;
+	pixel_y = 24;
+	layer = 7.1;
+	color = "#444444"
+	},
+/turf/open/floor/almayer_hull{
+	color = "#444444"
 	},
 /area/space)
 "Yl" = (
@@ -5252,888 +5653,888 @@ tc
 tc
 "}
 (12,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (13,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (14,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-og
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (15,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-St
-tc
-tc
-tc
-tc
-tc
-og
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (16,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (17,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (18,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tP
-Gl
-kl
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (19,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (20,1,1) = {"
-og
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (21,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (22,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (23,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 kl
 kl
 kl
@@ -6162,55 +6563,55 @@ kl
 kl
 kl
 kl
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (24,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 nS
-tc
+ZV
 nS
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
 kl
 Gl
 lG
@@ -6239,34 +6640,34 @@ lG
 lo
 lo
 kl
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (25,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 kl
 kl
 kl
@@ -6274,20 +6675,20 @@ kl
 kl
 kl
 kl
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 Op
-tc
+ZV
 Op
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
 kl
 Gl
 lo
@@ -6316,33 +6717,33 @@ lo
 lo
 lo
 kl
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (26,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 LF
 kl
 Gl
@@ -6352,19 +6753,19 @@ Tr
 nP
 kl
 kl
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
 Op
-tc
+ZV
 Op
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
 kl
 Gl
 lo
@@ -6401,24 +6802,24 @@ kl
 kl
 kl
 kl
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
 "}
 (27,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 Kt
 rs
 lo
@@ -6473,28 +6874,28 @@ lo
 Gl
 mt
 cl
-oq
+Uz
 cl
 he
 cl
 kl
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
 "}
 (28,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 rs
 rs
 lo
@@ -6537,7 +6938,7 @@ HT
 iT
 vo
 JW
-pw
+vo
 QM
 vo
 vo
@@ -6548,29 +6949,29 @@ lA
 lo
 lo
 Gl
-oq
+Uz
 cl
-oq
+Uz
 cl
 CY
 ms
 kl
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
 "}
 (29,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+om
+oq
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 rs
 rs
 lo
@@ -6613,9 +7014,9 @@ vo
 fq
 GK
 vo
-vo
-vo
 jL
+vo
+Yv
 vo
 yK
 vo
@@ -6638,15 +7039,15 @@ kl
 kl
 "}
 (30,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 rs
 rs
 XQ
@@ -6694,7 +7095,7 @@ jQ
 jQ
 Yv
 vo
-Yv
+uu
 UX
 vo
 vo
@@ -6715,14 +7116,14 @@ dR
 kl
 "}
 (31,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+ZV
+qr
 rs
 rs
 GM
@@ -6743,7 +7144,7 @@ Fj
 kl
 cg
 Du
-PR
+BN
 ni
 kl
 kl
@@ -6770,9 +7171,9 @@ KL
 HU
 HU
 HU
-vo
-Yv
-Yv
+RC
+uu
+uu
 Gw
 vo
 lA
@@ -6792,13 +7193,13 @@ le
 kl
 "}
 (32,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+qr
 rs
 Zk
 CJ
@@ -6820,7 +7221,7 @@ Fj
 kl
 cg
 Nh
-PR
+BN
 ni
 kl
 kT
@@ -6848,8 +7249,8 @@ HV
 HV
 HV
 vo
-Yv
-Yv
+xx
+uu
 ya
 vo
 lA
@@ -6869,13 +7270,13 @@ lo
 kl
 "}
 (33,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+xY
 Rt
 OL
 QT
@@ -6896,8 +7297,8 @@ Gl
 yt
 kl
 cg
-Du
-PR
+Ww
+BN
 ni
 kl
 wu
@@ -6925,7 +7326,7 @@ pm
 pm
 pm
 vo
-Yv
+Ey
 HW
 rL
 vo
@@ -6946,13 +7347,13 @@ lo
 kl
 "}
 (34,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+Jq
+oq
+ZV
+ZV
+ZV
+xY
 Rt
 Aa
 QT
@@ -7002,7 +7403,7 @@ Bi
 Bi
 Bi
 vo
-Yv
+SL
 Hx
 vo
 vo
@@ -7023,13 +7424,13 @@ lo
 kl
 "}
 (35,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+xY
 Rt
 wt
 dj
@@ -7078,8 +7479,8 @@ vo
 HU
 HU
 HU
-uu
-Yv
+vo
+vb
 vo
 vo
 og
@@ -7100,13 +7501,13 @@ lo
 kl
 "}
 (36,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+xY
 Rt
 vt
 IW
@@ -7177,13 +7578,13 @@ lo
 kl
 "}
 (37,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+nR
+hd
+ip
+ZV
+ZV
+xY
 Rt
 GW
 Rs
@@ -7254,13 +7655,13 @@ lo
 kl
 "}
 (38,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+Yf
+BB
+oq
+ZV
+ZV
+FU
+xY
 Rt
 qS
 jI
@@ -7294,23 +7695,23 @@ lo
 lo
 Mh
 IM
+db
 IM
 IM
 IM
+db
 IM
 IM
 IM
+db
 IM
 IM
 IM
+db
 IM
 IM
 IM
-IM
-IM
-IM
-IM
-IM
+db
 IM
 IM
 IM
@@ -7331,13 +7732,13 @@ lo
 kl
 "}
 (39,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+Yf
+jG
+CO
+Yf
+Yf
+vY
+xY
 Rt
 nD
 Fl
@@ -7408,13 +7809,13 @@ cl
 kl
 "}
 (40,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+Yf
+SI
+CO
+ZV
+ZV
+FU
+xY
 Rt
 eN
 VN
@@ -7485,13 +7886,13 @@ cl
 kl
 "}
 (41,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+nR
+hd
+ip
+ZV
+FU
+xY
 Rt
 Xr
 jI
@@ -7525,23 +7926,23 @@ lo
 lo
 Gc
 Mr
+Ah
 Mr
 Mr
 Mr
+Ah
 Mr
 Mr
 Mr
+Ah
 Mr
 Mr
 Mr
+Ah
 Mr
 Mr
 Mr
-Mr
-Mr
-Mr
-Mr
-Mr
+Ah
 Mr
 Mr
 Mr
@@ -7562,13 +7963,13 @@ lo
 kl
 "}
 (42,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+IV
+xY
 Rt
 wH
 wf
@@ -7639,13 +8040,13 @@ lo
 kl
 "}
 (43,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+xY
 Rt
 MF
 cM
@@ -7716,13 +8117,13 @@ lo
 kl
 "}
 (44,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+xY
 Rt
 jx
 wh
@@ -7793,13 +8194,13 @@ lo
 kl
 "}
 (45,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+xY
 Rt
 UY
 QT
@@ -7825,7 +8226,7 @@ ht
 Bh
 kl
 fg
-Sk
+zx
 Sk
 Sk
 UL
@@ -7870,13 +8271,13 @@ lo
 kl
 "}
 (46,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+Jq
+oq
+ZV
+ZV
+ZV
+xY
 Rt
 EM
 QT
@@ -7898,12 +8299,12 @@ MD
 kl
 cg
 Du
-PR
+BN
 ni
 kl
 do
 Sk
-Sk
+ig
 Sk
 aR
 lo
@@ -7947,13 +8348,13 @@ lo
 kl
 "}
 (47,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+RE
 rs
 rs
 wT
@@ -7975,7 +8376,7 @@ Lx
 kl
 cg
 Nh
-PR
+BN
 ni
 kl
 Gl
@@ -8024,14 +8425,14 @@ lo
 kl
 "}
 (48,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+ZV
+RE
 rs
 rs
 fw
@@ -8052,7 +8453,7 @@ Rq
 kl
 cg
 Du
-PR
+BN
 ni
 kl
 kl
@@ -8101,15 +8502,15 @@ lo
 kl
 "}
 (49,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 rs
 rs
 Cd
@@ -8178,16 +8579,16 @@ wX
 kl
 "}
 (50,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 rs
 rs
 lo
@@ -8255,17 +8656,17 @@ kl
 kl
 "}
 (51,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 Kt
 rs
 lo
@@ -8326,24 +8727,24 @@ XK
 Fj
 Fj
 kl
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
 "}
 (52,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 rs
 rs
 lo
@@ -8403,25 +8804,25 @@ Gl
 Yl
 bS
 kl
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
 "}
 (53,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+St
+oq
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 rs
 kl
 Gl
@@ -8431,19 +8832,19 @@ eD
 lz
 Gl
 kl
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
 Op
-tc
+ZV
 Op
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
 kl
 Gl
 lo
@@ -8480,26 +8881,26 @@ kl
 kl
 kl
 kl
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
 "}
 (54,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 kl
 kl
 kl
@@ -8507,20 +8908,20 @@ kl
 kl
 kl
 kl
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 Op
-tc
+ZV
 Op
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
 kl
 Gl
 lo
@@ -8549,55 +8950,55 @@ lo
 lo
 lo
 kl
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (55,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 va
-tc
+ZV
 va
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
 kl
 Gl
 lG
@@ -8626,55 +9027,55 @@ YV
 lo
 lo
 kl
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (56,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-ie
-tc
-tc
-tc
-tc
-tc
 ZV
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ie
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 kl
 kl
 kl
@@ -8703,711 +9104,711 @@ kl
 kl
 kl
 kl
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (57,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (58,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (59,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (60,1,1) = {"
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (61,1,1) = {"
-tc
-tc
-tc
-tc
-qI
-uq
-uq
-RG
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (62,1,1) = {"
-tc
-tc
-tc
-tc
-cg
-Du
-vM
-oT
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (63,1,1) = {"
-tc
-tc
-tc
-tc
-Ys
-Nh
-PR
-tV
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (64,1,1) = {"
-tc
-tc
-tc
-tc
-cg
-Du
-Sz
-Qt
-tc
-tc
-tc
-tc
-tc
-tc
-tP
-tP
-tP
-tP
-cu
-tP
-Gl
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (65,1,1) = {"
-tc
-tc
-tc
-tc
-Ow
-IP
-IP
-Pb
-tc
-tc
-tc
-tc
-tc
-tc
-tP
-YQ
-IA
-Fj
-Fj
-La
-Gl
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
+ZV
 "}
 (66,1,1) = {"
 tc
@@ -9424,13 +9825,13 @@ tc
 tc
 tc
 tc
-tP
-Yd
-Fj
-Fj
-Fj
-Fj
-Gl
+tc
+tc
+tc
+tc
+tc
+tc
+tc
 tc
 tc
 tc
@@ -9501,13 +9902,13 @@ tc
 tc
 tc
 tc
-tP
-lY
-Fj
-Fj
-Fj
-Fj
-Gl
+tc
+tc
+tc
+tc
+tc
+tc
+tc
 tc
 tc
 tc
@@ -9573,18 +9974,18 @@ tc
 tc
 tc
 tc
-tc
-tc
-tc
-tc
-tc
+tP
+tP
 tP
 tP
 cu
 tP
-tP
-cu
 Gl
+tc
+tc
+tc
+tc
+tc
 tc
 tc
 tc
@@ -9650,18 +10051,18 @@ tc
 tc
 tc
 tc
-tc
-tc
-tc
-tc
-tc
 tP
-lv
-fJ
-tP
-cy
+YQ
+IA
 Fj
+Fj
+La
 Gl
+tc
+tc
+tc
+tc
+tc
 tc
 tc
 tc
@@ -9727,18 +10128,18 @@ tc
 tc
 tc
 tc
-tc
-tc
-tc
-tc
-tc
 tP
-XB
-ij
-tP
-mO
-VJ
+Yd
+Fj
+Fj
+Fj
+Fj
 Gl
+tc
+tc
+tc
+tc
+tc
 tc
 tc
 tc
@@ -9798,24 +10199,24 @@ tc
 tc
 tc
 tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+qI
+uq
+uq
+RG
 tc
 tc
 tP
-tP
-tP
-tP
-tP
-tP
+lY
+Fj
+Fj
+Fj
+Fj
 Gl
+tc
+tc
+tc
+tc
+tc
 tc
 tc
 tc
@@ -9875,19 +10276,19 @@ tc
 tc
 tc
 tc
+cg
+Du
+vM
+oT
 tc
 tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+tP
+tP
+cu
+tP
+tP
+cu
+Gl
 tc
 tc
 tc
@@ -9952,19 +10353,19 @@ tc
 tc
 tc
 tc
+Ys
+Nh
+PR
+tV
 tc
 tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+tP
+lv
+fJ
+tP
+cy
+Fj
+Gl
 tc
 tc
 tc
@@ -10029,19 +10430,19 @@ tc
 tc
 tc
 tc
+cg
+Du
+Sz
+Qt
 tc
 tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+tP
+XB
+ij
+tP
+mO
+VJ
+Gl
 tc
 tc
 tc
@@ -10106,19 +10507,19 @@ tc
 tc
 tc
 tc
+Ow
+IP
+IP
+Pb
 tc
 tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
-tc
+tP
+tP
+tP
+tP
+tP
+tP
+Gl
 tc
 tc
 tc
